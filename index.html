@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRN-Atlas | 基因调控网络图谱</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #dee2e6;
+            --card-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --hover-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* 导航栏 */
+        nav {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "🧬";
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero区域 */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300"><path fill="none" stroke="white" stroke-width="0.5" opacity="0.3" d="M0,150 Q300,50 600,150 T1200,150"/><path fill="none" stroke="white" stroke-width="0.5" opacity="0.3" d="M0,100 Q300,200 600,100 T1200,100"/></svg>') no-repeat center;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* 搜索和筛选区域 */
+        .search-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 40px;
+        }
+
+        .search-section h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        .filter-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 10px;
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .search-btn {
+            background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        /* 数据卡片 */
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .data-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .data-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .card-badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .card-description {
+            color: #666;
+            margin-bottom: 15enegro;
+            line-height: 1.5;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .meta-item::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .card-action {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+            transform: translateX(3px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* 特性展示 */
+        .features {
+            margin: 60px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* 页脚 */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            color: #b8c5d6;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #b8c5d6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* 加载动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">GRN-Atlas</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#data">数据浏览</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <div class="container">
+        <div class="hero fade-in">
+            <div class="hero-content">
+                <h1>基因调控网络图谱数据库</h1>
+                <p>探索全面的基因调控网络(GRN)数据，支持多物种、多组织的调控关系查询与分析</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">GRN数据集</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">组织类型</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">物种覆盖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 搜索和筛选 -->
+        <div class="search-section fade-in" id="data">
+            <h2>🔍 数据检索</h2>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="species">物种选择</label>
+                    <select id="species">
+                        <option value="">全部物种</option>
+                        <option value="human">人类 (Homo sapiens)</option>
+                        <option value="mouse">小鼠 (Mus musculus)</option>
+                        <option value="rat">大鼠 (Rattus norvegicus)</option>
+                        <option value="zebrafish">斑马鱼 (Danio rerio)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="tissue">组织/细胞类型</label>
+                    <select id="tissue">
+                        <option value="">全部组织</option>
+                        <option value="brain">脑组织</option>
+                        <option value="heart">心脏</option>
+                        <option value="liver">肝脏</option>
+                        <option value="kidney">肾脏</option>
+                        <option value="lung">肺</option>
+                        <option value="muscle">肌肉</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="grn-type">GRN类型</label>
+                    <select id="grn-type">
+                        <option value="">全部类型</option>
+                        <option value="tf-gene">TF-Gene调控</option>
+                        <option value="mirna">miRNA调控</option>
+                        <option value="lncrna">lncRNA调控</option>
+                        <option value="chromatin">染色质互作</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="keyword">关键词搜索</label>
+                    <input type="text" id="keyword" placeholder="输入基因名称或通路...">
+                </div>
+            </div>
+            <button class="search-btn" onclick="searchData()">
+                🔍 搜索数据
+            </button>
+        </div>
+
+        <!-- 数据卡片展示 -->
+        <div class="data-grid" id="dataGrid">
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">人类脑组织GRN</h3>
+                    <span class="card-badge">TF-Gene</span>
+                </div>
+                <p class="card-description">
+                    包含人类大脑皮层的转录因子-基因调控网络，涵盖神经发育和突触可塑性相关通路。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">10,234 调控对</span>
+                    <span class="meta-item">更新: 2024-03</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">小鼠心脏GRN</h3>
+                    <span class="card-badge">miRNA</span>
+                </div>
+                <p class="card-description">
+                    小鼠心脏组织的miRNA调控网络，包含心肌细胞分化和心血管疾病相关调控关系。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">8,567 调控对</span>
+                    <span class="meta-item">更新: 2024-02</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">肝脏代谢GRN</h3>
+                    <span class="card-badge">Multi-omics</span>
+                </div>
+                <p class="card-description">
+                    整合多组学数据构建的肝脏代谢调控网络，涉及糖脂代谢和药物代谢通路。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">15,892 调控对</span>
+                    <span class="meta-item">更新: 2024-01</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">免疫细胞GRN</h3>
+                    <span class="card-badge">单细胞</span>
+                </div>
+                <p class="card-description">
+                    基于单细胞测序数据构建的免疫细胞亚群特异性调控网络。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">12,456 调控对</span>
+                    <span class="meta-item">更新: 2024-03</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">癌症GRN图谱</h3>
+                    <span class="card-badge">疾病相关</span>
+                </div>
+                <p class="card-description">
+                    多种癌症类型的基因调控网络异常模式分析，支持肿瘤标志物识别。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">25,678 调控对</span>
+                    <span class="meta-item">更新: 2024-02</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+
+            <div class="data-card fade-in">
+                <div class="card-header">
+                    <h3 class="card-title">发育时期GRN</h3>
+                    <span class="card-badge">时序数据</span>
+                </div>
+                <p class="card-description">
+                    胚胎发育不同阶段的动态基因调控网络，追踪关键调控因子的时序变化。
+                </p>
+                <div class="card-meta">
+                    <span class="meta-item">18,234 调控对</span>
+                    <span class="meta-item">更新: 2024-01</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://figshare.com/account/home#/projects/211369" target="_blank" class="btn btn-primary">
+                        查看数据 →
+                    </a>
+                    <a href="#" class="btn btn-secondary">详情</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 特性展示 -->
+        <div class="features">
+            <h2>平台特色</h2>
+            <div class="feature-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">综合数据</h3>
+                    <p class="feature-description">整合多个来源的高质量GRN数据，覆盖多物种、多组织类型</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔬</div>
+                    <h3 class="feature-title">实验验证</h3>
+                    <p class="feature-description">所有调控关系均经过实验验证或高置信度计算预测</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">快速访问</h3>
+                    <p class="feature-description">一键跳转至Figshare获取完整数据集，支持批量下载</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">定期更新</h3>
+                    <p class="feature-description">数据库定期更新，持续纳入最新研究成果</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于GRN-Atlas</h3>
+                <p>致力于提供全面、准确的基因调控网络数据资源，助力生命科学研究。</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">数据提交</a>
+                <a href="#">使用指南</a>
+                <a href="#">API文档</a>
+                <a href="#">引用说明</a>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <a href="#">Email: contact@grn-atlas.org</a>
+                <a href="#">GitHub: @grn-atlas</a>
+                <a href="#">Twitter: @GRNAtlas</a>
+            </div>
+            <div class="footer-section">
+                <h3>合作机构</h3>
+                <a href="#">研究实验室</a>
+                <a href="#">数据合作伙伴</a>
+                <a href="https://figshare.com/account/home#/projects/211369" target="_blank">Figshare项目</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GRN-Atlas. All rights reserved. | 基因调控网络图谱数据库</p>
+        </div>
+    </footer>
+
+    <script>
+        // 搜索功能
+        function searchData() {
+            const species = document.getElementById('species').value;
+            const tissue = document.getElementById('tissue').value;
+            const grnType = document.getElementById('grn-type').value;
+            const keyword = document.getElementById('keyword').value;
+            
+            // 这里可以添加实际的搜索逻辑
+            console.log('搜索条件：', { species, tissue, grnType, keyword });
+            
+            // 模拟搜索效果
+            const dataGrid = document.getElementById('dataGrid');
+            dataGrid.style.opacity = '0.5';
+            setTimeout(() => {
+                dataGrid.style.opacity = '1';
+                alert('搜索完成！实际使用时这里会根据条件筛选并显示相应的数据。');
+            }, 500);
+        }
+
+        // 页面加载动画
+        window.addEventListener('load', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '0';
+                    el.style.animation = 'fadeIn 0.6s ease-out forwards';
+                }, index * 100);
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
