@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRN‑Atlas | Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--fg:#0f172a;--muted:#6b7280;--border:#e5e7eb;--card:#ffffff;--brand:#2563eb;--accent:#22c55e;--chip:#eef2ff;--chip-text:#3730a3;--shadow:0 10px 30px rgba(17,24,39,.08)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--fg)}
+    a{color:var(--brand);text-decoration:none}
+    header{position:sticky;top:0;z-index:40;background:linear-gradient(135deg,#0b1020,#0f3d5e);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+    .nav{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.3px}
+    .nav a{color:#d1d5db;margin-left:18px}
+    .container{max-width:1200px;margin:0 auto;padding:22px 20px}
+    .panel{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+    .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    label{font-size:.85rem;color:#374151;margin-bottom:6px;display:block;font-weight:600}
+    select,input{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:10px}
+    .actions{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),#1d4ed8);color:#fff}
+    .btn-secondary{background:#eef2f7;color:#111827}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;margin-top:14px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+    .card h3{margin:0;font-size:1.05rem}
+    .meta{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:4px 10px;font-size:.78rem;color:#334155}
+    details.group{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+    details>summary{list-style:none;padding:14px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-weight:800}
+    details>summary::-webkit-details-marker{display:none}
+    .pill{font-size:.75rem;background:var(--chip);color:var(--chip-text);border-radius:999px;padding:4px 10px;margin-left:8px}
+    .group-inner{padding:4px 12px 14px}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .left{display:flex;flex-direction:column;gap:6px}
+    .desc{color:#334155}
+    .small{font-size:.85rem;color:#64748b}
+    /* Modal */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal .box{background:#fff;border-radius:16px;max-width:900px;width:100%;border:1px solid var(--border);box-shadow:var(--shadow)}
+    .box header{padding:14px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    .box .content{padding:14px 16px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+    .chip{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:4px 10px;font-size:.78rem}
+    .ct-list{max-height:320px;overflow:auto;border:1px solid var(--border);border-radius:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px 10px;border-bottom:1px solid #e5e7eb;text-align:left}
+    th{background:#f8fafc}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">🧬 GRN‑Atlas</div>
+      <div class="links"><a href="#">Catalog</a><a href="#">About</a></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel" aria-labelledby="filters">
+      <h2 id="filters" style="margin:0 0 10px">Search & Filter</h2>
+      <div class="filters">
+        <div><label for="species">Species</label>
+          <select id="species"><option value="">All</option><option value="human">Human</option><option value="mouse">Mouse</option></select></div>
+        <div><label for="source">Source</label>
+          <select id="source"><option value="">All</option><option value="bulk">Matched bulk RNA‑seq</option><option value="unpaired">Unpaired scRNA‑seq & scATAC‑seq</option><option value="multiome">sc‑Multiome</option></select></div>
+        <div><label for="tissue">Tissue/System</label>
+          <select id="tissue"><option value="">All</option></select></div>
+        <div><label for="keyword">Keyword</label>
+          <input id="keyword" placeholder="Gene / pathway / dataset id / note" />
+        </div>
+      </div>
+      <div class="actions"><button class="btn btn-primary" id="apply">Apply</button><button class="btn btn-secondary" id="reset">Reset</button></div>
+    </section>
+
+    <section>
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="md-title">
+    <div class="box">
+      <header>
+        <strong id="md-title">Dataset</strong>
+        <button class="btn btn-secondary" id="close">Close</button>
+      </header>
+      <div class="content">
+        <div>
+          <p class="desc" id="md-desc"></p>
+          <div class="meta" id="md-meta" style="margin:10px 0;display:flex;gap:8px;flex-wrap:wrap"></div>
+          <div class="row" style="margin-top:8px">
+            <div class="left small">
+              <div>Source description:</div>
+              <div id="md-source"></div>
+            </div>
+            <div class="right">
+              <a id="md-download" class="btn btn-primary" target="_blank" rel="noopener">Download (Figshare)</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+            <strong>Cell types</strong>
+            <span id="md-ncells" class="chip"></span>
+          </div>
+          <div class="ct-list">
+            <table>
+              <thead><tr><th>Cell type</th><th>Cells</th></tr></thead>
+              <tbody id="md-ct"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // === Data loading ===
+    // Expect a catalog.json at the same directory. See schema below.
+    let DATASETS = [];
+
+    const S = {
+      species: document.getElementById('species'),
+      source:  document.getElementById('source'),
+      tissue:  document.getElementById('tissue'),
+      keyword: document.getElementById('keyword')
+    };
+
+    async function load(){
+      const res = await fetch('catalog.json');
+      const json = await res.json();
+      DATASETS = json.datasets || [];
+      populateTissues();
+      render();
+    }
+
+    function populateTissues(){
+      const T = Array.from(new Set(DATASETS.map(d=>d.tissue))).sort();
+      const sel = S.tissue; sel.innerHTML = '<option value="">All</option>';
+      T.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t.charAt(0).toUpperCase()+t.slice(1);sel.appendChild(o)});
+    }
+
+    function pass(d){
+      if (S.species.value && d.species!==S.species.value) return false;
+      if (S.source.value && d.source_type!==S.source.value) return false;
+      if (S.tissue.value && d.tissue!==S.tissue.value) return false;
+      if (S.keyword.value){
+        const q=S.keyword.value.toLowerCase();
+        const hay=[d.title,d.dataset_id,d.description,d.source_description,d.version,d.updated,(d.modalities||[]).join(' '),(d.cell_types||[]).map(x=>x.name).join(' ')].join(' ').toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    }
+
+    function render(){
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';
+      const arr = DATASETS.filter(pass).sort((a,b)=> a.species.localeCompare(b.species) || a.source_type.localeCompare(b.source_type) || a.tissue.localeCompare(b.tissue));
+      if (!arr.length){ grid.innerHTML = '<div class="panel">No results. Adjust filters.</div>'; return; }
+      arr.forEach(d=> grid.appendChild(card(d)) );
+    }
+
+    function tag(t){const s=document.createElement('span');s.className='tag';s.textContent=t;return s}
+
+    function card(d){
+      const c = document.createElement('div'); c.className='card';
+      const h = document.createElement('h3'); h.textContent = d.title; c.appendChild(h);
+      const meta = document.createElement('div'); meta.className='meta';
+      meta.append(tag(cap(d.species))); meta.append(tag(labelSource(d.source_type)));
+      if (d.tissue) meta.append(tag(cap(d.tissue)));
+      if (d.modalities?.length) meta.append(tag(d.modalities.join(' + ')));
+      if (d.version) meta.append(tag(d.version));
+      if (d.updated) meta.append(tag('Updated '+d.updated));
+      c.appendChild(meta);
+
+      const row=document.createElement('div'); row.className='row';
+      const left=document.createElement('div'); left.className='left';
+      const desc=document.createElement('div'); desc.className='desc'; desc.textContent = d.description||'No description.';
+      const src=document.createElement('div'); src.className='small'; src.textContent = 'Source: '+(d.source_description|| labelSource(d.source_type));
+      left.append(desc,src); row.append(left);
+      const right=document.createElement('div');
+      const btn1=document.createElement('a'); btn1.className='btn btn-primary'; btn1.href=d.figshare_url; btn1.target='_blank'; btn1.rel='noopener'; btn1.textContent='Download';
+      const btn2=document.createElement('button'); btn2.className='btn btn-secondary'; btn2.textContent='Details'; btn2.onclick=()=>openModal(d);
+      right.append(btn1,btn2); row.append(right);
+      c.appendChild(row);
+      return c;
+    }
+
+    function openModal(d){
+      document.getElementById('md-title').textContent = d.title;
+      document.getElementById('md-desc').textContent  = d.description || '';
+      const meta = document.getElementById('md-meta'); meta.innerHTML='';
+      [cap(d.species), labelSource(d.source_type), cap(d.tissue||'')].filter(Boolean).forEach(x=>meta.append(tag(x)));
+      if (d.modalities?.length) meta.append(tag(d.modalities.join(' + ')));
+      if (d.version) meta.append(tag(d.version));
+      if (d.updated) meta.append(tag('Updated '+d.updated));
+      document.getElementById('md-source').textContent = d.source_description || labelSource(d.source_type);
+      document.getElementById('md-download').href = d.figshare_url;
+      const tb = document.getElementById('md-ct'); tb.innerHTML='';
+      const tot = (d.cell_types||[]).reduce((s,x)=>s+(x.count||0),0);
+      document.getElementById('md-ncells').textContent = `${tot.toLocaleString()} cells`;
+      (d.cell_types||[]).forEach(x=>{
+        const tr=document.createElement('tr');
+        const td1=document.createElement('td'); td1.textContent=x.name; const td2=document.createElement('td'); td2.textContent=(x.count??'');
+        tr.append(td1,td2); tb.append(tr);
+      });
+      document.getElementById('modal').style.display='flex';
+    }
+
+    function cap(s){return s? s.charAt(0).toUpperCase()+s.slice(1) : ''}
+    function labelSource(k){ return ({bulk:'Matched bulk RNA‑seq', unpaired:'Unpaired scRNA‑seq & scATAC‑seq', multiome:'sc‑Multiome'})[k] || k }
+
+    document.getElementById('apply').onclick=render;
+    document.getElementById('reset').onclick=()=>{S.species.value='';S.source.value='';S.tissue.value='';S.keyword.value='';render()};
+    document.getElementById('close').onclick=()=>{document.getElementById('modal').style.display='none'};
+    window.addEventListener('keydown',e=>{if(e.key==='Escape') document.getElementById('modal').style.display='none'});
+
+    load();
+  </script>
+
+  <!--
+  ======================
+  catalog.json SCHEMA
+  ======================
+  {
+    "datasets": [
+      {
+        "dataset_id": "H-Bulk-Heart-001",
+        "title": "Human bulk GRN — Heart",
+        "species": "human",                     // "human" | "mouse"
+        "source_type": "bulk",                  // "bulk" | "unpaired" | "multiome"
+        "tissue": "heart",                      // lowercase, for filtering
+        "modalities": ["RNA"],                   // e.g. ["RNA"], ["RNA","ATAC"]
+        "version": "v1.0",
+        "updated": "2025-08-01",               // YYYY-MM-DD
+        "figshare_url": "https://doi.org/10.6084/m9.figshare.xxxxxx", // DOI or file link
+        "description": "Matched bulk RNA-seq samples used to construct a heart-specific GRN.",
+        "source_description": "Matched bulk RNA-seq; samples harmonized and batch-corrected.",
+        "cell_types": [                          // list of {name, count}
+          {"name": "Cardiomyocyte", "count": 12034},
+          {"name": "Fibroblast",     "count":  6721}
+        ]
+      }
+    ]
+  }
+  -->
+</body>
+</html>
