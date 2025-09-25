@@ -178,11 +178,6 @@
           "atac_cells": 2492
         },
         {
-          "name": "Stromal_Cell-ForeLimb&Eye",
-          "rna_cells": 4017,
-          "atac_cells": 7227
-        },
-        {
           "name": "Stromal_Cell_ForeLimb",
           "rna_cells": 1936,
           "atac_cells": 1535
