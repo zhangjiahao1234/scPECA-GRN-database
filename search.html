@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <style>.errbar{display:none;background:#fee2e2;color:#7f1d1d;border:1px solid #fecaca;padding:8px;border-radius:10px;margin:10px 16px}</style>
 </head>
 <body>
   <header>
@@ -26,6 +27,7 @@
     </div>
   </div>
 
+  <div id="errbar" class="errbar"></div>
   <main class="container">
     <section class="filters" aria-label="Filters">
       <div class="field">
@@ -92,10 +94,18 @@
     let DATASETS = [];
 
     async function load(){
-      const res = await fetch('catalog.json');
-      const json = await res.json();
-      DATASETS = json.datasets || [];
-      hydrate();
+      const err = document.getElementById('errbar');
+      const ver = Date.now();
+      try{
+        const url = new URL('catalog.json', window.location.href); url.searchParams.set('v', ver);
+        const res = await fetch(url.toString(), {cache:'no-store'});
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        const json = await res.json();
+        DATASETS = json.datasets || [];
+        hydrate();
+      }catch(e){
+        if(err){ err.style.display='block'; err.textContent = 'Failed to load catalog.json — ' + e; }
+      }
     }
 
     function hydrate(){

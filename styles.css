@@ -64,7 +64,7 @@ tbody tr:hover{background:#f8fafc}
 /* Two columns */
 .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
 
-/* Decorative DNA background */
+/* Decorative DNA-like ornaments */
 .bg-ornaments{position:relative}
 .bg-ornaments:before{
   content:""; position:absolute; inset:-40px -40px auto auto; width:420px; height:220px; pointer-events:none; opacity:.15;
