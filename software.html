@@ -6,9 +6,31 @@
   <title>scPECA GRNDB | Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- GitHub-style Markdown CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown.min.css">
+
+  <!-- Code highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+
+  <!-- Marked for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+
+  <style>
+    /* Constrain markdown width and center it */
+    .markdown-wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Ensure long code lines wrap nicely on small screens */
+    .markdown-body code, .markdown-body pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,18 +42,38 @@
   </header>
 
   <main class="container">
-    <section class="panel section">
-      <div id="md" style="line-height:1.7"></div>
+    <section class="panel section markdown-wrap">
+      <article id="md" class="markdown-body">Loading...</article>
     </section>
   </main>
 
   <footer>© <span id="year"></span> scPECA GRNDB. CC BY 4.0.</footer>
+
   <script>
+    // Configure marked to better match GitHub
+    marked.setOptions({
+      gfm: true,
+      breaks: false,
+      smartypants: true,
+      headerIds: true,
+      mangle: false,
+      highlight: function(code, lang) {
+        try {
+          if (lang && hljs.getLanguage(lang)) {
+            return hljs.highlight(code, { language: lang }).value;
+          }
+        } catch(e){}
+        return hljs.highlightAuto(code).value;
+      }
+    });
+
     async function renderMD(){
       const res = await fetch('README.md?ts='+Date.now());
       const txt = await res.text();
       document.getElementById('md').innerHTML = marked.parse(txt);
       document.getElementById('year').textContent = new Date().getFullYear();
+      // Highlight after content is inserted
+      document.querySelectorAll('pre code').forEach(block => hljs.highlightElement(block));
     }
     renderMD();
   </script>
