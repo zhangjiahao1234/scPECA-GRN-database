@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRN‑Atlas | Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0c1222;--bg2:#0b2b4a;--text:#0f172a;--muted:#64748b;--border:#e5e7eb;--card:#ffffff;--brand:#2563eb;--accent:#16a34a;--chip:#eef2ff;--chip-text:#3730a3;--shadow:0 8px 24px rgba(2,6,23,.08)}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:#f8fafc}
+    a{color:var(--brand);text-decoration:none} button,a.btn{cursor:pointer}
+    header{position:sticky;top:0;z-index:40;background:linear-gradient(135deg,var(--bg),var(--bg2));color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+    .nav{max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+    .brand{font-weight:800;letter-spacing:.2px;display:flex;align-items:center;gap:10px}
+    .sub{background:#0f172a;color:#cbd5e1} .sub .wrap{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;gap:16px;align-items:center}
+    .stat{display:flex;align-items:center;gap:8px;border-right:1px solid rgba(148,163,184,.25);padding-right:12px} .stat:last-child{border-right:0}
+    .container{max-width:1200px;margin:0 auto;padding:16px}
+
+    /* Filters */
+    .filters{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;align-items:end;margin-bottom:12px}
+    .field{grid-column:span 3;background:#fff;border:1px solid var(--border);border-radius:10px;padding:8px 10px}
+    .field label{display:block;font-size:.78rem;color:#475569;font-weight:700;margin-bottom:4px}
+    .field select,.field input{width:100%;border:1px solid #e5e7eb;border-radius:8px;padding:8px 10px}
+    .actions{grid-column:span 3;display:flex;gap:8px;justify-content:flex-end}
+    .btn{border:0;border-radius:10px;padding:10px 12px;font-weight:700} .btn-primary{background:linear-gradient(135deg,var(--brand),#1d4ed8);color:#fff} .btn-secondary{background:#eef2f7;color:#0f172a}
+
+    /* Info panels */
+    .panel{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+    .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+    .section{padding:14px}
+    .section header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0} .chip{display:inline-block;background:var(--chip);color:var(--chip-text);border-radius:999px;padding:4px 10px;font-size:.78rem}
+    .desc{color:#334155;white-space:pre-wrap;line-height:1.45}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+    .empty{padding:16px;color:#64748b}
+
+    table{width:100%;border-collapse:collapse} thead th{font-size:.82rem;color:#475569;text-align:left;background:#f1f5f9;border-bottom:1px solid var(--border);padding:10px}
+    tbody td{padding:10px;border-bottom:1px solid #eef2f7;font-size:.94rem} tbody tr:hover{background:#f8fafc}
+    .mono{font-variant-numeric:tabular-nums}
+
+    /* Selection header card */
+    .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .badges .badge{display:inline-flex;align-items:center;gap:6px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:3px 8px;font-size:.72rem;color:#334155;margin-right:6px}
+
+    /* Tiny chart */
+    canvas{background:#ffffff;border:1px solid #e5e7eb;border-radius:12px}
+
+    @media (max-width:900px){ .two-col{grid-template-columns:1fr} .actions{grid-column:span 12;justify-content:flex-start} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">🧬 GRN‑Atlas</div>
+    </div>
+  </header>
+  <div class="sub">
+    <div class="wrap">
+      <div class="stat"><strong id="stat-d">—</strong><span>datasets</span></div>
+      <div class="stat"><strong id="stat-s">—</strong><span>species</span></div>
+      <div class="stat"><strong id="stat-t">—</strong><span>tissues</span></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Filters -->
+    <section class="filters" aria-label="Filters">
+      <div class="field">
+        <label for="species">Species</label>
+        <select id="species"><option value="">All</option><option value="human">Human</option><option value="mouse">Mouse</option></select>
+      </div>
+      <div class="field">
+        <label for="source">Source</label>
+        <select id="source"><option value="">All</option><option value="bulk">Matched bulk RNA‑seq</option><option value="unpaired">Unpaired scRNA‑seq & scATAC‑seq</option><option value="multiome">sc‑Multiome</option></select>
+      </div>
+      <div class="field">
+        <label for="tissue">Tissue/System</label>
+        <select id="tissue"><option value="">All</option></select>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary disabled" id="btn-download" target="_blank" rel="noopener" aria-disabled="true">Download GRN</a>
+        <a class="btn btn-secondary disabled" id="btn-source" target="_blank" rel="noopener" aria-disabled="true">Source Data</a>
+      </div>
+    </section>
+
+    <!-- Selection card -->
+    <section class="card panel" id="card" style="display:none">
+      <div>
+        <div id="card-title" style="font-weight:800"></div>
+        <div class="badges" style="margin-top:6px">
+          <span class="badge" id="badge-species"></span>
+          <span class="badge" id="badge-source"></span>
+          <span class="badge" id="badge-tissue"></span>
+          <span class="badge" id="badge-mod"></span>
+          <span class="badge" id="badge-total"></span>
+        </div>
+      </div>
+      <canvas id="chart" width="260" height="84" aria-label="RNA vs ATAC cells bar chart"></canvas>
+    </section>
+
+    <!-- Info panels -->
+    <section class="panel two-col" style="margin-top:12px">
+      <div class="section">
+        <header><h3 style="margin:0">Summary</h3></header>
+        <div class="meta" id="meta"></div>
+        <div class="desc" id="summary"></div>
+      </div>
+      <div class="section">
+        <header>
+          <h3 style="margin:0">Cell types</h3>
+          <span id="totals" class="chip mono"></span>
+        </header>
+        <div class="ct-list">
+          <table>
+            <thead><tr><th style="width:60%">Cell type</th><th class="mono">RNA cells</th><th class="mono">ATAC cells</th></tr></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="empty" class="empty">Select <b>Species = mouse</b>, <b>Source = unpaired</b>, <b>Tissue = mouse_embroy</b> and click <b>Apply</b> (or change filters) to view details.</div>
+    <div class="actions" style="justify-content:flex-start;margin-top:8px">
+      <button class="btn btn-secondary" id="apply">Apply</button>
+    </div>
+  </main>
+
+  <footer style="padding:16px;color:#94a3b8;text-align:center">© <span id="year"></span> GRN‑Atlas. CC BY 4.0.</footer>
+
+  <script>
+    let DATASETS = [];
+
+    async function load(){
+      const res = await fetch('catalog_filtered.json');
+      const json = await res.json();
+      DATASETS = json.datasets || [];
+      hydrate();
+    }
+
+    function hydrate(){
+      // Stats
+      const tissues = Array.from(new Set(DATASETS.map(d=>d.tissue))).sort();
+      document.getElementById('stat-d').textContent = DATASETS.length;
+      document.getElementById('stat-s').textContent = new Set(DATASETS.map(d=>d.species)).size;
+      document.getElementById('stat-t').textContent = tissues.length;
+
+      // Populate tissue options
+      const sel = document.getElementById('tissue');
+      sel.innerHTML = '<option value=\"\">All</option>' + tissues.map(t=>`<option value=\"${t}\">${t}</option>`).join('');
+    }
+
+    function cap(s){return s? s.charAt(0).toUpperCase()+s.slice(1):''}
+    function labelSource(k){ return ({bulk:'Matched bulk RNA‑seq', unpaired:'Unpaired scRNA‑seq & scATAC‑seq', multiome:'sc‑Multiome'})[k] || k }
+    function chip(t){ const s=document.createElement('span'); s.className='chip'; s.textContent=t; return s }
+    function escapeHtml(s=''){return s.replace(/[&<>\"']/g, m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]))}
+
+    function pass(d, S){
+      if (S.species && d.species!==S.species) return false;
+      if (S.source  && d.source_type!==S.source) return false;
+      if (S.tissue  && d.tissue!==S.tissue) return false;
+      return true;
+    }
+
+    function render(){
+      const S = {
+        species: document.getElementById('species').value,
+        source:  document.getElementById('source').value,
+        tissue:  document.getElementById('tissue').value
+      };
+      const arr = DATASETS.filter(d=>pass(d,S));
+
+      const empty = document.getElementById('empty');
+      const card  = document.getElementById('card');
+
+      if (!arr.length){
+        empty.style.display = 'block';
+        card.style.display = 'none';
+        document.getElementById('btn-download').classList.add('disabled');
+        document.getElementById('btn-source').classList.add('disabled');
+        document.getElementById('btn-download').setAttribute('aria-disabled','true');
+        document.getElementById('btn-source').setAttribute('aria-disabled','true');
+        fillDetails(null);
+        return;
+      }
+      const d = arr[0];
+      empty.style.display = 'none';
+      card.style.display = 'flex';
+
+      // Card badges & title
+      document.getElementById('card-title').textContent = d.title;
+      document.getElementById('badge-species').textContent = d.species;
+      document.getElementById('badge-source').textContent  = d.source_type;
+      document.getElementById('badge-tissue').textContent  = d.tissue;
+      document.getElementById('badge-mod').textContent     = (d.modalities||[]).join(' + ');
+      document.getElementById('badge-total').textContent   = `${(d.cell_types||[]).length} cell types`;
+
+      // Buttons
+      const dl = document.getElementById('btn-download');
+      const sd = document.getElementById('btn-source');
+      dl.href = d.figshare_url; sd.href = d.source_data_url;
+      dl.classList.remove('disabled'); sd.classList.remove('disabled');
+      dl.removeAttribute('aria-disabled'); sd.removeAttribute('aria-disabled');
+
+      fillDetails(d);
+    }
+
+    function fillDetails(d){
+      const meta = document.getElementById('meta'); const summary = document.getElementById('summary');
+      const tb   = document.getElementById('tbody'); const totals = document.getElementById('totals');
+      meta.innerHTML=''; summary.textContent=''; tb.innerHTML=''; totals.textContent='';
+
+      if (!d) return;
+
+      [cap(d.species), labelSource(d.source_type), d.tissue, (d.modalities||[]).join(' + '), d.version, 'Updated ' + d.updated]
+        .filter(Boolean).forEach(t=> meta.append(chip(t)));
+
+      summary.textContent = d.summary_text || d.description || '';
+
+      let totalRNA = 0, totalATAC = 0;
+      (d.cell_types||[]).forEach(x => {
+        totalRNA += +x.rna_cells || 0; totalATAC += +x.atac_cells || 0;
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${escapeHtml(x.name)}</td><td class="mono">${(+x.rna_cells||0).toLocaleString()}</td><td class="mono">${(+x.atac_cells||0).toLocaleString()}</td>`;
+        tb.appendChild(tr);
+      });
+      totals.textContent = `Total RNA: ${totalRNA.toLocaleString()} | ATAC: ${totalATAC.toLocaleString()}`;
+
+      drawChart(totalRNA, totalATAC);
+    }
+
+    function drawChart(rna, atac){
+      const c = document.getElementById('chart'); const ctx = c.getContext('2d');
+      ctx.clearRect(0,0,c.width,c.height);
+      const max = Math.max(rna, atac) || 1;
+      const padding = 20, barW = 80, gap = 40, baseY = c.height - 20;
+      const scale = (c.height - 40) / max;
+
+      function bar(x, val, label){
+        const h = val * scale;
+        ctx.fillStyle = '#93c5fd'; ctx.fillRect(x, baseY - h, barW, h);
+        ctx.fillStyle = '#0f172a'; ctx.font = '12px Inter'; ctx.fillText(label, x, baseY + 14);
+        ctx.fillText(val.toLocaleString(), x, baseY - h - 6);
+      }
+      bar(padding, rna, 'RNA'); bar(padding + barW + gap, atac, 'ATAC');
+    }
+
+    // Wire events
+    document.getElementById('apply').onclick = render;
+    document.getElementById('species').onchange = ()=>{};
+    document.getElementById('source').onchange  = ()=>{};
+    document.getElementById('tissue').onchange  = ()=>{};
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    load();
+  </script>
+</body>
+</html>
