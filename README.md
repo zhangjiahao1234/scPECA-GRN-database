@@ -1,22 +1,4 @@
 # scPECA
-
-- [scPECA](#scpeca)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Run scPECA](#run-scpeca)
-    - [Input](#input)
-      - [Format 1](#format-1)
-      - [Format 2](#format-2)
-      - [Format 3](#format-3)
-      - [Format 4](#format-4)
-    - [Prior files](#prior-files)
-    - [Run example](#run-example)
-    - [Output](#output)
-    - [GRN Analysis Tools (example cell line: K562)](#grn-analysis-tools-example-cell-line-k562)
-      - [TFTG co-module analysis:](#tftg-co-module-analysis)
-      - [TF layering](#tf-layering)
-  - [System \& Software Requirements](#system--software-requirements)
-  - [Considerations](#considerations)
 ## Introduction
 This is a python version of PECA2 gene regulatory 
 network construction software designed for single-cell data.
@@ -24,7 +6,7 @@ It has a faster running speed and a lower memory footprint.
 
 ## Installation
 ```commandline
-pip install scPECA==2.0
+pip install scPECA==1.17
 ```
 
 ## Run scPECA
@@ -124,12 +106,6 @@ sample_name_scATAC_meta.csv
     </tr>
 </table>
 
-#### Format 4
-h5ad scRNA file with cell label
-
-
-
-
 ### Prior files
 
 If you are the first time to run scPECA, please download the prior files as follows,
@@ -150,55 +126,18 @@ from scPECA.scPECA_main import scPECAclass
 import scPECA
 import os
 
-# example 1
+data_path = os.path.join(os.path.dirname(scPECA.__file__), 'Cones')# demo data path
 pkg_path = os.path.dirname(scPECA.__file__)
-# demo data path
-data_path = os.path.join(os.path.dirname(scPECA.__file__), 'Cones')
 demo = scPECAclass(data_path, 'Cones', 'hg38', pkg_path) # Create a scPECA class
 demo.RNA_process(2) # Format 2 RNA data processing
 demo.ATAC_process(2) # Format 2 ATAC data processing
-demo.network('Cones', data_path) # PECA2 GRN construction
-
-# example 2
-data_path = os.path.join(os.path.dirname(scPECA.__file__), '4cellline')
-demo = scPECAclass(data_path, '4cellline', 'hg38', pkg_path)
-demo.RNA_process(3) 
-demo.ATAC_process(3)
-
-# example 3
-data_path = os.path.join(os.path.dirname(scPECA.__file__), 'paul15')
-demo = scPECAclass(data_path, 'paul15', 'mm10', pkg_path)
-demo.RNA_process(4, 'paul15_clusters') 
+demo.network('Cones', pkg_path) # PECA2 GRN construction
 ```
 
-The details of other optional parameters can be viewed in python. All sample data has been downloaded with the software package.
+The details of other optional parameters can be viewed in python.
 
 ### Output 
 sample_name_network.txt
-
-TFTG_regulationScore.txt
-
-### GRN Analysis Tools (example cell line: K562)
-
-
-1. TFTG co-module analysis:
-
-```
-demo.co_module(celltype, num_clusters)
-```
-Result: TFmodule_result.txt, TGmodule_result.txt, co_module.png
-
-![image](co-module.png)
-
-2. TF layering
-```
-demo.tf_layer(celltype)
-demo.top_tf_layer_plot(celltype)
-```
-Result: TF_layer.txt, top_TF_layer_graph.png
-
-![image](top_TF_layer_graph.png)
-
 
 ## System & Software Requirements
 System: linux
@@ -212,5 +151,4 @@ Python package: pybedtools, ismember, scipy, numpy_groupies,
 1. RNA data preprocessing currently supports only hg38, hg19, mm10, mm9 genomes.
 2. pybedtools may not support the latest version of 
 python and will require the creation of a new environment.
-
 
