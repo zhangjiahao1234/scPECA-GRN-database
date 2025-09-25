@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>scPECA GRNDB | Contact</title>
+  <title>scPECA GRNDB | Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <header>
@@ -19,15 +21,19 @@
 
   <main class="container">
     <section class="panel section">
-      <h2 style="margin:0 0 8px">Contact</h2>
-      <ul style="line-height:1.8;color:#334155">
-        <li>Email: <a href="mailto:your.name@your-institute.edu">your.name@your-institute.edu</a></li>
-        <li>GitHub: <a href="https://github.com/zhangjiahao1234/scPECA-GRN-database" target="_blank" rel="noopener">project repository</a></li>
-      </ul>
+      <div id="md" style="line-height:1.7"></div>
     </section>
   </main>
 
   <footer>© <span id="year"></span> scPECA GRNDB. CC BY 4.0.</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    async function renderMD(){
+      const res = await fetch('README.md?ts='+Date.now());
+      const txt = await res.text();
+      document.getElementById('md').innerHTML = marked.parse(txt);
+      document.getElementById('year').textContent = new Date().getFullYear();
+    }
+    renderMD();
+  </script>
 </body>
 </html>

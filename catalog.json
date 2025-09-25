@@ -6,6 +6,7 @@
       "species": "mouse",
       "source_type": "unpaired",
       "tissue": "mouse_embroy",
+      "level": "cell-type",
       "modalities": [
         "RNA",
         "ATAC"
