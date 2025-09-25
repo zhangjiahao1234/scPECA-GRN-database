@@ -21,14 +21,25 @@
   <style>
     /* Constrain markdown width and center it */
     .markdown-wrap{
-      max-width: 980px;
+      max-width: 900px; /* narrower than before to avoid "too wide" look */
       margin: 0 auto;
       padding: 20px;
     }
-    /* Ensure long code lines wrap nicely on small screens */
-    .markdown-body code, .markdown-body pre {
-      white-space: pre-wrap;
-      word-break: break-word;
+    /* Keep GitHub look but prevent tables from stretching too wide */
+    .markdown-body table{
+      width: 100% !important;        /* fit within container */
+      table-layout: fixed;           /* force wrapping within cells */
+      border-collapse: collapse;
+    }
+    .markdown-body th,
+    .markdown-body td{
+      white-space: normal !important;
+      word-break: break-word;        /* wrap long words/paths */
+      padding: 8px 10px;
+    }
+    /* Optional: add subtle zebra striping for readability */
+    .markdown-body tbody tr:nth-child(odd){
+      background: #fafafa;
     }
   </style>
 </head>
