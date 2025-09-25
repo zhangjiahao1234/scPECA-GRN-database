@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRN‑Atlas | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">🧬 GRN‑Atlas</div>
+      <div class="spacer"></div>
+      <nav><a href="index.html">Home</a><a href="search.html">Search Networks</a><a href="manual.html">Manual</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <div class="sub">
+    <div class="wrap">
+      <div id="stat-d" class="badge">— datasets</div>
+      <div id="stat-s" class="badge">— species</div>
+      <div id="stat-t" class="badge">— tissues</div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="panel hero bg-ornaments">
+      <div>
+        <h1>GRN‑Atlas: a curated, citable gene regulatory network portal</h1>
+        <p>
+          GRN‑Atlas provides downloadable GRNs across species and data sources, including matched bulk RNA‑seq,
+          unpaired scRNA‑seq &amp; scATAC‑seq, and sc‑Multiome. Each dataset includes rich metadata with cell‑type
+          counts and source links (e.g., Figshare &amp; raw repositories).
+        </p>
+        <div class="kpis" style="margin-top:14px">
+          <div class="kpi"><div>Total datasets</div><strong id="kpi-d">—</strong></div>
+          <div class="kpi"><div>Species</div><strong id="kpi-s">—</strong></div>
+          <div class="kpi"><div>Tissues</div><strong id="kpi-t">—</strong></div>
+        </div>
+        <div style="margin-top:14px">
+          <a class="btn btn-primary" href="search.html">Search Networks</a>
+          <a class="btn btn-secondary" href="manual.html">Read Manual</a>
+        </div>
+      </div>
+      <div>
+        <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#93c5fd"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+            <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#86efac"/><stop offset="1" stop-color="#22c55e"/></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="600" height="360" rx="16" fill="#fff" stroke="#e5e7eb"/>
+          <g transform="translate(28,24)">
+            <rect x="0" y="0" width="260" height="140" rx="12" fill="#f8fafc" stroke="#e5e7eb"/>
+            <text x="12" y="24" font-size="14" fill="#0f172a" font-weight="700">Species / Sources</text>
+            <g transform="translate(12,40)" font-size="12" fill="#334155">
+              <text y="0">• Human / Mouse</text>
+              <text y="20">• Bulk / Unpaired / Multiome</text>
+              <text y="40">• Tissues</text>
+            </g>
+          </g>
+          <g transform="translate(312,24)">
+            <rect x="0" y="0" width="260" height="140" rx="12" fill="#f8fafc" stroke="#e5e7eb"/>
+            <text x="12" y="24" font-size="14" fill="#0f172a" font-weight="700">Metadata</text>
+            <g transform="translate(12,40)" font-size="12" fill="#334155">
+              <text y="0">• Cell types &amp; counts</text>
+              <text y="20">• Modalities, versions</text>
+              <text y="40">• Source links</text>
+            </g>
+          </g>
+          <g transform="translate(28,184)">
+            <rect x="0" y="0" width="544" height="140" rx="12" fill="#f8fafc" stroke="#e5e7eb"/>
+            <text x="12" y="24" font-size="14" fill="#0f172a" font-weight="700">Typical workflow</text>
+            <g transform="translate(12,44)">
+              <rect width="120" height="40" rx="8" fill="url(#g1)"/><text x="12" y="25" font-size="13" fill="#0b1320">Filter datasets</text>
+              <rect x="140" width="120" height="40" rx="8" fill="url(#g1)"/><text x="152" y="25" font-size="13" fill="#0b1320">Review metadata</text>
+              <rect x="280" width="120" height="40" rx="8" fill="url(#g2)"/><text x="292" y="25" font-size="13" fill="#0b1320">Download GRN</text>
+              <rect x="420" width="120" height="40" rx="8" fill="url(#g2)"/><text x="432" y="25" font-size="13" fill="#0b1320">Access Source</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="panel section">
+      <h3 style="margin:0 0 10px">Scope & Coverage</h3>
+      <p style="color:#334155;line-height:1.6">
+        The current release includes mouse embryo (unpaired scRNA‑seq &amp; scATAC‑seq) as a demo dataset.
+        Additional human and mouse tissues, and bulk / multiome sources can be appended incrementally by updating
+        <code>catalog.json</code> with the provided schema.
+      </p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> GRN‑Atlas. CC BY 4.0.</footer>
+
+  <script>
+    async function hydrate(){
+      try{
+        const res = await fetch('catalog.json');
+        const js = await res.json();
+        const D = js.datasets || [];
+        const tissues = Array.from(new Set(D.map(d=>d.tissue))).length;
+        const species = new Set(D.map(d=>d.species)).size;
+        document.getElementById('stat-d').textContent = D.length + ' datasets';
+        document.getElementById('stat-s').textContent = species + ' species';
+        document.getElementById('stat-t').textContent = tissues + ' tissues';
+        document.getElementById('kpi-d').textContent = D.length;
+        document.getElementById('kpi-s').textContent = species;
+        document.getElementById('kpi-t').textContent = tissues;
+      }catch(e){}
+      document.getElementById('year').textContent = new Date().getFullYear();
+    }
+    hydrate();
+  </script>
+</body>
+</html>
