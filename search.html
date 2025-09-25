@@ -38,25 +38,24 @@
       </div>
       <div class="field">
         <label for="tissue">organ/tissue/cell type</label>
-        <select id="tissue"><option value="">All</option></select>
+        <select id="tissue"></select>
       </div>
       <div class="actions">
         <a class="btn btn-primary disabled" id="btn-download" target="_blank" rel="noopener" aria-disabled="true">Download GRN</a>
-        <a class="btn btn-secondary disabled" id="btn-source" target="_blank" rel="noopener" aria-disabled="true">Source Data</a>
-        <button class="btn btn-secondary" id="apply">Apply</button>
+        <button class="btn" id="apply">Apply</button>
       </div>
     </section>
 
     <section class="panel two-col" id="details" style="display:none">
       <div class="section">
         <header><h3 style="margin:0">Summary</h3></header>
-        <div class="meta" id="meta"></div>
+        <div class="meta" id="meta" style="margin-bottom:8px"></div>
         <div class="desc" id="summary"></div>
       </div>
       <div class="section" id="ct-section">
         <header>
           <h3 style="margin:0">organ/tissue/cell type</h3>
-          <span id="totals" class="chip mono"></span>
+          <span id="totals" class="mono"></span>
         </header>
         <div class="ct-list">
           <table>
@@ -93,7 +92,7 @@
     function hydrate(){
       const tissues = Array.from(new Set(DATASETS.map(d=>d.tissue))).sort();
       const sel = document.getElementById('tissue');
-      sel.innerHTML = '<option value="">All</option>' + tissues.map(t=>`<option value="${t}">${t}</option>`).join('');
+      sel.innerHTML = tissues.map(t=>`<option value="${t}">${t}</option>`).join('');
     }
 
     function cap(s){return s? s.charAt(0).toUpperCase()+s.slice(1):''}
@@ -102,8 +101,9 @@
       unpaired:'unpaired scRNA&scATAC',
       multiome:'sc-multiome'
     })[k] || k }
-    function chip(t){ const s=document.createElement('span'); s.className='chip'; s.textContent=t; return s }
-    function escapeHtml(s=''){return s.replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;","\"":"&quot;","'":"&#39;","\u003e":"&gt;"}[m]||m))}
+    function chip(t){ const s=document.createElement('span'); s.style.cssText='display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:4px 10px;margin-right:6px;font-size:.78rem'; s.textContent=t; return s }
+    function esc(s=''){return s.replace(/[&<>"']/g, m=>({"&":"&amp;","<":"&lt;","\"":"&quot;","'":"&#39;","\u003e":"&gt;"}[m]||m))}
+    function toParagraphs(text){ return (text||'').split(/\n+/).map(line=>`<p style="margin:0 0 8px;">${esc(line)}</p>`).join('') }
 
     function pass(d, S){
       if (S.species && d.species!==S.species) return false;
@@ -123,52 +123,43 @@
       const details  = document.getElementById('details');
       const ctSection = document.getElementById('ct-section');
 
-      // Reset buttons
       const dl = document.getElementById('btn-download');
-      const sd = document.getElementById('btn-source');
-      dl.classList.add('disabled'); sd.classList.add('disabled');
-      dl.setAttribute('aria-disabled','true'); sd.setAttribute('aria-disabled','true');
+      dl.classList.add('disabled'); dl.setAttribute('aria-disabled','true');
 
       if (!arr.length){
         empty.style.display = 'block';
         details.style.display = 'none';
-        fillDetails(null, S);
         return;
       }
       const d = arr[0];
       empty.style.display = 'none';
       details.style.display = 'grid';
 
-      // If source == paired, hide right column (organ/tissue/cell type)
+      // paired -> only Summary; others -> Summary + table
       ctSection.style.display = (S.source === 'paired') ? 'none' : 'block';
 
-      // Enable buttons
-      dl.href = d.figshare_url; sd.href = d.source_data_url;
-      dl.classList.remove('disabled'); sd.classList.remove('disabled');
-      dl.removeAttribute('aria-disabled'); sd.removeAttribute('aria-disabled');
+      // Enable download
+      dl.href = d.figshare_url; dl.classList.remove('disabled'); dl.removeAttribute('aria-disabled');
 
-      fillDetails(d, S);
-    }
-
-    function fillDetails(d, S){
-      const meta = document.getElementById('meta'); const summary = document.getElementById('summary');
-      const tb   = document.getElementById('tbody'); const totals = document.getElementById('totals');
-      meta.innerHTML=''; summary.textContent=''; tb.innerHTML=''; totals.textContent='';
-
-      if (!d) return;
-
+      // Fill meta chips
+      const meta = document.getElementById('meta');
+      meta.innerHTML='';
       [cap(d.species), labelSource(d.source_type), d.tissue, (d.modalities||[]).join(' + '), d.version, 'Updated ' + d.updated]
         .filter(Boolean).forEach(t=> meta.append(chip(t)));
 
-      summary.textContent = d.summary_text || d.description || '';
+      // Summary paragraphs
+      document.getElementById('summary').innerHTML = toParagraphs(d.summary_text || d.description || '');
 
-      if (S.source === 'paired') return; // stop here for paired bulk
+      if (S.source === 'paired') return;
 
+      // Table
+      const tb = document.getElementById('tbody'); const totals = document.getElementById('totals');
+      tb.innerHTML=''; totals.textContent='';
       let totalRNA = 0, totalATAC = 0;
       (d.cell_types||[]).forEach(x => {
         totalRNA += +x.rna_cells || 0; totalATAC += +x.atac_cells || 0;
         const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${escapeHtml(x.name)}</td><td class="mono">${(+x.rna_cells||0).toLocaleString()}</td><td class="mono">${(+x.atac_cells||0).toLocaleString()}</td>`;
+        tr.innerHTML = `<td>${esc(x.name)}</td><td class="mono">${(+x.rna_cells||0).toLocaleString()}</td><td class="mono">${(+x.atac_cells||0).toLocaleString()}</td>`;
         tb.appendChild(tr);
       });
       totals.textContent = `Total RNA: ${totalRNA.toLocaleString()} | ATAC: ${totalATAC.toLocaleString()}`;

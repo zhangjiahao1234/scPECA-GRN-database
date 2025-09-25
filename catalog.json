@@ -14,9 +14,7 @@
       "version": "v1.0",
       "updated": "2025-09-25",
       "figshare_url": "https://figshare.com/",
-      "source_data_url": "https://ngdc.cncb.ac.cn/omix/release/OMIX928",
       "description": "Unpaired scRNA-seq and scATAC-seq data from mouse embryos; GRN constructed from cross-modality samples.",
-      "source_description": "Original raw data and metadata hosted at CNCB-NGDC OMIX (OMIX928).",
       "summary_text": "Description: Single cell ATAC-seq and RNA-seq in E7.5 and E13.5 mouse embryos.\nTitle: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos\nRelease Date: 2023-06-07\nSource Data URL: https://ngdc.cncb.ac.cn/omix/release/OMIX928",
       "cell_types": [
         {
