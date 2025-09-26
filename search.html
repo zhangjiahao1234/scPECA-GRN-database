@@ -162,7 +162,7 @@
         tr.innerHTML = `<td>${esc(x.name)}</td><td class="mono">${(+x.rna_cells||0).toLocaleString()}</td><td class="mono">${(+x.atac_cells||0).toLocaleString()}</td>`;
         tb.appendChild(tr);
       });
-      totals.textContent = `Total RNA: ${totalRNA.toLocaleString()} | ATAC: ${totalATAC.toLocaleString()}`;
+      totals.textContent = `Total RNA cell: ${totalRNA.toLocaleString()} | ATAC cell: ${totalATAC.toLocaleString()}`;
     }
 
     document.getElementById('apply').onclick = render;
