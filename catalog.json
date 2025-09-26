@@ -1,11 +1,11 @@
 {
   "datasets": [
     {
-      "dataset_id": "M-Unpaired-mouse_embroy-OMIX928",
-      "title": "Mouse unpaired GRN — mouse_embroy (OMIX928)",
+      "dataset_id": "M-Unpaired-mouse_embryo-OMIX928",
+      "title": "Mouse unpaired GRN — mouse_embryo (OMIX928)",
       "species": "mouse",
       "source_type": "unpaired",
-      "tissue": "mouse_embroy",
+      "tissue": "mouse_embryo",
       "level": "cell-type",
       "modalities": [
         "RNA",
