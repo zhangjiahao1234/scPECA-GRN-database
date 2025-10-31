@@ -1,0 +1,2197 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "M-Embryo-OMIX928",
+      "species": "mouse",
+      "organ_system": "Embryo",
+      "sample": "OMIX928",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-09-25",
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "summary_text": [
+        "Description: Single cell ATAC-seq and RNA-seq in E7.5 and E13.5 mouse embryos.",
+        "Title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Release Date: 2023-06-07",
+        "Source Data URL: https://ngdc.cncb.ac.cn/omix/release/OMIX928",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "Acinar_Cell",
+          "rna_cells": 1493,
+          "atac_cells": 2580
+        },
+        {
+          "name": "Cardiomyocyte",
+          "rna_cells": 2081,
+          "atac_cells": 4558
+        },
+        {
+          "name": "Corneal_Stroma",
+          "rna_cells": 860,
+          "atac_cells": 168
+        },
+        {
+          "name": "Early_Erythroblast",
+          "rna_cells": 1779,
+          "atac_cells": 7214
+        },
+        {
+          "name": "Ectoderm",
+          "rna_cells": 2868,
+          "atac_cells": 1644
+        },
+        {
+          "name": "Endothelial_Cell",
+          "rna_cells": 6205,
+          "atac_cells": 5019
+        },
+        {
+          "name": "Epithelial_Cell",
+          "rna_cells": 4900,
+          "atac_cells": 6507
+        },
+        {
+          "name": "Erythroblast",
+          "rna_cells": 2947,
+          "atac_cells": 6279
+        },
+        {
+          "name": "Eye_specific",
+          "rna_cells": 3237,
+          "atac_cells": 6961
+        },
+        {
+          "name": "Germlayer_ExE",
+          "rna_cells": 751,
+          "atac_cells": 937
+        },
+        {
+          "name": "Granulosa_Cell",
+          "rna_cells": 7571,
+          "atac_cells": 10582
+        },
+        {
+          "name": "Kidney_specific",
+          "rna_cells": 2483,
+          "atac_cells": 3031
+        },
+        {
+          "name": "Leydig_Stromal_GM",
+          "rna_cells": 866,
+          "atac_cells": 826
+        },
+        {
+          "name": "MGC",
+          "rna_cells": 1957,
+          "atac_cells": 4014
+        },
+        {
+          "name": "Macrophage",
+          "rna_cells": 3033,
+          "atac_cells": 2278
+        },
+        {
+          "name": "Mesoderm",
+          "rna_cells": 2628,
+          "atac_cells": 2998
+        },
+        {
+          "name": "Mesothelial_Cell",
+          "rna_cells": 9214,
+          "atac_cells": 10995
+        },
+        {
+          "name": "Myeloid_Cell",
+          "rna_cells": 710,
+          "atac_cells": 492
+        },
+        {
+          "name": "Neuron_Ednrb",
+          "rna_cells": 1564,
+          "atac_cells": 1375
+        },
+        {
+          "name": "Neuron_I",
+          "rna_cells": 1986,
+          "atac_cells": 2492
+        },
+        {
+          "name": "Neuron_II",
+          "rna_cells": 4766,
+          "atac_cells": 4896
+        },
+        {
+          "name": "Neuron_III",
+          "rna_cells": 2707,
+          "atac_cells": 3083
+        },
+        {
+          "name": "Neuron_IV",
+          "rna_cells": 3767,
+          "atac_cells": 3329
+        },
+        {
+          "name": "Neuron_Progenitor",
+          "rna_cells": 4429,
+          "atac_cells": 5609
+        },
+        {
+          "name": "Neuron_V",
+          "rna_cells": 4950,
+          "atac_cells": 8810
+        },
+        {
+          "name": "Neuron_VI",
+          "rna_cells": 5284,
+          "atac_cells": 5767
+        },
+        {
+          "name": "Neuron_VII",
+          "rna_cells": 3762,
+          "atac_cells": 2771
+        },
+        {
+          "name": "PGC",
+          "rna_cells": 8328,
+          "atac_cells": 6829
+        },
+        {
+          "name": "Sertoli_Cell",
+          "rna_cells": 3456,
+          "atac_cells": 3248
+        },
+        {
+          "name": "Smooth_Muscle",
+          "rna_cells": 1252,
+          "atac_cells": 892
+        },
+        {
+          "name": "Smooth_Muscle_Lung",
+          "rna_cells": 7941,
+          "atac_cells": 8910
+        },
+        {
+          "name": "Stromal_Cell",
+          "rna_cells": 2864,
+          "atac_cells": 2492
+        },
+        {
+          "name": "Stromal_Cell-ForeLimb&Eye",
+          "rna_cells": 4017,
+          "atac_cells": 7227
+        },
+        {
+          "name": "Stromal_Cell_ForeLimb",
+          "rna_cells": 1936,
+          "atac_cells": 1535
+        },
+        {
+          "name": "Stromal_E11Gonad",
+          "rna_cells": 9172,
+          "atac_cells": 11232
+        },
+        {
+          "name": "Stromal_Heart",
+          "rna_cells": 1290,
+          "atac_cells": 1983
+        },
+        {
+          "name": "Stromal_SmoothMuscle",
+          "rna_cells": 9235,
+          "atac_cells": 6736
+        },
+        {
+          "name": "mixture",
+          "rna_cells": 1285,
+          "atac_cells": 2671
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Thoracic_spinal_cord-GSE230765",
+      "species": "mouse",
+      "organ_system": "Thoracic_spinal_cord",
+      "sample": "GSE230765",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-20",
+      "figshare_url": "https://figshare.com/s/46fab8d78f6a040c11f0",
+      "summary_text": [
+        "Description: Single-nucleus RNA-sequencing and Single-nucleus ATAC-sequencing to profile the mid thoracic spinal cord.",
+        "Title: Best practices for differential accessibility analysis in single-cell epigenomics",
+        "Release Date: 2023-04-27",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230765",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Myelin forming oligodendrocytes (MFOL)",
+          "rna_cells": 16815,
+          "atac_cells": 16815
+        },
+        {
+          "name": "Microglia",
+          "rna_cells": 6962,
+          "atac_cells": 6962
+        },
+        {
+          "name": "Mature oligodendrocytes (MOL)",
+          "rna_cells": 5467,
+          "atac_cells": 5467
+        },
+        {
+          "name": "DE",
+          "rna_cells": 3638,
+          "atac_cells": 3638
+        },
+        {
+          "name": "Astrocytes",
+          "rna_cells": 2247,
+          "atac_cells": 2247
+        },
+        {
+          "name": "Peripheral macrophages",
+          "rna_cells": 2056,
+          "atac_cells": 2056
+        },
+        {
+          "name": "Newly formed oligodendrocytes (NFOL)",
+          "rna_cells": 2006,
+          "atac_cells": 2006
+        },
+        {
+          "name": "Oligodendrocytes precursor cells (OPC)",
+          "rna_cells": 1984,
+          "atac_cells": 1984
+        },
+        {
+          "name": "Mature oligodendrocytes (MOL), ischemic",
+          "rna_cells": 1713,
+          "atac_cells": 1713
+        },
+        {
+          "name": "DI",
+          "rna_cells": 1061,
+          "atac_cells": 1061
+        },
+        {
+          "name": "VE",
+          "rna_cells": 992,
+          "atac_cells": 992
+        },
+        {
+          "name": "Vascular leptomeningeal cells",
+          "rna_cells": 622,
+          "atac_cells": 622
+        },
+        {
+          "name": "VI",
+          "rna_cells": 499,
+          "atac_cells": 499
+        },
+        {
+          "name": "Ependymal cells",
+          "rna_cells": 480,
+          "atac_cells": 480
+        },
+        {
+          "name": "Vascular endothelial cells",
+          "rna_cells": 299,
+          "atac_cells": 299
+        },
+        {
+          "name": "NK, T cells",
+          "rna_cells": 231,
+          "atac_cells": 231
+        },
+        {
+          "name": "B cells",
+          "rna_cells": 196,
+          "atac_cells": 196
+        },
+        {
+          "name": "Infiltrating, bordering leukocytes",
+          "rna_cells": 167,
+          "atac_cells": 167
+        },
+        {
+          "name": "Oligodendrocytes precursor cells (OPC), differentiating",
+          "rna_cells": 83,
+          "atac_cells": 83
+        },
+        {
+          "name": "Pericytes",
+          "rna_cells": 75,
+          "atac_cells": 75
+        },
+        {
+          "name": "Myeloid, dividing",
+          "rna_cells": 32,
+          "atac_cells": 32
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-brain2-GSE140203",
+      "species": "mouse",
+      "organ_system": "Brain",
+      "sample": "GSE140203",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-09-25",
+      "figshare_url": "https://figshare.com/s/16eec51782f1a50d9b02",
+      "summary_text": [
+        "Description: Apply SHARE-seq to adult mouse brain and show a direct congruence in cell type definition by either chromatin accessibility or RNA expression and create cell-type specific regulatory maps.",
+        "Title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type specific regulatory interactions",
+        "Release Date: 2019-11-11",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "IN01",
+          "rna_cells": 591,
+          "atac_cells": 591
+        },
+        {
+          "name": "EN01",
+          "rna_cells": 327,
+          "atac_cells": 327
+        },
+        {
+          "name": "EN02",
+          "rna_cells": 239,
+          "atac_cells": 239
+        },
+        {
+          "name": "EN03",
+          "rna_cells": 235,
+          "atac_cells": 235
+        },
+        {
+          "name": "EN04",
+          "rna_cells": 216,
+          "atac_cells": 216
+        },
+        {
+          "name": "EN05",
+          "rna_cells": 191,
+          "atac_cells": 191
+        },
+        {
+          "name": "MX",
+          "rna_cells": 185,
+          "atac_cells": 185
+        },
+        {
+          "name": "IN02",
+          "rna_cells": 182,
+          "atac_cells": 182
+        },
+        {
+          "name": "P1",
+          "rna_cells": 153,
+          "atac_cells": 153
+        },
+        {
+          "name": "A1.E1",
+          "rna_cells": 137,
+          "atac_cells": 137
+        },
+        {
+          "name": "EN06",
+          "rna_cells": 132,
+          "atac_cells": 132
+        },
+        {
+          "name": "OG1",
+          "rna_cells": 130,
+          "atac_cells": 130
+        },
+        {
+          "name": "IN03",
+          "rna_cells": 113,
+          "atac_cells": 113
+        },
+        {
+          "name": "NSC",
+          "rna_cells": 106,
+          "atac_cells": 106
+        },
+        {
+          "name": "EN07",
+          "rna_cells": 93,
+          "atac_cells": 93
+        },
+        {
+          "name": "EN08",
+          "rna_cells": 79,
+          "atac_cells": 79
+        },
+        {
+          "name": "EN09",
+          "rna_cells": 67,
+          "atac_cells": 67
+        },
+        {
+          "name": "IN04",
+          "rna_cells": 66,
+          "atac_cells": 66
+        },
+        {
+          "name": "IN05",
+          "rna_cells": 51,
+          "atac_cells": 51
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-skin-GSE140203",
+      "species": "mouse",
+      "organ_system": "Skin",
+      "sample": "GSE140203",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/c55c18a2f1ee95bace5d",
+      "summary_text": [
+        "Description: Apply SHARE-seq to adult mouse skin and show a direct congruence in cell type definition by either chromatin accessibility or RNA expression and create cell-type specific regulatory maps.",
+        "Title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type specific regulatory interactions",
+        "Release Date: 2019-11-11",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Basal",
+          "rna_cells": 7787,
+          "atac_cells": 7787
+        },
+        {
+          "name": "Infundibulum",
+          "rna_cells": 4139,
+          "atac_cells": 4139
+        },
+        {
+          "name": "TAC-1",
+          "rna_cells": 3370,
+          "atac_cells": 3370
+        },
+        {
+          "name": "Spinous",
+          "rna_cells": 3146,
+          "atac_cells": 3146
+        },
+        {
+          "name": "Mix",
+          "rna_cells": 2543,
+          "atac_cells": 2543
+        },
+        {
+          "name": "alowCD34+ bulge",
+          "rna_cells": 1877,
+          "atac_cells": 1877
+        },
+        {
+          "name": "ahighCD34+ bulge",
+          "rna_cells": 1556,
+          "atac_cells": 1556
+        },
+        {
+          "name": "Hair Shaft-cuticle.cortex",
+          "rna_cells": 1166,
+          "atac_cells": 1166
+        },
+        {
+          "name": "Dermal Fibroblast",
+          "rna_cells": 1121,
+          "atac_cells": 1121
+        },
+        {
+          "name": "ORS",
+          "rna_cells": 1029,
+          "atac_cells": 1029
+        },
+        {
+          "name": "TAC-2",
+          "rna_cells": 1008,
+          "atac_cells": 1008
+        },
+        {
+          "name": "Medulla",
+          "rna_cells": 981,
+          "atac_cells": 981
+        },
+        {
+          "name": "Endothelial",
+          "rna_cells": 927,
+          "atac_cells": 927
+        },
+        {
+          "name": "Dermal Papilla",
+          "rna_cells": 766,
+          "atac_cells": 766
+        },
+        {
+          "name": "Isthmus",
+          "rna_cells": 689,
+          "atac_cells": 689
+        },
+        {
+          "name": "IRS",
+          "rna_cells": 672,
+          "atac_cells": 672
+        },
+        {
+          "name": "K6+ Bulge Companion Layer",
+          "rna_cells": 514,
+          "atac_cells": 514
+        },
+        {
+          "name": "Dermal Sheath",
+          "rna_cells": 398,
+          "atac_cells": 398
+        },
+        {
+          "name": "Granular",
+          "rna_cells": 291,
+          "atac_cells": 291
+        },
+        {
+          "name": "Macrophage DC",
+          "rna_cells": 263,
+          "atac_cells": 263
+        },
+        {
+          "name": "Melanocyte",
+          "rna_cells": 187,
+          "atac_cells": 187
+        },
+        {
+          "name": "Sebaceous Gland",
+          "rna_cells": 181,
+          "atac_cells": 181
+        },
+        {
+          "name": "Schwann Cell",
+          "rna_cells": 163,
+          "atac_cells": 163
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-prostate-GSE284640.1",
+      "species": "mouse",
+      "organ_system": "Prostate",
+      "sample": "GSE284640_sample1",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/c118d7d3612568d49c63",
+      "summary_text": [
+        "Description: Prostates from sham operated or castrated mice were sequenced using 10x Chromium Next GEM Single Cell Multiome ATAC + Gene Expression to test for differentially accessible chromatin regions and differential nuclear RNA expression.",
+        "Title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Release Date: 2024-12-18",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Basal",
+          "rna_cells": 362,
+          "atac_cells": 362
+        },
+        {
+          "name": "Endothelial-1",
+          "rna_cells": 4,
+          "atac_cells": 4
+        },
+        {
+          "name": "Endothelial-2",
+          "rna_cells": 61,
+          "atac_cells": 61
+        },
+        {
+          "name": "Fibroblast",
+          "rna_cells": 432,
+          "atac_cells": 432
+        },
+        {
+          "name": "Luminal-1",
+          "rna_cells": 589,
+          "atac_cells": 589
+        },
+        {
+          "name": "Luminal-2",
+          "rna_cells": 138,
+          "atac_cells": 138
+        },
+        {
+          "name": "Luminal-5",
+          "rna_cells": 24,
+          "atac_cells": 24
+        },
+        {
+          "name": "Luminal-7",
+          "rna_cells": 317,
+          "atac_cells": 317
+        },
+        {
+          "name": "Luminal-8",
+          "rna_cells": 39,
+          "atac_cells": 39
+        },
+        {
+          "name": "Lymphocyte",
+          "rna_cells": 13,
+          "atac_cells": 13
+        },
+        {
+          "name": "Macrophage",
+          "rna_cells": 74,
+          "atac_cells": 74
+        },
+        {
+          "name": "NE",
+          "rna_cells": 4,
+          "atac_cells": 4
+        },
+        {
+          "name": "Schwann",
+          "rna_cells": 19,
+          "atac_cells": 19
+        },
+        {
+          "name": "SMC",
+          "rna_cells": 70,
+          "atac_cells": 70
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-prostate-GSE284640.2",
+      "species": "mouse",
+      "organ_system": "Prostate",
+      "sample": "GSE284640_sample2",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/fbb8e77b332debbe2238",
+      "summary_text": [
+        "Description: Prostates from sham operated or castrated mice were sequenced using 10x Chromium Next GEM Single Cell Multiome ATAC + Gene Expression to test for differentially accessible chromatin regions and differential nuclear RNA expression.",
+        "Title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Release Date: 2024-12-18",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Basal",
+          "rna_cells": 256,
+          "atac_cells": 256
+        },
+        {
+          "name": "Endothelial-1",
+          "rna_cells": 11,
+          "atac_cells": 11
+        },
+        {
+          "name": "Endothelial-2",
+          "rna_cells": 123,
+          "atac_cells": 123
+        },
+        {
+          "name": "Fibroblast",
+          "rna_cells": 330,
+          "atac_cells": 330
+        },
+        {
+          "name": "Luminal-1",
+          "rna_cells": 624,
+          "atac_cells": 624
+        },
+        {
+          "name": "Luminal-2",
+          "rna_cells": 54,
+          "atac_cells": 54
+        },
+        {
+          "name": "Luminal-3",
+          "rna_cells": 116,
+          "atac_cells": 116
+        },
+        {
+          "name": "Luminal-5",
+          "rna_cells": 55,
+          "atac_cells": 55
+        },
+        {
+          "name": "Luminal-7",
+          "rna_cells": 447,
+          "atac_cells": 447
+        },
+        {
+          "name": "Luminal-8",
+          "rna_cells": 5,
+          "atac_cells": 5
+        },
+        {
+          "name": "Lymphocyte",
+          "rna_cells": 8,
+          "atac_cells": 8
+        },
+        {
+          "name": "Macrophage",
+          "rna_cells": 30,
+          "atac_cells": 30
+        },
+        {
+          "name": "Periurethral",
+          "rna_cells": 53,
+          "atac_cells": 53
+        },
+        {
+          "name": "NE",
+          "rna_cells": 2,
+          "atac_cells": 2
+        },
+        {
+          "name": "Schwann",
+          "rna_cells": 12,
+          "atac_cells": 12
+        },
+        {
+          "name": "SMC",
+          "rna_cells": 39,
+          "atac_cells": 39
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Spermatogenesis-GSE107644",
+      "species": "mouse",
+      "organ_system": "Spermatogenesis",
+      "sample": "GSE107644",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/e8c715436d674e3a4e34",
+      "summary_text": [
+        "Description: Purify all types of homogeneous spermatogenic cells by combining transgenic labelling and synchronization of the cycle of the seminiferous epithelium, and subsequent single-cell RNA-sequencing and NOMe-sequencing.",
+        "Title: Single-cell RNA-seq Uncovers Dynamic Processes and Critical Regulators in Mouse Spermatogenesis",
+        "Release Date: 2017-12-04",
+        "Source Data URL: https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE107644",
+        "Data type: scRNA-seq, NOMe-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "A1",
+          "rna_cells": 42,
+          "atac_cells": "/"
+        },
+        {
+          "name": "B",
+          "rna_cells": 128,
+          "atac_cells": "/"
+        },
+        {
+          "name": "D_stage",
+          "rna_cells": 61,
+          "atac_cells": "/"
+        },
+        {
+          "name": "L_stage",
+          "rna_cells": 220,
+          "atac_cells": "/"
+        },
+        {
+          "name": "mP",
+          "rna_cells": 51,
+          "atac_cells": "/"
+        },
+        {
+          "name": "mPL",
+          "rna_cells": 57,
+          "atac_cells": "/"
+        },
+        {
+          "name": "RS2",
+          "rna_cells": 48,
+          "atac_cells": "/"
+        },
+        {
+          "name": "RS4",
+          "rna_cells": 37,
+          "atac_cells": "/"
+        },
+        {
+          "name": "RS8",
+          "rna_cells": 57,
+          "atac_cells": "/"
+        },
+        {
+          "name": "Z_stage",
+          "rna_cells": 65,
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Retina-GSE169262",
+      "species": "mouse",
+      "organ_system": "Retina",
+      "sample": "GSE169262",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/450608a61626ed7c0791",
+      "summary_text": [
+        "Description: Single cell RNA sequencing, single cell ATAC sequencing from WT and VSX2SE Region deletion mice retina at adult stages",
+        "Title: Identification of a modular super-enhancer in murine retinal development",
+        "Release Date: 2021-03-20",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169262",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "AC_HC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "BC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "Cone",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "MG",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "NG",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "Rod",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "RPC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Lung-GSE157378",
+      "species": "mouse",
+      "organ_system": "Lung",
+      "sample": "GSE157654",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/f94a56922a3c52da788a",
+      "summary_text": [
+        "Description: Single cell RNA sequencing, single cell ATAC sequencing from E17.5 mouse lungs.",
+        "Title: Categorization of lung mesenchymal cells in development and fibrosis.",
+        "Release Date: 2020-09-02",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157654, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157378",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "Ebf1+_fibroblasts",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "endothelial_cells",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "epithelial_cells",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "immune_cells",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "lipofibroblasts",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "mesenchymal_cells",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "myofibroblasts",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "proliferating_fibroblasts",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Cortex-GSE161132",
+      "species": "mouse",
+      "organ_system": "Cortex",
+      "sample": "GSE161132",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/b03b23d81d2c8dfaef32",
+      "summary_text": [
+        "Description: ScATAC-seq were performed on FACS sorted GFP+ cells from the E18.5 hGFAP-GFP cortex. ScRNA-seq were performed on FACS sorted RFP+ cells from the P1 IS cortex which were electroporated of pCAG-Cre plasmid at E15.",
+        "Title: Decoding Cortical Glial Cell Development",
+        "Release Date: 2020-11-09",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161132",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "aMIPC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "AS-lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "bMIPC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "mRGC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "OBiN_lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "OL-lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Brian1-Stuartlab",
+      "species": "mouse",
+      "organ_system": "Brain",
+      "sample": "Stuartlab",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-15",
+      "figshare_url": "https://figshare.com/s/6ebe66ae369a60e684d2",
+      "summary_text": [
+        "Description: A single-cell ATAC-seq dataset of adult mouse brain cells provided by 10x Genomics and classify cells based on a scRNA-seq experiment from the same biological system",
+        "Data integration URL: https://stuartlab.org/signac/articles/mouse_brain_vignette",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "aMIPC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "AS-lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "bMIPC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "mRGC",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "OBiN_lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "OL-lineage",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-Cerebellum-ENCODE",
+      "species": "mouse",
+      "organ_system": "Cerebellum",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse cerebellum",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Cerebrum-ENCODE",
+      "species": "mouse",
+      "organ_system": "Cerebrum",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse cerebrum",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-FatPad-ENCODE",
+      "species": "mouse",
+      "organ_system": "FatPad",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse FatPad",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-GenitalFatPad-ENCODE",
+      "species": "mouse",
+      "organ_system": "GenitalFatPad",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse GenitalFatPad",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Heart-ENCODE",
+      "species": "mouse",
+      "organ_system": "Heart",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5, E16.5, P0, adult 8 weeks mouse heart",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Kidney-ENCODE",
+      "species": "mouse",
+      "organ_system": "Kidney",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E14.5, E15.5, E16.5, P0, adult 8 weeks mouse kidney",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Liver-ENCODE",
+      "species": "mouse",
+      "organ_system": "Liver",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5, E16.5, P0, adult 8 weeks mouse liver",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Lung-ENCODE",
+      "species": "mouse",
+      "organ_system": "Lung",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E14.5, E15.5, E16.5, P0, adult 8 weeks mouse lung",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Mel-ENCODE",
+      "species": "mouse",
+      "organ_system": "Melanocyte",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse melanocyte",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-SkMuscle-ENCODE",
+      "species": "mouse",
+      "organ_system": "SkMuscle",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse SkMuscle",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Spleen-ENCODE",
+      "species": "mouse",
+      "organ_system": "Spleen",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse spleen",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Thymus-ENCODE",
+      "species": "mouse",
+      "organ_system": "Thymus",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse thymus",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Tnaive-ENCODE",
+      "species": "mouse",
+      "organ_system": "Tnaive",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse Tnaive",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Face-ENCODE",
+      "species": "mouse",
+      "organ_system": "Face",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5 mouse face",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Forebrain-ENCODE",
+      "species": "mouse",
+      "organ_system": "Forebrain",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5, E16.5, P0 mouse forebrain",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Hindbrain-ENCODE",
+      "species": "mouse",
+      "organ_system": "Hindbrain",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5, E16.5, P0 mouse hindbrain",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Intestine-ENCODE",
+      "species": "mouse",
+      "organ_system": "Intestine",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E14.5, E15.5, E16.5, P0 mouse intestine",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Limb-ENCODE",
+      "species": "mouse",
+      "organ_system": "Limb",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5 mouse limb",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Midbrain-ENCODE",
+      "species": "mouse",
+      "organ_system": "Midbrain",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5, E16.5, P0 mouse midbrain",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-NeuralTube-ENCODE",
+      "species": "mouse",
+      "organ_system": "NeuralTube",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E11.5, E12.5, E13.5, E14.5, E15.5 mouse NeuralTube",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Stomach-ENCODE",
+      "species": "mouse",
+      "organ_system": "Stomach",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E14.5, E15.5, E16.5, P0 mouse NeuralTube",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-416b-ENCODE",
+      "species": "mouse",
+      "organ_system": "Cell line",
+      "sample": "ENCODE_416b",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse 416b",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-A20B-ENCODE",
+      "species": "mouse",
+      "organ_system": "Cell line",
+      "sample": "ENCODE_A20B",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse A20B",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Lgint-ENCODE",
+      "species": "mouse",
+      "organ_system": "Lgint",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse Lgint",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-Bcell-ENCODE",
+      "species": "mouse",
+      "organ_system": "Bcell",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of adult 8 weeks mouse CD19+, CD43+ Bcell",
+        "ENCODE-Mouse URL: https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released&related_series.@type=OrganismDevelopmentSeries&replicates.library.biosample.organism.scientific_name=Mus+musculus",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "M-PGC-GSE109770",
+      "species": "mouse",
+      "organ_system": "PGC",
+      "sample": "GSE109770",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/4feac009df7300a2e1ce",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of E10.5 mouse PGC",
+        "Title: Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+        "Release Date: 2018-01-29",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109770",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Nervous system-ENCODE",
+      "species": "human",
+      "organ_system": "Nervous system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human Ammons_horn, caudate_nucleus, cerebellum, frontal_cortex, putamen, tibial_nerve, CNCC",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Circulatory system-ENCODE",
+      "species": "human",
+      "organ_system": "Circulatory system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human heart_left_ventricle, right_atrium_auricular_region, thoracic_aorta",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Respiratory system-ENCODE",
+      "species": "human",
+      "organ_system": "Respiratory system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human upper_lobe_of_left_lung",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Digestive system-ENCODE",
+      "species": "human",
+      "organ_system": "Digestive system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human body_of_pancrea, esophagus_muscularis_mucosa, esophagus_squamous_epithelium, right_lobe_of_liver, sigmoid_colon, stomach, Gastric, gastroesophageal_sphincter, transverse_colon",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Immune system-ENCODE",
+      "species": "human",
+      "organ_system": "Immune system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human CD4_Primary_Cells, CD8_Primary_Cells, Primary_B_cells, Primary_T_cells, Primary_monocytes, Primary_Natural_Killer_cells, Treg_Primary_Cells, Primary_hematopoietic_stem_cells, Hematopoietic_multipotent_progenitor_cell, Peyers_patch, spleen",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Muscular/Skeletal system-ENCODE",
+      "species": "human",
+      "organ_system": "Muscular/Skeletal system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human Psoas_Muscle, gastrocnemius_medialis",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Endocrine system-ENCODE",
+      "species": "human",
+      "organ_system": "Endocrine system",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human adrenal_gland, thyroid_gland",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Integumentary/Connective tissue-ENCODE",
+      "species": "human",
+      "organ_system": "Integumentary/Connective",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human lower_leg_skin, Foreskin_Fibroblast, Foreskin_Keratinocyte, subcutaneous_adipose_tissue, omental_fat_pad, Fibroblasts",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Cell line-ENCODE",
+      "species": "human",
+      "organ_system": "Cell line",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human HeLa-S3, BE2C, BJ, Jurkat, K562, MCF-7, Melanocyte, Panc1, Pancreas, T47D, GM12878, HepG2, H1_BMP4_Derived_Trophoblast, H1-hESC, H7-hESC",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Fetal-ENCODE",
+      "species": "human",
+      "organ_system": "Fetal",
+      "sample": "ENCODE",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/23b201b5fc76f495ec7b",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of human fetal Adrenal_Gland, Heart, Intestine_Large, Intestine_Small, Kidney, Lung, Muscle, Ovary, Renal_Cortex, Renal_Pelvis, Spinal_Cord, Spleen, Stomach, Thymus",
+        "ENCODE-Human URL: https://www.encodeproject.org/human-donor-matrix/?type=Experiment&control_type!=*&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&biosample_ontology.classification=tissue&status=released&config=HumanDonorMatrix",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-car-T-GSE160174",
+      "species": "human",
+      "organ_system": "Immune system",
+      "sample": "Car-T_GSE160174",
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2022-05-13",
+      "figshare_url": "https://figshare.com/s/b8967fdf6f36beb5b5aa",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq&ATAC-seq of Control Day 0 CAR+ T1 and Continuous CAR+ T1.",
+        "Title: An NK-like CAR T cell transition in CAR T cell dysfunction",
+        "Release Date: 2020-01-26",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE160174",
+        "Data type: Paired bulk RNA-seq&ATAC-seq"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Cell line-GSE126074",
+      "species": "human",
+      "organ_system": "Cell line",
+      "sample": "GSE126074",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2023-06-19",
+      "figshare_url": "https://figshare.com/s/c0dc0c05343a2694c498",
+      "summary_text": [
+        "Description: Single nuclei RNA-seq and ATAC-seq co-assay for BJ, H1, K562 and GM12878 cell mixture, and wild type neonatal and adult mouse brain cerebral cortex.",
+        "Title: High-throughput sequencing of the transcriptome and chromatin accessibility in the same cell",
+        "Release Date: 2019-02-04",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126074",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "BJ",
+          "rna_cells": 326,
+          "atac_cells": 326
+        },
+        {
+          "name": "H1",
+          "rna_cells": 385,
+          "atac_cells": 385
+        },
+        {
+          "name": "K562",
+          "rna_cells": 198,
+          "atac_cells": 198
+        },
+        {
+          "name": "GM12878",
+          "rna_cells": 138,
+          "atac_cells": 138
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Fetal-GSE156793",
+      "species": "human",
+      "organ_system": "Fetal",
+      "sample": "GSE156793",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2023-06-19",
+      "figshare_url": "https://figshare.com/s/dd5e691de644554ec826",
+      "summary_text": [
+        "Description: Single cell RNA-seq and single cell ATAC-seq profiling of human fetal tissues",
+        "Title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Release Date: 2020-08-24",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156793, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149683",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": []
+    },
+    {
+      "dataset_id": "H-Reproductive system-Gnoad",
+      "species": "human",
+      "organ_system": "Reproductive system",
+      "sample": "Gnoad",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2024-06-25",
+      "figshare_url": "https://figshare.com/s/3ca8adddd9fd7d724364",
+      "summary_text": [
+        "Description: Single cell RNA-seq and single cell ATAC-seq profiling of human Leydig and Sertoli",
+        "Source Data: Unpublished",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "Leydig",
+          "rna_cells": 2873,
+          "atac_cells": 901
+        },
+        {
+          "name": "Sertoli",
+          "rna_cells": 36796,
+          "atac_cells": 385
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Digestive system-Pancreas",
+      "species": "human",
+      "organ_system": "Digestive system",
+      "sample": "Pancreas_GSE200044",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2024-06-25",
+      "figshare_url": "https://figshare.com/s/0f66343d977196b0cef7",
+      "summary_text": [
+        "Description: Single cell multiome (ATAC and RNA) sequencing to profile islet cells from 20 individuals.",
+        "Title: Integrating genetics with single-cell multiomic measurements across disease states identifies mechanisms of beta cell dysfunction in type 2 diabetes",
+        "Release Date: 2022-14-03",
+        "Source Data URL: https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE200044",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Acinar",
+          "rna_cells": 7452,
+          "atac_cells": 7452
+        },
+        {
+          "name": "Alpha",
+          "rna_cells": 10230,
+          "atac_cells": 10230
+        },
+        {
+          "name": "Beta",
+          "rna_cells": 18777,
+          "atac_cells": 18777
+        },
+        {
+          "name": "Delta",
+          "rna_cells": 6231,
+          "atac_cells": 6231
+        },
+        {
+          "name": "Ductal",
+          "rna_cells": 2879,
+          "atac_cells": 2879
+        },
+        {
+          "name": "Endothelial",
+          "rna_cells": 15478,
+          "atac_cells": 15478
+        },
+        {
+          "name": "Immune",
+          "rna_cells": 13522,
+          "atac_cells": 13522
+        },
+        {
+          "name": "Mesenchyme",
+          "rna_cells": 7221,
+          "atac_cells": 7221
+        },
+        {
+          "name": "PP",
+          "rna_cells": 3476,
+          "atac_cells": 3476
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Nervous system-Retina",
+      "species": "human",
+      "organ_system": "Nervous system",
+      "sample": "Retina_GSE142526",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2024-06-25",
+      "figshare_url": "https://figshare.com/s/1d2d8fe24d29962161d7",
+      "summary_text": [
+        "Description: Single cell RNA-seq and single cell ATAC-seq of the developing human retina.",
+        "Title: Controlling donor and newborn neuron migration and maturation in the eye through microenvironment engineering; Single cell ATAC-seq of the developing human retina and stem cell-derived retinal organoids shows changing epigenomic landscapes during cell fate acquisition",
+        "Release Date: 2021-09-18",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142526, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE184386",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "Cones",
+          "rna_cells": 77,
+          "atac_cells": 194
+        },
+        {
+          "name": "HOR",
+          "rna_cells": 442,
+          "atac_cells": 261
+        },
+        {
+          "name": "MPC",
+          "rna_cells": 1040,
+          "atac_cells": 2007
+        },
+        {
+          "name": "RGC",
+          "rna_cells": 1304,
+          "atac_cells": 1268
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Immune system-PBMC",
+      "species": "human",
+      "organ_system": "Immune system",
+      "sample": "PBMC_Seurat",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2024-06-25",
+      "figshare_url": "https://figshare.com/s/bf735dc630dd4e793453",
+      "summary_text": [
+        "Description: sc-multiome PBMC data used as an example in Seurat.",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "CD4_Naive",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD4_TCM",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD8_Naive",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD8_TEM_1",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD8_TEM_2",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD14_Mono",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "CD16_Mono",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "Intermediate_B",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "Memory_B",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        },
+        {
+          "name": "NK",
+          "rna_cells": "/",
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Somatic-GSE100345",
+      "species": "human",
+      "organ_system": "Somatic",
+      "sample": "Somatic_GSE100345",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2024-06-25",
+      "figshare_url": "https://figshare.com/s/60c6169e2cdb3c269ed1",
+      "summary_text": [
+        "Description: sc-multiome PBMC data used as an example in Seurat.",
+        "Title: Diversification of reprogramming trajectories revealed by parallel single-cell transcriptome and chromatin accessibility sequencing",
+        "Release Date: 2017-06-22",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100345",
+        "Data type: Unpaired scRNA-seq&scATAC-seq with cell type annotation"
+      ],
+      "cell_entities": [
+        {
+          "name": "BJ",
+          "rna_cells": 96,
+          "atac_cells": "/"
+        },
+        {
+          "name": "D2",
+          "rna_cells": 96,
+          "atac_cells": "/"
+        },
+        {
+          "name": "D8",
+          "rna_cells": 96,
+          "atac_cells": "/"
+        },
+        {
+          "name": "D16neg",
+          "rna_cells": 96,
+          "atac_cells": "/"
+        },
+        {
+          "name": "D16pos",
+          "rna_cells": 96,
+          "atac_cells": "/"
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Sensory system-GSE255677",
+      "species": "human",
+      "organ_system": "Sensory system",
+      "sample": "ear_nose_GSE255677",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-30",
+      "figshare_url": "https://figshare.com/s/b72f4ea33930bd166bab",
+      "summary_text": [
+        "Description: Separately dissociated the outer ear and nose tissue into single cell suspensions, extracted nuclei and then prepared 10X multiome libraries",
+        "Title: Repurposing of a gill gene regulatory program for outer-ear evolution",
+        "Release Date: 2024-02-13",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255677",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "Ear mes. 3",
+          "rna_cells": 1069,
+          "atac_cells": 1069
+        },
+        {
+          "name": "Ear mes. 1",
+          "rna_cells": 1022,
+          "atac_cells": 1022
+        },
+        {
+          "name": "General mes.",
+          "rna_cells": 944,
+          "atac_cells": 944
+        },
+        {
+          "name": "Perivascular 1",
+          "rna_cells": 935,
+          "atac_cells": 935
+        },
+        {
+          "name": "Perivascular 2",
+          "rna_cells": 768,
+          "atac_cells": 768
+        },
+        {
+          "name": "Epithelia 1",
+          "rna_cells": 712,
+          "atac_cells": 712
+        },
+        {
+          "name": "Epithelia 2",
+          "rna_cells": 710,
+          "atac_cells": 710
+        },
+        {
+          "name": "Outer ear cartilage",
+          "rna_cells": 686,
+          "atac_cells": 686
+        },
+        {
+          "name": "Unknown",
+          "rna_cells": 619,
+          "atac_cells": 619
+        },
+        {
+          "name": "Ear mes. 2 ",
+          "rna_cells": 546,
+          "atac_cells": 546
+        },
+        {
+          "name": "Nose cartilage",
+          "rna_cells": 530,
+          "atac_cells": 530
+        },
+        {
+          "name": "Endothelia",
+          "rna_cells": 461,
+          "atac_cells": 461
+        },
+        {
+          "name": "Nose mes.",
+          "rna_cells": 427,
+          "atac_cells": 427
+        },
+        {
+          "name": "Ear mes. 4",
+          "rna_cells": 367,
+          "atac_cells": 367
+        },
+        {
+          "name": "Neuronal",
+          "rna_cells": 299,
+          "atac_cells": 299
+        },
+        {
+          "name": "Proliferative",
+          "rna_cells": 155,
+          "atac_cells": 155
+        },
+        {
+          "name": "Ear mes. 5",
+          "rna_cells": 99,
+          "atac_cells": 99
+        },
+        {
+          "name": "Epithelia 3",
+          "rna_cells": 98,
+          "atac_cells": 98
+        },
+        {
+          "name": "Lymphatic endothelia",
+          "rna_cells": 71,
+          "atac_cells": 71
+        },
+        {
+          "name": "Melanocytes",
+          "rna_cells": 70,
+          "atac_cells": 70
+        },
+        {
+          "name": "Prolif. perivascular",
+          "rna_cells": 69,
+          "atac_cells": 69
+        },
+        {
+          "name": "Perivascular 3",
+          "rna_cells": 62,
+          "atac_cells": 62
+        },
+        {
+          "name": "Muscle",
+          "rna_cells": 57,
+          "atac_cells": 57
+        }
+      ]
+    },
+    {
+      "dataset_id": "H-Urinary system-GSE234788",
+      "species": "human",
+      "organ_system": "Urinary system",
+      "sample": "Kidney_GSE234788",
+      "generation": "single-cell",
+      "version": "v1.0",
+      "updated": "2025-10-30",
+      "figshare_url": "https://figshare.com/s/b66ff96d80c9848ac901",
+      "summary_text": [
+        "Description: Sequencing the SHARE-seq libraries of 48 human kidney samples from kidney cortex, medulla, papilla, ureter and renal artery.",
+        "Title: Transcriptomic, epigenomic, and spatial metabolomic cell profiling redefines regional human kidney anatomy",
+        "Release Date: 2023-06-13",
+        "Source Data URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234788",
+        "Data type: sc-multiome"
+      ],
+      "cell_entities": [
+        {
+          "name": "BT",
+          "rna_cells": 8275,
+          "atac_cells": 7781
+        },
+        {
+          "name": "CNT",
+          "rna_cells": 17255,
+          "atac_cells": 12831
+        },
+        {
+          "name": "DCT",
+          "rna_cells": 19226,
+          "atac_cells": 22644
+        },
+        {
+          "name": "ENDO",
+          "rna_cells": 18592,
+          "atac_cells": 19556
+        },
+        {
+          "name": "Fib1",
+          "rna_cells": 5556,
+          "atac_cells": 11733
+        },
+        {
+          "name": "Fib2",
+          "rna_cells": 10749,
+          "atac_cells": 712
+        },
+        {
+          "name": "Fib3",
+          "rna_cells": 4428,
+          "atac_cells": 559
+        },
+        {
+          "name": "Ma",
+          "rna_cells": 5836,
+          "atac_cells": 5325
+        },
+        {
+          "name": "PC1",
+          "rna_cells": 21757,
+          "atac_cells": 19049
+        },
+        {
+          "name": "PC2",
+          "rna_cells": 5346,
+          "atac_cells": 4936
+        },
+        {
+          "name": "PEC",
+          "rna_cells": 1438,
+          "atac_cells": 1026
+        },
+        {
+          "name": "POD",
+          "rna_cells": 4321,
+          "atac_cells": 2184
+        },
+        {
+          "name": "PT",
+          "rna_cells": 82341,
+          "atac_cells": 121675
+        },
+        {
+          "name": "PT_VCAM1",
+          "rna_cells": 9766,
+          "atac_cells": 15998
+        },
+        {
+          "name": "TAL1",
+          "rna_cells": 42803,
+          "atac_cells": 39742
+        },
+        {
+          "name": "TAL2",
+          "rna_cells": 30662,
+          "atac_cells": 10112
+        },
+        {
+          "name": "TAL3",
+          "rna_cells": 9887,
+          "atac_cells": 22900
+        },
+        {
+          "name": "tL1",
+          "rna_cells": 33518,
+          "atac_cells": 28062
+        },
+        {
+          "name": "tL2",
+          "rna_cells": 14203,
+          "atac_cells": 10205
+        },
+        {
+          "name": "tL-TAL",
+          "rna_cells": 24464,
+          "atac_cells": 23850
+        }
+      ]
+    }
+  ]
+}
