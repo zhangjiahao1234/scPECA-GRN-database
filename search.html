@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>scPECA GRNDB | Search</title>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    :root { --ink:#0f172a; --muted:#475569; --chip:#eef2ff; --chipfg:#3730a3; --bord:#e5e7eb; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); margin:0; background:#fff; }
+    header .nav { display:flex; align-items:center; gap:16px; padding:14px 20px; border-bottom:1px solid var(--bord); position:sticky; top:0; background:#fff; z-index:10; }
+    header .brand { font-weight:700; letter-spacing:.2px; }
+    header nav a { margin-left:14px; text-decoration:none; color:var(--muted); }
+    header nav a:hover { color:var(--ink); }
+    .container { max-width:1100px; margin:0 auto; padding:22px 18px 60px; }
+    .filters { display:flex; flex-wrap:wrap; gap:12px 18px; align-items:flex-end; margin-bottom:16px; }
+    .field label { display:block; font-size:.85rem; color:var(--muted); margin-bottom:6px; }
+    .field select { min-width:220px; padding:10px 12px; border:1px solid var(--bord); border-radius:10px; background:#fff; }
+    .actions { margin-left:auto; display:flex; gap:10px; }
+    .btn { padding:10px 14px; border-radius:10px; border:1px solid var(--bord); background:#fff; cursor:pointer; }
+    .btn-primary { background:#1d4ed8; color:#fff; border-color:#1d4ed8; text-decoration:none; display:inline-block; }
+    .btn-primary.disabled { opacity:.45; pointer-events:none; }
+    .errbar { display:none; background:#fee2e2; color:#991b1b; border:1px solid #fecaca; padding:10px 12px; border-radius:10px; margin-bottom:12px; }
+    .panel.two-col { display:grid; grid-template-columns: 1.2fr .9fr; gap:16px; }
+    .section { border:1px solid var(--bord); border-radius:16px; padding:16px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+    .chip { display:inline-block; background:var(--chip); color:var(--chipfg); border-radius:999px; padding:4px 10px; font-size:.78rem; }
+    .desc p { margin:.5rem 0; line-height:1.5; }
+    .desc a { word-break:break-all; }
+    .links { margin-top:10px; border-top:1px dashed var(--bord); padding-top:10px; }
+    .links .item { margin:6px 0; }
+    .mono { font-variant-numeric: tabular-nums; }
+    table { width:100%; border-collapse:collapse; }
+    thead th { text-align:left; font-weight:600; border-bottom:1px solid var(--bord); padding:8px 6px; }
+    tbody td { border-bottom:1px solid #f1f5f9; padding:8px 6px; }
+    #empty { color:var(--muted); text-align:center; padding:40px 0; }
+    @media (max-width: 920px) { .panel.two-col { grid-template-columns: 1fr; } .actions { width:100%; margin-left:0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">🧬 scPECA GRNDB</div>
+      <div class="spacer"></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="search.html"><strong>Search</strong></a>
+        <a href="software.html">Software</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="errbar" class="errbar"></div>
+
+    <section class="filters" aria-label="Filters">
+      <div class="field">
+        <label for="species">Species</label>
+        <select id="species"></select>
+      </div>
+      <div class="field">
+        <label for="organ">Organ/System</label>
+        <select id="organ"></select>
+      </div>
+      <div class="field">
+        <label for="sample">Sample</label>
+        <select id="sample"></select>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary disabled" id="btn-download" target="_blank" rel="noopener" aria-disabled="true">Download GRN</a>
+        <button class="btn" id="apply">Apply</button>
+      </div>
+    </section>
+
+    <section class="panel two-col" id="details" style="display:none">
+      <div class="section">
+        <header><h3 style="margin:0">Summary</h3></header>
+        <div class="meta" id="meta"></div>
+        <div class="desc" id="summary"></div>
+        <div class="links" id="links" style="display:none">
+          <div style="font-weight:600; margin-bottom:4px;">Links</div>
+          <div id="links-body"></div>
+        </div>
+      </div>
+      <div class="section" id="ct-section">
+        <header>
+          <h3 style="margin:0">organ/tissue/cell type</h3>
+        </header>
+        <div class="ct-list">
+          <table>
+            <thead><tr><th style="width:60%">Name</th><th class="mono">RNA cells</th><th class="mono">ATAC cells</th></tr></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="empty" class="empty">Choose <b>Species</b> → <b>Organ/System</b> → <b>Sample</b>, then click <b>Apply</b>.</div>
+  </main>
+
+  <footer style="border-top:1px solid var(--bord); padding:16px 18px; color:var(--muted)">
+    © <span id="year"></span> scPECA GRNDB. CC BY 4.0.
+  </footer>
+
+  <script>
+    let DATASETS = [];
+
+    function unique(arr){ return Array.from(new Set(arr)).filter(Boolean).sort() }
+    function cap(s){return s? s.charAt(0).toUpperCase()+s.slice(1):''}
+    function chip(t){ const s=document.createElement('span'); s.className='chip'; s.textContent=t; return s }
+    function esc(s=''){return String(s).replace(/[&<>"']/g,(m)=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]||m));}
+
+    function linkify(text){
+      if (!text) return '';
+      let t = String(text);
+      const urlRe = /(https?:\/\/[^\s)]+[^\s.,;:)\]])/g;
+      t = t.replace(urlRe, (m)=>`<a href="${m}" target="_blank" rel="noopener">${m}</a>`);
+      t = t.replace(/<\/a>\s+(?=<a\s)/g, '</a><br>');
+      return t;
+    }
+
+    function toParagraphs(val){
+      if (Array.isArray(val)){
+        return val.map(s => `<p>${linkify(s)}</p>`).join('');
+      }
+      const raw = String(val);
+      const parts = raw.split(/\n\n|\n|\r\n/g).filter(x=>x.trim()!=='');
+      return parts.map(s => `<p>${linkify(s.trim())}</p>`).join('');
+    }
+
+    function collectUrlFields(d){
+      const urls = [];
+      const urlRe = /^https?:\/\//i;
+      for (const [k,v] of Object.entries(d)){
+        if (k === 'figshare_url') continue;
+        if (typeof v === 'string' && urlRe.test(v)){
+          urls.push({label: prettyKey(k), url: v});
+        } else if (Array.isArray(v)){
+          for (const item of v){
+            if (typeof item === 'string' && urlRe.test(item)){
+              urls.push({label: prettyKey(k), url: item});
+            }
+          }
+        }
+      }
+      return urls;
+    }
+
+    function prettyKey(k){
+      return k.replace(/_/g,' ').replace(/\b\w/g, s=>s.toUpperCase());
+    }
+
+    async function load(){
+      const err = document.getElementById('errbar');
+      try{
+        const res = await fetch('catalog.json?v=' + Date.now(), {cache:'no-store'});
+        if(!res.ok) throw new Error('HTTP ' + res.status);
+        const json = await res.json();
+        DATASETS = json.datasets || [];
+        seedSpecies();
+      }catch(e){
+        err.style.display='block';
+        err.textContent = 'Failed to load catalog.json — ' + e.message;
+      }
+    }
+
+    function seedSpecies(){
+      const sel = document.getElementById('species');
+      sel.innerHTML = unique(DATASETS.map(d=>d.species)).map(v=>`<option value="${v}">${cap(v)}</option>`).join('');
+      sel.onchange = seedOrgans;
+      seedOrgans();
+    }
+
+    function seedOrgans(){
+      const species = document.getElementById('species').value;
+      const organs = unique(DATASETS.filter(d=>d.species===species).map(d=>d.organ_system));
+      const organSel = document.getElementById('organ');
+      organSel.innerHTML = organs.map(v=>`<option value="${v}">${v}</option>`).join('');
+      organSel.onchange = seedSamples;
+      seedSamples();
+    }
+
+    function seedSamples(){
+      const species = document.getElementById('species').value;
+      const organ   = document.getElementById('organ').value;
+      const samples = unique(DATASETS.filter(d=>d.species===species && d.organ_system===organ).map(d=>d.sample));
+      const smpSel = document.getElementById('sample');
+      smpSel.innerHTML = samples.map(v=>`<option value="${v}">${v}</option>`).join('');
+    }
+
+    function render(){
+      const species = document.getElementById('species').value;
+      const organ   = document.getElementById('organ').value;
+      const sample  = document.getElementById('sample').value;
+
+      const d = DATASETS.find(x => x.species===species && x.organ_system===organ && x.sample===sample);
+      const details  = document.getElementById('details');
+      const empty = document.getElementById('empty');
+      const ctSection = document.getElementById('ct-section');
+      const dl = document.getElementById('btn-download');
+
+      dl.classList.add('disabled'); dl.setAttribute('aria-disabled','true'); dl.removeAttribute('href');
+
+      if (!d){
+        empty.style.display='block'; details.style.display='none'; return;
+      }
+      empty.style.display='none'; details.style.display='grid';
+
+      const meta = document.getElementById('meta');
+      meta.innerHTML = '';
+      [cap(d.species), d.organ_system, d.sample, d.modality||'', d.version||'', d.updated?('Updated '+d.updated):'']
+        .filter(Boolean).forEach(t=> meta.appendChild(chip(t)));
+
+      const summary = document.getElementById('summary');
+      summary.innerHTML = toParagraphs(d.summary_text || d.description || '');
+
+      const linksWrap = document.getElementById('links');
+      const linksBody = document.getElementById('links-body');
+      const extraLinks = collectUrlFields(d);
+      linksBody.innerHTML = '';
+      if (extraLinks.length > 0){
+        linksWrap.style.display='block';
+        for (const item of extraLinks){
+          const div = document.createElement('div');
+          div.className = 'item';
+          div.innerHTML = `<strong>${esc(item.label)}:</strong> <a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.url)}</a>`;
+          linksBody.appendChild(div);
+        }
+      } else {
+        linksWrap.style.display='none';
+      }
+
+      const isSingleCell = (d.generation || '').toLowerCase() === 'single-cell';
+      ctSection.style.display = isSingleCell ? 'block' : 'none';
+      const tb = document.getElementById('tbody');
+      tb.innerHTML='';
+      if (isSingleCell){
+        (d.cell_entities || []).forEach(x => {
+          const tr = document.createElement('tr');
+          const rna = (x.rna_cells===undefined || x.rna_cells===null || x.rna_cells==='') ? '' : x.rna_cells;
+          const atac = (x.atac_cells===undefined || x.atac_cells===null || x.atac_cells==='') ? '' : x.atac_cells;
+          tr.innerHTML = `<td>${esc(x.name||'')}</td><td class="mono">${esc(String(rna))}</td><td class="mono">${esc(String(atac))}</td>`;
+          tb.appendChild(tr);
+        });
+      }
+
+      if (d.figshare_url){
+        dl.href = d.figshare_url; dl.classList.remove('disabled'); dl.removeAttribute('aria-disabled');
+      }
+    }
+
+    document.getElementById('apply').onclick = render;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    load();
+  </script>
+</body>
+</html>
