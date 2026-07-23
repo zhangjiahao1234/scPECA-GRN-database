@@ -89,18 +89,18 @@ function populateFilters(changedLevel = "species") {
   );
 
   const dataForm = elements.dataForm.value;
-  const parentRows = filteredRows({
+  const organTissueRows = filteredRows({
     species,
     organ_system: organSystem,
     data_form: dataForm,
   });
   setOptions(
-    elements.parentNode,
-    parentRows.map((row) => ({
+    elements.organTissue,
+    organTissueRows.map((row) => ({
       value: row.dataset_id,
-      label: `${row.parent_node} (${row.network_count})`,
+      label: `${row.organ_tissue} (${row.network_count})`,
     })),
-    changedLevel === "parent" ? elements.parentNode.value : null
+    changedLevel === "organ_tissue" ? elements.organTissue.value : null
   );
 
   renderSelected();
@@ -194,7 +194,7 @@ function renderCellTypes(row, query = "") {
 
 function renderSelected() {
   const row = state.datasets.find(
-    (item) => item.dataset_id === elements.parentNode.value
+    (item) => item.dataset_id === elements.organTissue.value
   );
   state.selected = row || null;
 
@@ -206,7 +206,7 @@ function renderSelected() {
   elements.resultPath.textContent =
     `${row.species} / ${row.organ_system} / ${row.data_form}`;
   elements.resultTitle.textContent =
-    `${row.parent_node} (${row.network_count})`;
+    `${row.organ_tissue} (${row.network_count})`;
   elements.downloadButton.href = row.figshare_url;
 
   const description = row.summary_text[0].replace(/^Description:\s*/, "");
@@ -244,7 +244,7 @@ async function loadCatalog() {
 
     elements.catalogStatus.textContent =
       `${state.catalog.network_total} human GRNs · ` +
-      `${state.catalog.parent_node_total} parent nodes`;
+      `${state.catalog.organ_tissue_total} organ/tissue entries`;
     populateFilters("species");
   } catch (error) {
     showError(
@@ -260,7 +260,7 @@ function initialize() {
   elements.species = byId("species");
   elements.system = byId("system");
   elements.dataForm = byId("data-form");
-  elements.parentNode = byId("parent-node");
+  elements.organTissue = byId("organ-tissue");
   elements.catalogStatus = byId("catalog-status");
   elements.errorMessage = byId("error-message");
   elements.result = byId("result");
@@ -283,7 +283,7 @@ function initialize() {
   elements.species.addEventListener("change", () => populateFilters("species"));
   elements.system.addEventListener("change", () => populateFilters("system"));
   elements.dataForm.addEventListener("change", () => populateFilters("form"));
-  elements.parentNode.addEventListener("change", renderSelected);
+  elements.organTissue.addEventListener("change", renderSelected);
   elements.cellFilter.addEventListener("input", () => {
     if (state.selected) {
       renderCellTypes(state.selected, elements.cellFilter.value);
