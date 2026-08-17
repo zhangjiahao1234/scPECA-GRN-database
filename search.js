@@ -22,8 +22,13 @@ function optionLabel(label, rows) {
   return `${label} (${countNetworks(rows)})`;
 }
 
-function setOptions(select, options, preferredValue = null) {
-  const previous = preferredValue || select.value;
+function setOptions(select, options, preferredValue = undefined) {
+  const previous =
+    preferredValue === null
+      ? ""
+      : preferredValue === undefined
+        ? select.value
+        : preferredValue;
   select.replaceChildren();
 
   options.forEach(({ value, label }) => {
@@ -188,7 +193,7 @@ function renderCellTypes(row, query = "") {
   elements.cellTypeCount.textContent =
     normalizedQuery && cells.length !== row.network_count
       ? `${cells.length} of ${row.network_count} networks shown`
-      : `${row.network_count} networks`;
+      : `${row.network_count} network${row.network_count === 1 ? "" : "s"}`;
   elements.noCellResults.hidden = cells.length !== 0;
 }
 
@@ -207,7 +212,17 @@ function renderSelected() {
     `${row.species} / ${row.organ_system} / ${row.data_form}`;
   elements.resultTitle.textContent =
     `${row.organ_tissue} (${row.network_count})`;
-  elements.downloadButton.href = row.figshare_url;
+  if (row.figshare_url) {
+    elements.downloadButton.href = row.figshare_url;
+    elements.downloadButton.removeAttribute("aria-disabled");
+    elements.downloadButton.classList.remove("is-disabled");
+    elements.downloadButton.title = "Open this source collection on Figshare";
+  } else {
+    elements.downloadButton.removeAttribute("href");
+    elements.downloadButton.setAttribute("aria-disabled", "true");
+    elements.downloadButton.classList.add("is-disabled");
+    elements.downloadButton.title = "Figshare link is being verified";
+  }
 
   const description = row.summary_text[0].replace(/^Description:\s*/, "");
   elements.description.textContent = description;
@@ -242,8 +257,10 @@ async function loadCatalog() {
     state.catalog = await response.json();
     state.datasets = state.catalog.datasets;
 
+    const humanTotal = state.catalog.species_totals?.Human || 0;
+    const mouseTotal = state.catalog.species_totals?.Mouse || 0;
     elements.catalogStatus.textContent =
-      `${state.catalog.network_total} human GRNs · ` +
+      `${humanTotal} human + ${mouseTotal} mouse GRNs · ` +
       `${state.catalog.organ_tissue_total} organ/tissue entries`;
     populateFilters("species");
   } catch (error) {

@@ -1,10 +1,14 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "3.0",
   "resource_name": "TRENDS",
-  "scope": "Human catalog",
-  "generated": "2026-07-24",
-  "network_total": 444,
-  "organ_tissue_total": 84,
+  "scope": "Human and mouse catalog",
+  "generated": "2026-07-28",
+  "network_total": 701,
+  "species_totals": {
+    "Human": 444,
+    "Mouse": 257
+  },
+  "organ_tissue_total": 137,
   "sources": [
     {
       "source_id": "encode",
@@ -230,6 +234,334 @@
       ],
       "assay_description": "Unpaired single-nucleus RNA-seq and ATAC-seq matched by lung cell type",
       "study_description": "Donor-matched snRNA-seq and snATAC-seq profiled non-diseased human lungs across neonatal, pediatric and adult stages. Samples represented approximately 30-week gestational age, 3-year-old and 30-year-old donors, with three donors in each main age group; modalities were aligned using published lung cell-type annotations."
+    },
+    {
+      "source_id": "mouse_encode",
+      "folder": "bulk/ENCODE",
+      "mapping_dataset": "ENCODE",
+      "source_name": "ENCODE mouse development",
+      "data_form": "Bulk",
+      "figshare_article_id": 26121574,
+      "figshare_item_title": "Mouse_bulk_ENCODE",
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "study_description": "ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context."
+    },
+    {
+      "source_id": "mouse_cardiomyocytes",
+      "folder": "bulk/Cardiomyocytes_GSE156001",
+      "mapping_dataset": "Miscellaneous",
+      "source_name": "Embryonic cardiomyocyte GATA4 study",
+      "data_form": "Bulk",
+      "figshare_article_id": 33102911,
+      "figshare_item_title": "Mouse_bulk_cardiomyocytes",
+      "figshare_url": "https://figshare.com/s/c622d197345650bde140",
+      "record_title": "Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
+      "article_title": null,
+      "accessions": [
+        "GSE156001"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156001"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "study_description": "The study generated RNA-seq and ATAC-seq profiles from E12.5 mouse cardiomyocytes while examining lineage-selective GATA4 occupancy."
+    },
+    {
+      "source_id": "mouse_immune",
+      "folder": "bulk/Immune_GSE204745",
+      "mapping_dataset": "Miscellaneous",
+      "source_name": "Immune-cell transdifferentiation study",
+      "data_form": "Bulk",
+      "figshare_article_id": 33102908,
+      "figshare_item_title": "Mouse_bulk_Immune",
+      "figshare_url": "https://figshare.com/s/fa6c5e00e2e28a510044",
+      "record_title": "Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
+      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
+      "accessions": [
+        "GSE204746",
+        "GSE204745"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204746",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204745"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
+      "study_description": "The GSE204746 SuperSeries followed C/EBPalpha-driven conversion of mouse B cells toward macrophages with bulk RNA-seq and ATAC-seq; GSE204745 is its RNA-seq SubSeries. TRENDS provides the starting B-cell and terminal macrophage contexts."
+    },
+    {
+      "source_id": "mouse_mef",
+      "folder": "bulk/MEF_GSE169055",
+      "mapping_dataset": "MEF",
+      "source_name": "Mouse fibroblast reprogramming study",
+      "data_form": "Bulk",
+      "figshare_article_id": 33102902,
+      "figshare_item_title": "Mouse_bulk_MEF",
+      "figshare_url": "https://figshare.com/s/6bf589deb076492c979f",
+      "record_title": "Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
+      "article_title": "An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
+      "accessions": [
+        "GSE169055",
+        "GSE169053",
+        "GSE186271"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169055",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169053",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186271"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "study_description": "Bulk RNA-seq and Omni-ATAC-seq profiled mouse embryonic fibroblasts and intermediate states during conversion toward induced myogenic progenitor cells. The current local release contains the MEF GRN."
+    },
+    {
+      "source_id": "mouse_pgc",
+      "folder": "bulk/PGCE10.5_GSE109770",
+      "mapping_dataset": "PGCE10.5_GSE109770",
+      "source_name": "Mouse primordial germ-cell study",
+      "data_form": "Bulk",
+      "figshare_article_id": 26121580,
+      "figshare_item_title": "Mouse_bulk_PGC",
+      "figshare_url": "https://figshare.com/s/4feac009df7300a2e1ce",
+      "record_title": "Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+      "article_title": "Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+      "accessions": [
+        "GSE109770"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109770"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "study_description": "Paired bulk RNA-seq and ATAC-seq profiled mouse primordial germ cells at embryonic day 10.5."
+    },
+    {
+      "source_id": "mouse_brain_layers",
+      "folder": "sc/Brain_layer_stuartlab",
+      "mapping_dataset": "Brain_stuartlab",
+      "source_name": "Adult mouse brain Signac reference",
+      "data_form": "Unpaired",
+      "figshare_article_id": 33102824,
+      "figshare_item_title": "Mouse_sc_brain_layer",
+      "figshare_url": "https://figshare.com/s/68d65f8e57d778fec20d",
+      "record_title": "Adult mouse brain scATAC-seq integrated with an scRNA-seq reference",
+      "article_title": null,
+      "accessions": [
+        "10x Genomics dataset"
+      ],
+      "source_urls": [
+        "https://stuartlab.org/signac/articles/mouse_brain_vignette"
+      ],
+      "assay_description": "Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
+      "study_description": "The Signac mouse-brain reference integrates adult mouse scATAC-seq with an scRNA-seq reference from the same biological system and transfers brain cell identities across modalities."
+    },
+    {
+      "source_id": "mouse_cortex",
+      "folder": "sc/Cortex_GSE161132",
+      "mapping_dataset": "Cortex_GSE161132",
+      "source_name": "Developing mouse cortex glial study",
+      "data_form": "Unpaired",
+      "figshare_article_id": 26121589,
+      "figshare_item_title": "Mouse_sc_cortex",
+      "figshare_url": "https://figshare.com/s/b03b23d81d2c8dfaef32",
+      "record_title": "Decoding Cortical Glial Cell Development",
+      "article_title": "Decoding Cortical Glial Cell Development",
+      "accessions": [
+        "GSE161132"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161132"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by cortical lineage annotation",
+      "study_description": "The study profiled E18.5 hGFAP-GFP-positive cortex by scATAC-seq and P1 cortex by scRNA-seq to resolve cortical glial lineages."
+    },
+    {
+      "source_id": "mouse_embryo",
+      "folder": "sc/Embryo_OMIX928",
+      "mapping_dataset": "OMIX928",
+      "source_name": "Mouse embryo single-cell atlases",
+      "data_form": "Unpaired",
+      "figshare_article_id": 30210553,
+      "figshare_item_title": "Mouse_sc_embryo",
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "study_description": "Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities."
+    },
+    {
+      "source_id": "mouse_brain_shareseq",
+      "folder": "sc/GSE140203_mouse_brain",
+      "mapping_dataset": "GSE140203_mouse_brain",
+      "source_name": "Adult mouse brain SHARE-seq",
+      "data_form": "Paired",
+      "figshare_article_id": 30428194,
+      "figshare_item_title": "Mouse_sc_brain",
+      "figshare_url": "https://figshare.com/s/16eec51782f1a50d9b02",
+      "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "accessions": [
+        "GSE140203"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "study_description": "SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse brain cells and resolved cell-type-specific regulatory relationships."
+    },
+    {
+      "source_id": "mouse_skin_shareseq",
+      "folder": "sc/GSE140203_mouse_skin",
+      "mapping_dataset": "GSE140203_mouse_skin",
+      "source_name": "Adult mouse skin SHARE-seq",
+      "data_form": "Paired",
+      "figshare_article_id": 30433639,
+      "figshare_item_title": "Mouse_sc_skin",
+      "figshare_url": "https://figshare.com/s/c55c18a2f1ee95bace5d",
+      "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "accessions": [
+        "GSE140203"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "study_description": "SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse skin cells and resolved cell-type-specific regulatory relationships."
+    },
+    {
+      "source_id": "mouse_spinal_cord",
+      "folder": "sc/GSE230765_mouse_thoracic_spinal_cord",
+      "mapping_dataset": "GSE230765_mouse_thoracic_spinal_cord",
+      "source_name": "Mouse thoracic spinal-cord multiome",
+      "data_form": "Paired",
+      "figshare_article_id": 30428128,
+      "figshare_item_title": "Mouse_sc_thoracic_spinal_cord",
+      "figshare_url": "https://figshare.com/s/46fab8d78f6a040c11f0",
+      "record_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "article_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "accessions": [
+        "GSE230765"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230765"
+      ],
+      "assay_description": "Paired single-nucleus RNA and ATAC multiome",
+      "study_description": "Single-nucleus multiome sequencing profiled RNA and chromatin accessibility in the mouse mid-thoracic spinal cord."
+    },
+    {
+      "source_id": "mouse_prostate_intact",
+      "folder": "sc/GSE284640_mouse_prostate/prostate1_net",
+      "mapping_dataset": "GSE284640_mouse_prostate/prostate1_net",
+      "source_name": "Intact mouse prostate multiome",
+      "data_form": "Paired",
+      "figshare_article_id": 30450335,
+      "figshare_item_title": "Mouse_sc_IntactProstate",
+      "figshare_url": "https://figshare.com/s/c118d7d3612568d49c63",
+      "record_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "article_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "accessions": [
+        "GSE284640"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "study_description": "10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in sham-operated mouse prostates."
+    },
+    {
+      "source_id": "mouse_prostate_castrated",
+      "folder": "sc/GSE284640_mouse_prostate/prostate2_net",
+      "mapping_dataset": "GSE284640_mouse_prostate/prostate2_net",
+      "source_name": "Castrated mouse prostate multiome",
+      "data_form": "Paired",
+      "figshare_article_id": 30450344,
+      "figshare_item_title": "Mouse_sc_CastratedProstate",
+      "figshare_url": "https://figshare.com/s/fbb8e77b332debbe2238",
+      "record_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "article_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "accessions": [
+        "GSE284640"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "study_description": "10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in castrated mouse prostates."
+    },
+    {
+      "source_id": "mouse_lung",
+      "folder": "sc/Lung_GSE157654_GSE157378",
+      "mapping_dataset": "Lung_GSE157654_GSE157378",
+      "source_name": "Developing mouse lung atlases",
+      "data_form": "Unpaired",
+      "figshare_article_id": 26121592,
+      "figshare_item_title": "Mouse_sc_lung",
+      "figshare_url": "https://figshare.com/s/f94a56922a3c52da788a",
+      "record_title": "Categorization of lung mesenchymal cells in development and fibrosis",
+      "article_title": "Categorization of lung mesenchymal cells in development and fibrosis",
+      "accessions": [
+        "GSE157654",
+        "GSE157378"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157654",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157378"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by lung cell type",
+      "study_description": "Separate scRNA-seq and scATAC-seq datasets profiled E17.5 mouse lung mesenchymal populations and were aligned by published cell-type labels."
+    },
+    {
+      "source_id": "mouse_retina",
+      "folder": "sc/Retina_GSE169262",
+      "mapping_dataset": "Retina_GSE169262",
+      "source_name": "Mouse retina single-cell atlases",
+      "data_form": "Unpaired",
+      "figshare_article_id": 26121598,
+      "figshare_item_title": "Mouse_sc_retina",
+      "figshare_url": "https://figshare.com/s/450608a61626ed7c0791",
+      "record_title": "Identification of a modular super-enhancer in murine retinal development",
+      "article_title": "Identification of a modular super-enhancer in murine retinal development",
+      "accessions": [
+        "GSE169262"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169262"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
+      "study_description": "Single-cell RNA and chromatin-accessibility profiles were generated from adult wild-type and VSX2 super-enhancer-deletion mouse retina."
+    },
+    {
+      "source_id": "mouse_spermatogenesis",
+      "folder": "sc/Spermatogenesis_GSE107644",
+      "mapping_dataset": "Spermatogenesis_GSE107644",
+      "source_name": "Mouse spermatogenesis single-cell study",
+      "data_form": "Unpaired",
+      "figshare_article_id": 26121595,
+      "figshare_item_title": "Mouse_sc_spermatogenesis",
+      "figshare_url": "https://figshare.com/s/e8c715436d674e3a4e34",
+      "record_title": "Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+      "article_title": "Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+      "accessions": [
+        "GSE107644"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107644"
+      ],
+      "assay_description": "Unpaired scRNA-seq and NOMe-seq matched by spermatogenic stage",
+      "study_description": "Purified spermatogenic populations were profiled by single-cell RNA-seq and NOMe-seq to follow successive stages of mouse spermatogenesis."
     }
   ],
   "datasets": [
@@ -4929,6 +5261,2844 @@
         {
           "name": "SKOR2_NPSR1_positive_cells",
           "network_file": "SKOR2_NPSR1_positive_cells_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-cerebellum-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Cerebellum",
+      "sample": "mouse_encode_cerebellum",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Cerebellum: EncodeCerebellumC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeCerebellumC57bl6MAdult8wks",
+          "network_file": "EncodeCerebellumC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-cerebrum-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Cerebrum",
+      "sample": "mouse_encode_cerebrum",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Cerebrum: EncodeCerebrumC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeCerebrumC57bl6MAdult8wks",
+          "network_file": "EncodeCerebrumC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-forebrain-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Forebrain",
+      "sample": "mouse_encode_forebrain",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 7,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Forebrain.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "ForebrainE11.5",
+          "network_file": "ForebrainE11.5_network.txt"
+        },
+        {
+          "name": "ForebrainE12.5",
+          "network_file": "ForebrainE12.5_network.txt"
+        },
+        {
+          "name": "ForebrainE13.5",
+          "network_file": "ForebrainE13.5_network.txt"
+        },
+        {
+          "name": "ForebrainE14.5",
+          "network_file": "ForebrainE14.5_network.txt"
+        },
+        {
+          "name": "ForebrainE15.5",
+          "network_file": "ForebrainE15.5_network.txt"
+        },
+        {
+          "name": "ForebrainE16.5",
+          "network_file": "ForebrainE16.5_network.txt"
+        },
+        {
+          "name": "ForebrainP0",
+          "network_file": "ForebrainP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-hindbrain-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Hindbrain",
+      "sample": "mouse_encode_hindbrain",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 7,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Hindbrain.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "HindbrainE11.5",
+          "network_file": "HindbrainE11.5_network.txt"
+        },
+        {
+          "name": "HindbrainE12.5",
+          "network_file": "HindbrainE12.5_network.txt"
+        },
+        {
+          "name": "HindbrainE13.5",
+          "network_file": "HindbrainE13.5_network.txt"
+        },
+        {
+          "name": "HindbrainE14.5",
+          "network_file": "HindbrainE14.5_network.txt"
+        },
+        {
+          "name": "HindbrainE15.5",
+          "network_file": "HindbrainE15.5_network.txt"
+        },
+        {
+          "name": "HindbrainE16.5",
+          "network_file": "HindbrainE16.5_network.txt"
+        },
+        {
+          "name": "HindbrainP0",
+          "network_file": "HindbrainP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-midbrain-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Midbrain",
+      "sample": "mouse_encode_midbrain",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 7,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Midbrain.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "MidbrainE11.5",
+          "network_file": "MidbrainE11.5_network.txt"
+        },
+        {
+          "name": "MidbrainE12.5",
+          "network_file": "MidbrainE12.5_network.txt"
+        },
+        {
+          "name": "MidbrainE13.5",
+          "network_file": "MidbrainE13.5_network.txt"
+        },
+        {
+          "name": "MidbrainE14.5",
+          "network_file": "MidbrainE14.5_network.txt"
+        },
+        {
+          "name": "MidbrainE15.5",
+          "network_file": "MidbrainE15.5_network.txt"
+        },
+        {
+          "name": "MidbrainE16.5",
+          "network_file": "MidbrainE16.5_network.txt"
+        },
+        {
+          "name": "MidbrainP0",
+          "network_file": "MidbrainP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-bulk-neural-tube-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Bulk",
+      "organ_tissue": "Neural tube",
+      "sample": "mouse_encode_neural-tube",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Neural tube: NeuralTubeE11.5, NeuralTubeE12.5, NeuralTubeE13.5, NeuralTubeE14.5, NeuralTubeE15.5.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "NeuralTubeE11.5",
+          "network_file": "NeuralTubeE11.5_network.txt"
+        },
+        {
+          "name": "NeuralTubeE12.5",
+          "network_file": "NeuralTubeE12.5_network.txt"
+        },
+        {
+          "name": "NeuralTubeE13.5",
+          "network_file": "NeuralTubeE13.5_network.txt"
+        },
+        {
+          "name": "NeuralTubeE14.5",
+          "network_file": "NeuralTubeE14.5_network.txt"
+        },
+        {
+          "name": "NeuralTubeE15.5",
+          "network_file": "NeuralTubeE15.5_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-brain-layers-mouse-brain-layers",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Brain layers",
+      "sample": "mouse_brain_layers_brain-layers",
+      "source_id": "mouse_brain_layers",
+      "source_name": "Adult mouse brain Signac reference",
+      "network_count": 7,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 33102824,
+      "figshare_url": "https://figshare.com/s/68d65f8e57d778fec20d",
+      "record_title": "Adult mouse brain scATAC-seq integrated with an scRNA-seq reference",
+      "article_title": null,
+      "accessions": [
+        "10x Genomics dataset"
+      ],
+      "source_urls": [
+        "https://stuartlab.org/signac/articles/mouse_brain_vignette"
+      ],
+      "assay_description": "Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
+      "summary_text": [
+        "Description: The Signac mouse-brain reference integrates adult mouse scATAC-seq with an scRNA-seq reference from the same biological system and transfers brain cell identities across modalities. TRENDS provides 7 cell-type GRNs for Brain layers.",
+        "Source: Adult mouse brain Signac reference",
+        "Dataset title: Adult mouse brain scATAC-seq integrated with an scRNA-seq reference",
+        "Data form: Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
+        "Source accession: 10x Genomics dataset"
+      ],
+      "cell_entities": [
+        {
+          "name": "Astro",
+          "network_file": "Astro_network.txt"
+        },
+        {
+          "name": "L2_3_IT",
+          "network_file": "L2_3_IT_network.txt"
+        },
+        {
+          "name": "L4",
+          "network_file": "L4_network.txt"
+        },
+        {
+          "name": "L5_IT",
+          "network_file": "L5_IT_network.txt"
+        },
+        {
+          "name": "L6_CT",
+          "network_file": "L6_CT_network.txt"
+        },
+        {
+          "name": "L6_IT",
+          "network_file": "L6_IT_network.txt"
+        },
+        {
+          "name": "Pvalb",
+          "network_file": "Pvalb_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-cortex-mouse-cortex",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Cortex",
+      "sample": "mouse_cortex_cortex",
+      "source_id": "mouse_cortex",
+      "source_name": "Developing mouse cortex glial study",
+      "network_count": 6,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121589,
+      "figshare_url": "https://figshare.com/s/b03b23d81d2c8dfaef32",
+      "record_title": "Decoding Cortical Glial Cell Development",
+      "article_title": "Decoding Cortical Glial Cell Development",
+      "accessions": [
+        "GSE161132"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161132"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by cortical lineage annotation",
+      "summary_text": [
+        "Description: The study profiled E18.5 hGFAP-GFP-positive cortex by scATAC-seq and P1 cortex by scRNA-seq to resolve cortical glial lineages. TRENDS provides 6 cell-type GRNs for Cortex.",
+        "Source: Developing mouse cortex glial study",
+        "Dataset title: Decoding Cortical Glial Cell Development",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by cortical lineage annotation",
+        "Source accession: GSE161132"
+      ],
+      "cell_entities": [
+        {
+          "name": "aMIPC",
+          "network_file": "aMIPC_network.txt"
+        },
+        {
+          "name": "AS-lineage",
+          "network_file": "AS-lineage_network.txt"
+        },
+        {
+          "name": "bMIPC",
+          "network_file": "bMIPC_network.txt"
+        },
+        {
+          "name": "mRGC",
+          "network_file": "mRGC_network.txt"
+        },
+        {
+          "name": "OBiN_lineage",
+          "network_file": "OBiN_lineage_network.txt"
+        },
+        {
+          "name": "OL-lineage",
+          "network_file": "OL-lineage_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-eye-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Eye",
+      "sample": "mouse_embryo_eye",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 2,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Eye: Corneal Stroma, Eye specific.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Corneal_Stroma",
+          "network_file": "Corneal_Stroma_network.txt"
+        },
+        {
+          "name": "Eye_specific",
+          "network_file": "Eye_specific_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-neuron-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Neuron",
+      "sample": "mouse_embryo_neuron",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 8,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 8 cell-type GRNs for Neuron.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Neuron_Ednrb",
+          "network_file": "Neuron_Ednrb_network.txt"
+        },
+        {
+          "name": "Neuron_I",
+          "network_file": "Neuron_I_network.txt"
+        },
+        {
+          "name": "Neuron_II",
+          "network_file": "Neuron_II_network.txt"
+        },
+        {
+          "name": "Neuron_III",
+          "network_file": "Neuron_III_network.txt"
+        },
+        {
+          "name": "Neuron_IV",
+          "network_file": "Neuron_IV_network.txt"
+        },
+        {
+          "name": "Neuron_V",
+          "network_file": "Neuron_V_network.txt"
+        },
+        {
+          "name": "Neuron_VI",
+          "network_file": "Neuron_VI_network.txt"
+        },
+        {
+          "name": "Neuron_VII",
+          "network_file": "Neuron_VII_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-neuron-progenitor-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Neuron progenitor",
+      "sample": "mouse_embryo_neuron-progenitor",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Neuron progenitor: Neuron Progenitor.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Neuron_Progenitor",
+          "network_file": "Neuron_Progenitor_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-unpaired-retina-mouse-retina",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Retina",
+      "sample": "mouse_retina_retina",
+      "source_id": "mouse_retina",
+      "source_name": "Mouse retina single-cell atlases",
+      "network_count": 7,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121598,
+      "figshare_url": "https://figshare.com/s/450608a61626ed7c0791",
+      "record_title": "Identification of a modular super-enhancer in murine retinal development",
+      "article_title": "Identification of a modular super-enhancer in murine retinal development",
+      "accessions": [
+        "GSE169262"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169262"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
+      "summary_text": [
+        "Description: Single-cell RNA and chromatin-accessibility profiles were generated from adult wild-type and VSX2 super-enhancer-deletion mouse retina. TRENDS provides 7 cell-type GRNs for Retina.",
+        "Source: Mouse retina single-cell atlases",
+        "Dataset title: Identification of a modular super-enhancer in murine retinal development",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
+        "Source accession: GSE169262"
+      ],
+      "cell_entities": [
+        {
+          "name": "AC_HC_retina",
+          "network_file": "AC_HC_retina_network.txt"
+        },
+        {
+          "name": "BC_retina",
+          "network_file": "BC_retina_network.txt"
+        },
+        {
+          "name": "Cone_retina",
+          "network_file": "Cone_retina_network.txt"
+        },
+        {
+          "name": "MG_retina",
+          "network_file": "MG_retina_network.txt"
+        },
+        {
+          "name": "NG_retina",
+          "network_file": "NG_retina_network.txt"
+        },
+        {
+          "name": "Rod_retina",
+          "network_file": "Rod_retina_network.txt"
+        },
+        {
+          "name": "RPC_retina",
+          "network_file": "RPC_retina_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-paired-brain-mouse-brain-shareseq",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Paired",
+      "organ_tissue": "Brain",
+      "sample": "mouse_brain_shareseq_brain",
+      "source_id": "mouse_brain_shareseq",
+      "source_name": "Adult mouse brain SHARE-seq",
+      "network_count": 19,
+      "generation": "paired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30428194,
+      "figshare_url": "https://figshare.com/s/16eec51782f1a50d9b02",
+      "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "accessions": [
+        "GSE140203"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "summary_text": [
+        "Description: SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse brain cells and resolved cell-type-specific regulatory relationships. TRENDS provides 19 cell-type GRNs for Brain.",
+        "Source: Adult mouse brain SHARE-seq",
+        "Dataset title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+        "Data form: Paired single-cell RNA and ATAC SHARE-seq",
+        "Source accession: GSE140203"
+      ],
+      "cell_entities": [
+        {
+          "name": "A1.E1",
+          "network_file": "A1.E1_network.txt"
+        },
+        {
+          "name": "EN01",
+          "network_file": "EN01_network.txt"
+        },
+        {
+          "name": "EN02",
+          "network_file": "EN02_network.txt"
+        },
+        {
+          "name": "EN03",
+          "network_file": "EN03_network.txt"
+        },
+        {
+          "name": "EN04",
+          "network_file": "EN04_network.txt"
+        },
+        {
+          "name": "EN05",
+          "network_file": "EN05_network.txt"
+        },
+        {
+          "name": "EN06",
+          "network_file": "EN06_network.txt"
+        },
+        {
+          "name": "EN07",
+          "network_file": "EN07_network.txt"
+        },
+        {
+          "name": "EN08",
+          "network_file": "EN08_network.txt"
+        },
+        {
+          "name": "EN09",
+          "network_file": "EN09_network.txt"
+        },
+        {
+          "name": "IN01",
+          "network_file": "IN01_network.txt"
+        },
+        {
+          "name": "IN02",
+          "network_file": "IN02_network.txt"
+        },
+        {
+          "name": "IN03",
+          "network_file": "IN03_network.txt"
+        },
+        {
+          "name": "IN04",
+          "network_file": "IN04_network.txt"
+        },
+        {
+          "name": "IN05",
+          "network_file": "IN05_network.txt"
+        },
+        {
+          "name": "MX",
+          "network_file": "MX_network.txt"
+        },
+        {
+          "name": "NSC",
+          "network_file": "NSC_network.txt"
+        },
+        {
+          "name": "OG1",
+          "network_file": "OG1_network.txt"
+        },
+        {
+          "name": "P1",
+          "network_file": "P1_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-nervous-system-paired-spinal-cord-mouse-spinal-cord",
+      "species": "Mouse",
+      "organ_system": "Nervous system",
+      "data_form": "Paired",
+      "organ_tissue": "Spinal cord",
+      "sample": "mouse_spinal_cord_spinal-cord",
+      "source_id": "mouse_spinal_cord",
+      "source_name": "Mouse thoracic spinal-cord multiome",
+      "network_count": 21,
+      "generation": "paired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30428128,
+      "figshare_url": "https://figshare.com/s/46fab8d78f6a040c11f0",
+      "record_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "article_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "accessions": [
+        "GSE230765"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230765"
+      ],
+      "assay_description": "Paired single-nucleus RNA and ATAC multiome",
+      "summary_text": [
+        "Description: Single-nucleus multiome sequencing profiled RNA and chromatin accessibility in the mouse mid-thoracic spinal cord. TRENDS provides 21 cell-type GRNs for Spinal cord.",
+        "Source: Mouse thoracic spinal-cord multiome",
+        "Dataset title: Best practices for differential accessibility analysis in single-cell epigenomics",
+        "Data form: Paired single-nucleus RNA and ATAC multiome",
+        "Source accession: GSE230765"
+      ],
+      "cell_entities": [
+        {
+          "name": "Astrocytes",
+          "network_file": "Astrocytes_network.txt"
+        },
+        {
+          "name": "B_cells",
+          "network_file": "B_cells_network.txt"
+        },
+        {
+          "name": "DE",
+          "network_file": "DE_network.txt"
+        },
+        {
+          "name": "DI",
+          "network_file": "DI_network.txt"
+        },
+        {
+          "name": "Ependymal_cells",
+          "network_file": "Ependymal_cells_network.txt"
+        },
+        {
+          "name": "Infiltrating_bordering_leukocytes",
+          "network_file": "Infiltrating_bordering_leukocytes_network.txt"
+        },
+        {
+          "name": "MFOL",
+          "network_file": "MFOL_network.txt"
+        },
+        {
+          "name": "Microglia",
+          "network_file": "Microglia_network.txt"
+        },
+        {
+          "name": "MOL",
+          "network_file": "MOL_network.txt"
+        },
+        {
+          "name": "MOL_ischemic",
+          "network_file": "MOL_ischemic_network.txt"
+        },
+        {
+          "name": "Myeloid_dividing",
+          "network_file": "Myeloid_dividing_network.txt"
+        },
+        {
+          "name": "NFOL",
+          "network_file": "NFOL_network.txt"
+        },
+        {
+          "name": "NK_T_cells",
+          "network_file": "NK_T_cells_network.txt"
+        },
+        {
+          "name": "OPC",
+          "network_file": "OPC_network.txt"
+        },
+        {
+          "name": "OPC_differentiating",
+          "network_file": "OPC_differentiating_network.txt"
+        },
+        {
+          "name": "Pericytes",
+          "network_file": "Pericytes_network.txt"
+        },
+        {
+          "name": "Peripheral_macrophages",
+          "network_file": "Peripheral_macrophages_network.txt"
+        },
+        {
+          "name": "Vascular_endothelial_cells",
+          "network_file": "Vascular_endothelial_cells_network.txt"
+        },
+        {
+          "name": "Vascular_leptomeningeal_cells",
+          "network_file": "Vascular_leptomeningeal_cells_network.txt"
+        },
+        {
+          "name": "VE",
+          "network_file": "VE_network.txt"
+        },
+        {
+          "name": "VI",
+          "network_file": "VI_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-bulk-pgc-mouse-pgc",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Bulk",
+      "organ_tissue": "PGC",
+      "sample": "mouse_pgc_pgc",
+      "source_id": "mouse_pgc",
+      "source_name": "Mouse primordial germ-cell study",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121580,
+      "figshare_url": "https://figshare.com/s/4feac009df7300a2e1ce",
+      "record_title": "Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+      "article_title": "Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+      "accessions": [
+        "GSE109770"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109770"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: Paired bulk RNA-seq and ATAC-seq profiled mouse primordial germ cells at embryonic day 10.5. TRENDS provides 1 GRN for PGC: PGCmouseE10.5.",
+        "Source: Mouse primordial germ-cell study",
+        "Dataset title: Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: GSE109770"
+      ],
+      "cell_entities": [
+        {
+          "name": "PGCmouseE10.5",
+          "network_file": "PGCmouseE10.5_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-unpaired-gonad-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Gonad",
+      "sample": "mouse_embryo_gonad",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 5,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 5 GRNs for Gonad: Granulosa Cell, Leydig Stromal GM, MGC, Sertoli Cell, Stromal E11Gonad.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Granulosa_Cell",
+          "network_file": "Granulosa_Cell_network.txt"
+        },
+        {
+          "name": "Leydig_Stromal_GM",
+          "network_file": "Leydig_Stromal_GM_network.txt"
+        },
+        {
+          "name": "MGC",
+          "network_file": "MGC_network.txt"
+        },
+        {
+          "name": "Sertoli_Cell",
+          "network_file": "Sertoli_Cell_network.txt"
+        },
+        {
+          "name": "Stromal_E11Gonad",
+          "network_file": "Stromal_E11Gonad_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-unpaired-pgc-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Unpaired",
+      "organ_tissue": "PGC",
+      "sample": "mouse_embryo_pgc",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for PGC: PGC.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "PGC",
+          "network_file": "PGC_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-unpaired-spermatogenesis-mouse-spermatogenesis",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Spermatogenesis",
+      "sample": "mouse_spermatogenesis_spermatogenesis",
+      "source_id": "mouse_spermatogenesis",
+      "source_name": "Mouse spermatogenesis single-cell study",
+      "network_count": 10,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121595,
+      "figshare_url": "https://figshare.com/s/e8c715436d674e3a4e34",
+      "record_title": "Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+      "article_title": "Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+      "accessions": [
+        "GSE107644"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107644"
+      ],
+      "assay_description": "Unpaired scRNA-seq and NOMe-seq matched by spermatogenic stage",
+      "summary_text": [
+        "Description: Purified spermatogenic populations were profiled by single-cell RNA-seq and NOMe-seq to follow successive stages of mouse spermatogenesis. TRENDS provides 10 cell-type GRNs for Spermatogenesis.",
+        "Source: Mouse spermatogenesis single-cell study",
+        "Dataset title: Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+        "Data form: Unpaired scRNA-seq and NOMe-seq matched by spermatogenic stage",
+        "Source accession: GSE107644"
+      ],
+      "cell_entities": [
+        {
+          "name": "A1",
+          "network_file": "A1_network.txt"
+        },
+        {
+          "name": "B",
+          "network_file": "B_network.txt"
+        },
+        {
+          "name": "D_stage",
+          "network_file": "D_stage_network.txt"
+        },
+        {
+          "name": "L_stage",
+          "network_file": "L_stage_network.txt"
+        },
+        {
+          "name": "mP",
+          "network_file": "mP_network.txt"
+        },
+        {
+          "name": "mPL",
+          "network_file": "mPL_network.txt"
+        },
+        {
+          "name": "RS2",
+          "network_file": "RS2_network.txt"
+        },
+        {
+          "name": "RS4",
+          "network_file": "RS4_network.txt"
+        },
+        {
+          "name": "RS8",
+          "network_file": "RS8_network.txt"
+        },
+        {
+          "name": "Z_stage",
+          "network_file": "Z_stage_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-paired-castrated-prostate-mouse-prostate-castrated",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Paired",
+      "organ_tissue": "Castrated prostate",
+      "sample": "mouse_prostate_castrated_castrated-prostate",
+      "source_id": "mouse_prostate_castrated",
+      "source_name": "Castrated mouse prostate multiome",
+      "network_count": 16,
+      "generation": "paired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30450344,
+      "figshare_url": "https://figshare.com/s/fbb8e77b332debbe2238",
+      "record_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "article_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "accessions": [
+        "GSE284640"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "summary_text": [
+        "Description: 10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in castrated mouse prostates. TRENDS provides 16 cell-type GRNs for Castrated prostate.",
+        "Source: Castrated mouse prostate multiome",
+        "Dataset title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Source accession: GSE284640"
+      ],
+      "cell_entities": [
+        {
+          "name": "Basal",
+          "network_file": "Basal_network.txt"
+        },
+        {
+          "name": "Endothelial-1",
+          "network_file": "Endothelial-1_network.txt"
+        },
+        {
+          "name": "Endothelial-2",
+          "network_file": "Endothelial-2_network.txt"
+        },
+        {
+          "name": "Fibroblast",
+          "network_file": "Fibroblast_network.txt"
+        },
+        {
+          "name": "Luminal-1",
+          "network_file": "Luminal-1_network.txt"
+        },
+        {
+          "name": "Luminal-2",
+          "network_file": "Luminal-2_network.txt"
+        },
+        {
+          "name": "Luminal-3",
+          "network_file": "Luminal-3_network.txt"
+        },
+        {
+          "name": "Luminal-5",
+          "network_file": "Luminal-5_network.txt"
+        },
+        {
+          "name": "Luminal-7",
+          "network_file": "Luminal-7_network.txt"
+        },
+        {
+          "name": "Luminal-8",
+          "network_file": "Luminal-8_network.txt"
+        },
+        {
+          "name": "Lymphocyte",
+          "network_file": "Lymphocyte_network.txt"
+        },
+        {
+          "name": "Macrophage",
+          "network_file": "Macrophage_network.txt"
+        },
+        {
+          "name": "NE",
+          "network_file": "NE_network.txt"
+        },
+        {
+          "name": "Periurethral",
+          "network_file": "Periurethral_network.txt"
+        },
+        {
+          "name": "Schwann",
+          "network_file": "Schwann_network.txt"
+        },
+        {
+          "name": "SMC",
+          "network_file": "SMC_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-reproductive-system-paired-intact-prostate-mouse-prostate-intact",
+      "species": "Mouse",
+      "organ_system": "Reproductive system",
+      "data_form": "Paired",
+      "organ_tissue": "Intact prostate",
+      "sample": "mouse_prostate_intact_intact-prostate",
+      "source_id": "mouse_prostate_intact",
+      "source_name": "Intact mouse prostate multiome",
+      "network_count": 14,
+      "generation": "paired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30450335,
+      "figshare_url": "https://figshare.com/s/c118d7d3612568d49c63",
+      "record_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "article_title": "Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+      "accessions": [
+        "GSE284640"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "summary_text": [
+        "Description: 10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in sham-operated mouse prostates. TRENDS provides 14 cell-type GRNs for Intact prostate.",
+        "Source: Intact mouse prostate multiome",
+        "Dataset title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Source accession: GSE284640"
+      ],
+      "cell_entities": [
+        {
+          "name": "Basal",
+          "network_file": "Basal_network.txt"
+        },
+        {
+          "name": "Endothelial-1",
+          "network_file": "Endothelial-1_network.txt"
+        },
+        {
+          "name": "Endothelial-2",
+          "network_file": "Endothelial-2_network.txt"
+        },
+        {
+          "name": "Fibroblast",
+          "network_file": "Fibroblast_network.txt"
+        },
+        {
+          "name": "Luminal-1",
+          "network_file": "Luminal-1_network.txt"
+        },
+        {
+          "name": "Luminal-2",
+          "network_file": "Luminal-2_network.txt"
+        },
+        {
+          "name": "Luminal-5",
+          "network_file": "Luminal-5_network.txt"
+        },
+        {
+          "name": "Luminal-7",
+          "network_file": "Luminal-7_network.txt"
+        },
+        {
+          "name": "Luminal-8",
+          "network_file": "Luminal-8_network.txt"
+        },
+        {
+          "name": "Lymphocyte",
+          "network_file": "Lymphocyte_network.txt"
+        },
+        {
+          "name": "Macrophage",
+          "network_file": "Macrophage_network.txt"
+        },
+        {
+          "name": "NE",
+          "network_file": "NE_network.txt"
+        },
+        {
+          "name": "Schwann",
+          "network_file": "Schwann_network.txt"
+        },
+        {
+          "name": "SMC",
+          "network_file": "SMC_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-digestive-system-bulk-intestine-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Digestive system",
+      "data_form": "Bulk",
+      "organ_tissue": "Intestine",
+      "sample": "mouse_encode_intestine",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 4,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Intestine: IntestineE14.5, IntestineE15.5, IntestineE16.5, IntestineP0.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "IntestineE14.5",
+          "network_file": "IntestineE14.5_network.txt"
+        },
+        {
+          "name": "IntestineE15.5",
+          "network_file": "IntestineE15.5_network.txt"
+        },
+        {
+          "name": "IntestineE16.5",
+          "network_file": "IntestineE16.5_network.txt"
+        },
+        {
+          "name": "IntestineP0",
+          "network_file": "IntestineP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-digestive-system-bulk-large-intestine-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Digestive system",
+      "data_form": "Bulk",
+      "organ_tissue": "Large intestine",
+      "sample": "mouse_encode_large-intestine",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Large intestine: EncodeLgintC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeLgintC57bl6MAdult8wks",
+          "network_file": "EncodeLgintC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-digestive-system-bulk-liver-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Digestive system",
+      "data_form": "Bulk",
+      "organ_tissue": "Liver",
+      "sample": "mouse_encode_liver",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 8,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 8 cell-type GRNs for Liver.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeLiverC57bl6MAdult8wks",
+          "network_file": "EncodeLiverC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "LiverE11.5",
+          "network_file": "LiverE11.5_network.txt"
+        },
+        {
+          "name": "LiverE12.5",
+          "network_file": "LiverE12.5_network.txt"
+        },
+        {
+          "name": "LiverE13.5",
+          "network_file": "LiverE13.5_network.txt"
+        },
+        {
+          "name": "LiverE14.5",
+          "network_file": "LiverE14.5_network.txt"
+        },
+        {
+          "name": "LiverE15.5",
+          "network_file": "LiverE15.5_network.txt"
+        },
+        {
+          "name": "LiverE16.5",
+          "network_file": "LiverE16.5_network.txt"
+        },
+        {
+          "name": "LiverP0",
+          "network_file": "LiverP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-digestive-system-bulk-stomach-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Digestive system",
+      "data_form": "Bulk",
+      "organ_tissue": "Stomach",
+      "sample": "mouse_encode_stomach",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 4,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Stomach: StomachE14.5, StomachE15.5, StomachE16.5, StomachP0.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "StomachE14.5",
+          "network_file": "StomachE14.5_network.txt"
+        },
+        {
+          "name": "StomachE15.5",
+          "network_file": "StomachE15.5_network.txt"
+        },
+        {
+          "name": "StomachE16.5",
+          "network_file": "StomachE16.5_network.txt"
+        },
+        {
+          "name": "StomachP0",
+          "network_file": "StomachP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-digestive-system-unpaired-acinar-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Digestive system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Acinar",
+      "sample": "mouse_embryo_acinar",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Acinar: Acinar Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Acinar_Cell",
+          "network_file": "Acinar_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-immune-system-bulk-spleen-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Immune system",
+      "data_form": "Bulk",
+      "organ_tissue": "Spleen",
+      "sample": "mouse_encode_spleen",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Spleen: EncodeSpleenC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeSpleenC57bl6MAdult8wks",
+          "network_file": "EncodeSpleenC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-immune-system-bulk-thymus-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Immune system",
+      "data_form": "Bulk",
+      "organ_tissue": "Thymus",
+      "sample": "mouse_encode_thymus",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Thymus: EncodeThymusC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeThymusC57bl6MAdult8wks",
+          "network_file": "EncodeThymusC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-immune-system-unpaired-hematopoietic-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Immune system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Hematopoietic",
+      "sample": "mouse_embryo_hematopoietic",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 2,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Hematopoietic: Early Erythroblast, Erythroblast.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Early_Erythroblast",
+          "network_file": "Early_Erythroblast_network.txt"
+        },
+        {
+          "name": "Erythroblast",
+          "network_file": "Erythroblast_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-immune-system-unpaired-immune-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Immune system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Immune",
+      "sample": "mouse_embryo_immune",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 2,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Immune: Macrophage, Myeloid Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Macrophage",
+          "network_file": "Macrophage_network.txt"
+        },
+        {
+          "name": "Myeloid_Cell",
+          "network_file": "Myeloid_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-integumentary-system-paired-skin-mouse-skin-shareseq",
+      "species": "Mouse",
+      "organ_system": "Integumentary system",
+      "data_form": "Paired",
+      "organ_tissue": "Skin",
+      "sample": "mouse_skin_shareseq_skin",
+      "source_id": "mouse_skin_shareseq",
+      "source_name": "Adult mouse skin SHARE-seq",
+      "network_count": 23,
+      "generation": "paired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30433639,
+      "figshare_url": "https://figshare.com/s/c55c18a2f1ee95bace5d",
+      "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "accessions": [
+        "GSE140203"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
+      ],
+      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "summary_text": [
+        "Description: SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse skin cells and resolved cell-type-specific regulatory relationships. TRENDS provides 23 cell-type GRNs for Skin.",
+        "Source: Adult mouse skin SHARE-seq",
+        "Dataset title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+        "Data form: Paired single-cell RNA and ATAC SHARE-seq",
+        "Source accession: GSE140203"
+      ],
+      "cell_entities": [
+        {
+          "name": "ahighCD34+_bulge",
+          "network_file": "ahighCD34+_bulge_network.txt"
+        },
+        {
+          "name": "alowCD34+_bulge",
+          "network_file": "alowCD34+_bulge_network.txt"
+        },
+        {
+          "name": "Basal",
+          "network_file": "Basal_network.txt"
+        },
+        {
+          "name": "Dermal_Fibroblast",
+          "network_file": "Dermal_Fibroblast_network.txt"
+        },
+        {
+          "name": "Dermal_Papilla",
+          "network_file": "Dermal_Papilla_network.txt"
+        },
+        {
+          "name": "Dermal_Sheath",
+          "network_file": "Dermal_Sheath_network.txt"
+        },
+        {
+          "name": "Endothelial",
+          "network_file": "Endothelial_network.txt"
+        },
+        {
+          "name": "Granular",
+          "network_file": "Granular_network.txt"
+        },
+        {
+          "name": "Hair_Shaft-cuticle.cortex",
+          "network_file": "Hair_Shaft-cuticle.cortex_network.txt"
+        },
+        {
+          "name": "Infundibulum",
+          "network_file": "Infundibulum_network.txt"
+        },
+        {
+          "name": "IRS",
+          "network_file": "IRS_network.txt"
+        },
+        {
+          "name": "Isthmus",
+          "network_file": "Isthmus_network.txt"
+        },
+        {
+          "name": "K6+_Bulge_Companion_Layer",
+          "network_file": "K6+_Bulge_Companion_Layer_network.txt"
+        },
+        {
+          "name": "Macrophage_DC",
+          "network_file": "Macrophage_DC_network.txt"
+        },
+        {
+          "name": "Medulla",
+          "network_file": "Medulla_network.txt"
+        },
+        {
+          "name": "Melanocyte",
+          "network_file": "Melanocyte_network.txt"
+        },
+        {
+          "name": "Mix",
+          "network_file": "Mix_network.txt"
+        },
+        {
+          "name": "ORS",
+          "network_file": "ORS_network.txt"
+        },
+        {
+          "name": "Schwann_Cell",
+          "network_file": "Schwann_Cell_network.txt"
+        },
+        {
+          "name": "Sebaceous_Gland",
+          "network_file": "Sebaceous_Gland_network.txt"
+        },
+        {
+          "name": "Spinous",
+          "network_file": "Spinous_network.txt"
+        },
+        {
+          "name": "TAC-1",
+          "network_file": "TAC-1_network.txt"
+        },
+        {
+          "name": "TAC-2",
+          "network_file": "TAC-2_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-cell-line-bulk-encode-cell-lines-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Cell line",
+      "data_form": "Bulk",
+      "organ_tissue": "ENCODE cell lines",
+      "sample": "mouse_encode_encode-cell-lines",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for ENCODE cell lines: Encode416bC57bl6MAdult8wks, EncodeA20BalbcannMAdult8wks, EncodeBcellcd19pC57bl6MAdult8wks, EncodeBcellcd43nC57bl6MAdult8wks, EncodeTnaiveC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "Encode416bC57bl6MAdult8wks",
+          "network_file": "Encode416bC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeA20BalbcannMAdult8wks",
+          "network_file": "EncodeA20BalbcannMAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeBcellcd19pC57bl6MAdult8wks",
+          "network_file": "EncodeBcellcd19pC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeBcellcd43nC57bl6MAdult8wks",
+          "network_file": "EncodeBcellcd43nC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeTnaiveC57bl6MAdult8wks",
+          "network_file": "EncodeTnaiveC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-cell-line-bulk-gata4-lineage-mouse-cardiomyocytes",
+      "species": "Mouse",
+      "organ_system": "Cell line",
+      "data_form": "Bulk",
+      "organ_tissue": "GATA4 lineage",
+      "sample": "mouse_cardiomyocytes_gata4-lineage",
+      "source_id": "mouse_cardiomyocytes",
+      "source_name": "Embryonic cardiomyocyte GATA4 study",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 33102911,
+      "figshare_url": "https://figshare.com/s/c622d197345650bde140",
+      "record_title": "Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
+      "article_title": null,
+      "accessions": [
+        "GSE156001"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156001"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: The study generated RNA-seq and ATAC-seq profiles from E12.5 mouse cardiomyocytes while examining lineage-selective GATA4 occupancy. TRENDS provides 1 GRN for GATA4 lineage: cardiomyocytes.",
+        "Source: Embryonic cardiomyocyte GATA4 study",
+        "Dataset title: Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: GSE156001"
+      ],
+      "cell_entities": [
+        {
+          "name": "cardiomyocytes",
+          "network_file": "cardiomyocytes_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-cell-line-bulk-immune-transdifferentiation-mouse-immune",
+      "species": "Mouse",
+      "organ_system": "Cell line",
+      "data_form": "Bulk",
+      "organ_tissue": "Immune transdifferentiation",
+      "sample": "mouse_immune_immune-transdifferentiation",
+      "source_id": "mouse_immune",
+      "source_name": "Immune-cell transdifferentiation study",
+      "network_count": 2,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 33102908,
+      "figshare_url": "https://figshare.com/s/fa6c5e00e2e28a510044",
+      "record_title": "Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
+      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
+      "accessions": [
+        "GSE204746",
+        "GSE204745"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204746",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204745"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
+      "summary_text": [
+        "Description: The GSE204746 SuperSeries followed C/EBPalpha-driven conversion of mouse B cells toward macrophages with bulk RNA-seq and ATAC-seq; GSE204745 is its RNA-seq SubSeries. TRENDS provides the starting B-cell and terminal macrophage contexts. TRENDS provides 2 GRNs for Immune transdifferentiation: Macrophages, mBells.",
+        "Source: Immune-cell transdifferentiation study",
+        "Dataset title: Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
+        "Data form: Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
+        "Source accession: GSE204746, GSE204745"
+      ],
+      "cell_entities": [
+        {
+          "name": "Macrophages",
+          "network_file": "Macrophages_network.txt"
+        },
+        {
+          "name": "mBells",
+          "network_file": "mBells_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-cell-line-bulk-reprogramming-mouse-mef",
+      "species": "Mouse",
+      "organ_system": "Cell line",
+      "data_form": "Bulk",
+      "organ_tissue": "Reprogramming",
+      "sample": "mouse_mef_reprogramming",
+      "source_id": "mouse_mef",
+      "source_name": "Mouse fibroblast reprogramming study",
+      "network_count": 1,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 33102902,
+      "figshare_url": "https://figshare.com/s/6bf589deb076492c979f",
+      "record_title": "Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
+      "article_title": "An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
+      "accessions": [
+        "GSE169055",
+        "GSE169053",
+        "GSE186271"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169055",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169053",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186271"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: Bulk RNA-seq and Omni-ATAC-seq profiled mouse embryonic fibroblasts and intermediate states during conversion toward induced myogenic progenitor cells. The current local release contains the MEF GRN. TRENDS provides 1 GRN for Reprogramming: MEF.",
+        "Source: Mouse fibroblast reprogramming study",
+        "Dataset title: Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: GSE169055, GSE169053, GSE186271"
+      ],
+      "cell_entities": [
+        {
+          "name": "MEF",
+          "network_file": "MEF_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-respiratory-system-bulk-lung-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Respiratory system",
+      "data_form": "Bulk",
+      "organ_tissue": "Lung",
+      "sample": "mouse_encode_lung",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Lung: EncodeLungC57bl6MAdult8wks, LungE14.5, LungE15.5, LungE16.5, LungP0.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeLungC57bl6MAdult8wks",
+          "network_file": "EncodeLungC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "LungE14.5",
+          "network_file": "LungE14.5_network.txt"
+        },
+        {
+          "name": "LungE15.5",
+          "network_file": "LungE15.5_network.txt"
+        },
+        {
+          "name": "LungE16.5",
+          "network_file": "LungE16.5_network.txt"
+        },
+        {
+          "name": "LungP0",
+          "network_file": "LungP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-respiratory-system-unpaired-lung-mouse-lung",
+      "species": "Mouse",
+      "organ_system": "Respiratory system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Lung",
+      "sample": "mouse_lung_lung",
+      "source_id": "mouse_lung",
+      "source_name": "Developing mouse lung atlases",
+      "network_count": 8,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121592,
+      "figshare_url": "https://figshare.com/s/f94a56922a3c52da788a",
+      "record_title": "Categorization of lung mesenchymal cells in development and fibrosis",
+      "article_title": "Categorization of lung mesenchymal cells in development and fibrosis",
+      "accessions": [
+        "GSE157654",
+        "GSE157378"
+      ],
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157654",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157378"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by lung cell type",
+      "summary_text": [
+        "Description: Separate scRNA-seq and scATAC-seq datasets profiled E17.5 mouse lung mesenchymal populations and were aligned by published cell-type labels. TRENDS provides 8 cell-type GRNs for Lung.",
+        "Source: Developing mouse lung atlases",
+        "Dataset title: Categorization of lung mesenchymal cells in development and fibrosis",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by lung cell type",
+        "Source accession: GSE157654, GSE157378"
+      ],
+      "cell_entities": [
+        {
+          "name": "Ebf1+_fibroblasts",
+          "network_file": "Ebf1+_fibroblasts_network.txt"
+        },
+        {
+          "name": "endothelial_cells",
+          "network_file": "endothelial_cells_network.txt"
+        },
+        {
+          "name": "epithelial_cells",
+          "network_file": "epithelial_cells_network.txt"
+        },
+        {
+          "name": "immune_cells",
+          "network_file": "immune_cells_network.txt"
+        },
+        {
+          "name": "lipofibroblasts",
+          "network_file": "lipofibroblasts_network.txt"
+        },
+        {
+          "name": "mesenchymal_cells",
+          "network_file": "mesenchymal_cells_network.txt"
+        },
+        {
+          "name": "myofibroblasts",
+          "network_file": "myofibroblasts_network.txt"
+        },
+        {
+          "name": "proliferating_fibroblasts",
+          "network_file": "proliferating_fibroblasts_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-respiratory-system-unpaired-smooth-muscle-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Respiratory system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Smooth muscle",
+      "sample": "mouse_embryo_smooth-muscle",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Smooth muscle: Smooth Muscle Lung.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Smooth_Muscle_Lung",
+          "network_file": "Smooth_Muscle_Lung_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-bulk-other-encode-samples-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Bulk",
+      "organ_tissue": "Other ENCODE samples",
+      "sample": "mouse_encode_other-encode-samples",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 4,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Other ENCODE samples: EncodeFatC57bl6MAdult8wks, EncodeGfatC57bl6MAdult8wks, EncodeMelC57bl6MAdult8wks, EncodeSkmuscleC57bl6MAdult8wks.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeFatC57bl6MAdult8wks",
+          "network_file": "EncodeFatC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeGfatC57bl6MAdult8wks",
+          "network_file": "EncodeGfatC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeMelC57bl6MAdult8wks",
+          "network_file": "EncodeMelC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "EncodeSkmuscleC57bl6MAdult8wks",
+          "network_file": "EncodeSkmuscleC57bl6MAdult8wks_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-epithelial-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Epithelial",
+      "sample": "mouse_embryo_epithelial",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Epithelial: Epithelial Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Epithelial_Cell",
+          "network_file": "Epithelial_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-germ-layer-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Germ layer",
+      "sample": "mouse_embryo_germ-layer",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 3,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 3 GRNs for Germ layer: Ectoderm, Germlayer ExE, Mesoderm.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Ectoderm",
+          "network_file": "Ectoderm_network.txt"
+        },
+        {
+          "name": "Germlayer_ExE",
+          "network_file": "Germlayer_ExE_network.txt"
+        },
+        {
+          "name": "Mesoderm",
+          "network_file": "Mesoderm_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-mesothelial-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Mesothelial",
+      "sample": "mouse_embryo_mesothelial",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Mesothelial: Mesothelial Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Mesothelial_Cell",
+          "network_file": "Mesothelial_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-mixed-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Mixed",
+      "sample": "mouse_embryo_mixed",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Mixed: mixture.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "mixture",
+          "network_file": "mixture_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-smooth-muscle-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Smooth muscle",
+      "sample": "mouse_embryo_smooth-muscle",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 2,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Smooth muscle: Smooth Muscle, Stromal SmoothMuscle.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Smooth_Muscle",
+          "network_file": "Smooth_Muscle_network.txt"
+        },
+        {
+          "name": "Stromal_SmoothMuscle",
+          "network_file": "Stromal_SmoothMuscle_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-stromal-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Stromal",
+      "sample": "mouse_embryo_stromal",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Stromal: Stromal Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Stromal_Cell",
+          "network_file": "Stromal_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-other-unpaired-vascular-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Other",
+      "data_form": "Unpaired",
+      "organ_tissue": "Vascular",
+      "sample": "mouse_embryo_vascular",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Vascular: Endothelial Cell.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Endothelial_Cell",
+          "network_file": "Endothelial_Cell_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-circulatory-system-bulk-heart-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Circulatory system",
+      "data_form": "Bulk",
+      "organ_tissue": "Heart",
+      "sample": "mouse_encode_heart",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 8,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 8 cell-type GRNs for Heart.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeHeartC57bl6MAdult8wks",
+          "network_file": "EncodeHeartC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "HeartE11.5",
+          "network_file": "HeartE11.5_network.txt"
+        },
+        {
+          "name": "HeartE12.5",
+          "network_file": "HeartE12.5_network.txt"
+        },
+        {
+          "name": "HeartE13.5",
+          "network_file": "HeartE13.5_network.txt"
+        },
+        {
+          "name": "HeartE14.5",
+          "network_file": "HeartE14.5_network.txt"
+        },
+        {
+          "name": "HeartE15.5",
+          "network_file": "HeartE15.5_network.txt"
+        },
+        {
+          "name": "HeartE16.5",
+          "network_file": "HeartE16.5_network.txt"
+        },
+        {
+          "name": "HeartP0",
+          "network_file": "HeartP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-circulatory-system-unpaired-cardiomyocyte-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Circulatory system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Cardiomyocyte",
+      "sample": "mouse_embryo_cardiomyocyte",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Cardiomyocyte: Cardiomyocyte.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Cardiomyocyte",
+          "network_file": "Cardiomyocyte_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-circulatory-system-unpaired-stromal-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Circulatory system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Stromal",
+      "sample": "mouse_embryo_stromal",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Stromal: Stromal Heart.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Stromal_Heart",
+          "network_file": "Stromal_Heart_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-musculoskeletal-system-bulk-face-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Musculoskeletal system",
+      "data_form": "Bulk",
+      "organ_tissue": "Face",
+      "sample": "mouse_encode_face",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Face: FaceE11.5, FaceE12.5, FaceE13.5, FaceE14.5, FaceE15.5.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "FaceE11.5",
+          "network_file": "FaceE11.5_network.txt"
+        },
+        {
+          "name": "FaceE12.5",
+          "network_file": "FaceE12.5_network.txt"
+        },
+        {
+          "name": "FaceE13.5",
+          "network_file": "FaceE13.5_network.txt"
+        },
+        {
+          "name": "FaceE14.5",
+          "network_file": "FaceE14.5_network.txt"
+        },
+        {
+          "name": "FaceE15.5",
+          "network_file": "FaceE15.5_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-musculoskeletal-system-bulk-limb-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Musculoskeletal system",
+      "data_form": "Bulk",
+      "organ_tissue": "Limb",
+      "sample": "mouse_encode_limb",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Limb: LimbE11.5, LimbE12.5, LimbE13.5, LimbE14.5, LimbE15.5.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "LimbE11.5",
+          "network_file": "LimbE11.5_network.txt"
+        },
+        {
+          "name": "LimbE12.5",
+          "network_file": "LimbE12.5_network.txt"
+        },
+        {
+          "name": "LimbE13.5",
+          "network_file": "LimbE13.5_network.txt"
+        },
+        {
+          "name": "LimbE14.5",
+          "network_file": "LimbE14.5_network.txt"
+        },
+        {
+          "name": "LimbE15.5",
+          "network_file": "LimbE15.5_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-musculoskeletal-system-unpaired-forelimb-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Musculoskeletal system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Forelimb",
+      "sample": "mouse_embryo_forelimb",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Forelimb: Stromal Cell ForeLimb.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Stromal_Cell_ForeLimb",
+          "network_file": "Stromal_Cell_ForeLimb_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-urinary-system-bulk-kidney-mouse-encode",
+      "species": "Mouse",
+      "organ_system": "Urinary system",
+      "data_form": "Bulk",
+      "organ_tissue": "Kidney",
+      "sample": "mouse_encode_kidney",
+      "source_id": "mouse_encode",
+      "source_name": "ENCODE mouse development",
+      "network_count": 5,
+      "generation": "bulk",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 26121574,
+      "figshare_url": "https://figshare.com/s/ffe6af4b38e6233e6f99",
+      "record_title": "ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+      "article_title": null,
+      "accessions": [
+        "ENCODE"
+      ],
+      "source_urls": [
+        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
+      ],
+      "assay_description": "Paired bulk RNA-seq and ATAC-seq",
+      "summary_text": [
+        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Kidney: EncodeKidneyC57bl6MAdult8wks, KidneyE14.5, KidneyE15.5, KidneyE16.5, KidneyP0.",
+        "Source: ENCODE mouse development",
+        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Data form: Paired bulk RNA-seq and ATAC-seq",
+        "Source accession: ENCODE"
+      ],
+      "cell_entities": [
+        {
+          "name": "EncodeKidneyC57bl6MAdult8wks",
+          "network_file": "EncodeKidneyC57bl6MAdult8wks_network.txt"
+        },
+        {
+          "name": "KidneyE14.5",
+          "network_file": "KidneyE14.5_network.txt"
+        },
+        {
+          "name": "KidneyE15.5",
+          "network_file": "KidneyE15.5_network.txt"
+        },
+        {
+          "name": "KidneyE16.5",
+          "network_file": "KidneyE16.5_network.txt"
+        },
+        {
+          "name": "KidneyP0",
+          "network_file": "KidneyP0_network.txt"
+        }
+      ]
+    },
+    {
+      "dataset_id": "M-urinary-system-unpaired-kidney-mouse-embryo",
+      "species": "Mouse",
+      "organ_system": "Urinary system",
+      "data_form": "Unpaired",
+      "organ_tissue": "Kidney",
+      "sample": "mouse_embryo_kidney",
+      "source_id": "mouse_embryo",
+      "source_name": "Mouse embryo single-cell atlases",
+      "network_count": 1,
+      "generation": "unpaired",
+      "version": "v1.0",
+      "updated": "2026-07-28",
+      "figshare_article_id": 30210553,
+      "figshare_url": "https://figshare.com/s/378dad8b3830a23671cb",
+      "record_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "article_title": "Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+      "accessions": [
+        "OMIX928"
+      ],
+      "source_urls": [
+        "https://ngdc.cncb.ac.cn/omix/release/OMIX928"
+      ],
+      "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+      "summary_text": [
+        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Kidney: Kidney specific.",
+        "Source: Mouse embryo single-cell atlases",
+        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
+        "Source accession: OMIX928"
+      ],
+      "cell_entities": [
+        {
+          "name": "Kidney_specific",
+          "network_file": "Kidney_specific_network.txt"
         }
       ]
     }
