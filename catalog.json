@@ -226,8 +226,11 @@
       "figshare_url": "https://figshare.com/s/361b2ccc6d4d32007bb6",
       "record_title": "Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
       "article_title": "Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
-      "accessions": [],
+      "accessions": [
+        "GSE161383"
+      ],
       "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161383",
         "https://elifesciences.org/articles/62522"
       ],
       "assay_description": "Unpaired single-nucleus RNA-seq and ATAC-seq matched by lung cell type",
@@ -2319,7 +2322,9 @@
       "figshare_url": "https://figshare.com/s/361b2ccc6d4d32007bb6",
       "record_title": "Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
       "article_title": "Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
-      "accessions": ["GSE161383"],
+      "accessions": [
+        "GSE161383"
+      ],
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161383",
         "https://elifesciences.org/articles/62522"
