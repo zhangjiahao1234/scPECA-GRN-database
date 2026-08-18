@@ -2,7 +2,7 @@
   "schema_version": "3.0",
   "resource_name": "TRENDS",
   "scope": "Human and mouse catalog",
-  "generated": "2026-07-28",
+  "generated": "2026-08-18",
   "network_total": 701,
   "species_totals": {
     "Human": 444,
@@ -21,9 +21,7 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "study_description": "ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference."
     },
@@ -239,7 +237,7 @@
       "source_id": "mouse_encode",
       "folder": "bulk/ENCODE",
       "mapping_dataset": "ENCODE",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "data_form": "Bulk",
       "figshare_article_id": 26121574,
       "figshare_item_title": "Mouse_bulk_ENCODE",
@@ -249,9 +247,7 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "study_description": "ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context."
     },
@@ -585,14 +581,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Hematopoietic tissue, TRENDS provides 2 GRNs: Hematopoietic multipotent progenitor cell, Primary hematopoietic stem cells G-CSF-mobilized Female.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -627,14 +620,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For PBMC, TRENDS provides 7 cell-type GRNs.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -674,7 +664,7 @@
       "species": "Human",
       "organ_system": "Immune system",
       "data_form": "Bulk",
-      "organ_tissue": "Peyer’s patch",
+      "organ_tissue": "Peyer's patch",
       "sample": "ENCODE_Peyers_patch",
       "source_id": "encode",
       "source_name": "ENCODE",
@@ -689,14 +679,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Peyer’s patch, TRENDS provides 1 GRN: Peyers patch.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -727,14 +714,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Spleen, TRENDS provides 2 GRNs: Fetal Spleen, spleen.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -769,14 +753,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Thymus, TRENDS provides 1 GRN: Fetal Thymus.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -814,9 +795,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Hematopoietic tissue, TRENDS provides 3 GRNs: Erythroblasts, Hematopoietic stem cells, Megakaryocytes.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -862,9 +842,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Immune cells, TRENDS provides 3 GRNs: Antigen presenting cells, Lymphoid cells, Myeloid cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -910,9 +889,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Spleen, TRENDS provides 1 GRN: Spleen.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -950,9 +928,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Thymus, TRENDS provides 3 GRNs: Thymic epithelial cells, Thymocytes, Thymus.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -976,7 +953,7 @@
       "species": "Human",
       "organ_system": "Immune system",
       "data_form": "Paired",
-      "organ_tissue": "Seurat pbmcMultiome",
+      "organ_tissue": "PBMC",
       "sample": "Seurat_pbmcMultiome",
       "source_id": "pbmc",
       "source_name": "10x Genomics PBMC multiome",
@@ -997,9 +974,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC multiome",
       "summary_text": [
-        "Description: The 10x Genomics PBMC multiome dataset jointly measured RNA and chromatin accessibility in approximately 10,000 peripheral blood mononuclear cells; cell-type labels follow the Seurat weighted-nearest-neighbor reference analysis. For Seurat pbmcMultiome, TRENDS provides 10 cell-type GRNs.",
-        "Source: 10x Genomics PBMC multiome",
-        "Dataset title: 10k Human PBMCs, Multiome v1.0, Chromium X",
+        "Description: Joint RNA and chromatin-accessibility profiles from human peripheral blood mononuclear cells were grouped using published cell-type annotations.",
+        "Publication/source: 10x Genomics PBMC multiome",
         "Data form: Paired single-cell RNA and ATAC multiome",
         "Source accession: 10x Genomics dataset"
       ],
@@ -1072,9 +1048,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Spleen, TRENDS provides 12 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -1155,9 +1130,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Thymus, TRENDS provides 18 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -1262,9 +1236,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Brain, TRENDS provides 18 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -1363,14 +1336,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Brain, TRENDS provides 3 GRNs: caudate nucleus, frontal cortex, putamen.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1409,14 +1379,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Cerebellum, TRENDS provides 1 GRN: cerebellum.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1447,14 +1414,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For CNCC, TRENDS provides 1 GRN: CNCC.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1485,14 +1449,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Hippocampus, TRENDS provides 1 GRN: Ammons horn.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1523,14 +1484,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Peripheral nerve, TRENDS provides 1 GRN: tibial nerve.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1561,14 +1519,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Spinal cord, TRENDS provides 1 GRN: Fetal Spinal Cord.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -1605,9 +1560,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Eye, TRENDS provides 22 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -1729,9 +1683,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Brain, TRENDS provides 8 cell-type GRNs.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1797,9 +1750,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Enteric nervous system, TRENDS provides 2 GRNs: ENS glia, ENS neurons.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1841,9 +1793,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Eye Retina, TRENDS provides 4 GRNs: Eye, Photoreceptor cells, Retinal pigment cells, Retinal progenitors and Muller glia.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1893,9 +1844,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Peripheral nerve, TRENDS provides 1 GRN: Schwann cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1933,9 +1883,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Peripheral nerve ganglion, TRENDS provides 1 GRN: Ganglion cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1973,9 +1922,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Sympathetic nerve, TRENDS provides 1 GRN: Sympathoblasts.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -1991,7 +1939,7 @@
       "species": "Human",
       "organ_system": "Nervous system",
       "data_form": "Paired",
-      "organ_tissue": "GSE255677 human ear nose",
+      "organ_tissue": "Outer ear and nose",
       "sample": "GSE255677_human_ear_nose",
       "source_id": "ear_nose",
       "source_name": "Human outer-ear and nose multiome",
@@ -2011,9 +1959,8 @@
       ],
       "assay_description": "Paired single-nucleus RNA and ATAC multiome",
       "summary_text": [
-        "Description: 10x single-cell multiome libraries were generated from human fetal outer ear and nose at 20 post-gestation weeks and from outer ear and epiglottis at 22 post-gestation weeks. For GSE255677 human ear nose, TRENDS provides 23 cell-type GRNs.",
-        "Source: Human outer-ear and nose multiome",
-        "Dataset title: Reutilization of ancestral gill regulatory programs in outer ear evolution (human)",
+        "Description: Paired single-cell multiome profiles from human outer-ear and nose tissues were grouped using published cell-type annotations.",
+        "Publication/source: Repurposing of a gill gene regulatory program for outer-ear evolution",
         "Data form: Paired single-nucleus RNA and ATAC multiome",
         "Source accession: GSE255677"
       ],
@@ -2117,7 +2064,7 @@
       "species": "Human",
       "organ_system": "Nervous system",
       "data_form": "Unpaired",
-      "organ_tissue": "Retina GSE184386 GSE142526",
+      "organ_tissue": "Retina",
       "sample": "Retina_GSE184386_GSE142526",
       "source_id": "retina",
       "source_name": "Developing human retina atlases",
@@ -2128,7 +2075,7 @@
       "figshare_article_id": 26121652,
       "figshare_url": "https://figshare.com/s/1d2d8fe24d29962161d7",
       "record_title": "Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
-      "article_title": null,
+      "article_title": "Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
       "accessions": [
         "GSE142526",
         "GSE184386"
@@ -2139,9 +2086,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
       "summary_text": [
-        "Description: The RNA atlas profiled human fetal retina from approximately gestational days 59-125, while the ATAC atlas profiled fetal weeks 8, 11 and 13 together with age-matched retinal organoids. The modalities were aligned using retinal cell-type annotations. For Retina GSE184386 GSE142526, TRENDS provides 4 GRNs: Cones, HOR, MPC, RGC.",
-        "Source: Developing human retina atlases",
-        "Dataset title: Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
+        "Description: Separate scRNA-seq and scATAC-seq datasets from developing human retina were aligned using published retinal cell-type annotations.",
+        "Publication/source: Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
         "Source accession: GSE142526, GSE184386"
       ],
@@ -2184,14 +2130,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Lung, TRENDS provides 2 GRNs: Fetal Lung, upper lobe of left lung.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2233,9 +2176,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Lung, TRENDS provides 3 GRNs: Bronchiolar and alveolar epithelial cells, Ciliated epithelial cells, Lung.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -2280,9 +2222,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Lung, TRENDS provides 18 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -2366,7 +2307,7 @@
       "species": "Human",
       "organ_system": "Respiratory system",
       "data_form": "Unpaired",
-      "organ_tissue": "Lung unpair",
+      "organ_tissue": "Lung",
       "sample": "Lung_unpair",
       "source_id": "lung_unpair",
       "source_name": "Human lung single-cell multiomic atlas",
@@ -2384,9 +2325,8 @@
       ],
       "assay_description": "Unpaired single-nucleus RNA-seq and ATAC-seq matched by lung cell type",
       "summary_text": [
-        "Description: Donor-matched snRNA-seq and snATAC-seq profiled non-diseased human lungs across neonatal, pediatric and adult stages. Samples represented approximately 30-week gestational age, 3-year-old and 30-year-old donors, with three donors in each main age group; modalities were aligned using published lung cell-type annotations. For Lung unpair, TRENDS provides 17 cell-type GRNs.",
-        "Source: Human lung single-cell multiomic atlas",
-        "Dataset title: Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
+        "Description: Donor-matched snRNA-seq and snATAC-seq profiles from non-diseased human lungs were aligned using published lung cell-type annotations.",
+        "Publication/source: Single-cell multiomic profiling of human lungs reveals cell-type-specific and age-dynamic control of SARS-CoV2 host genes",
         "Data form: Unpaired single-nucleus RNA-seq and ATAC-seq matched by lung cell type",
         "Source accession: No public accession reported"
       ],
@@ -2481,14 +2421,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Colon, TRENDS provides 2 GRNs: sigmoid colon, transverse colon.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2523,14 +2460,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Esophagus, TRENDS provides 2 GRNs: esophagus muscularis mucosa, esophagus squamous epithelium.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2565,14 +2499,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Gastroesophageal junction, TRENDS provides 1 GRN: gastroesophageal sphincter.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2603,14 +2534,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Intestine, TRENDS provides 2 GRNs: Fetal Intestine Large, Fetal Intestine Small.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2645,14 +2573,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Liver, TRENDS provides 1 GRN: right lobe of liver.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2683,14 +2608,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Pancreas, TRENDS provides 2 GRNs: Pancreas, body of pancrea.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2725,14 +2647,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Stomach, TRENDS provides 3 GRNs: Fetal Stomach, Gastric, stomach.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -2778,9 +2697,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Intestine, TRENDS provides 3 GRNs: Goblet cells, Intestinal epithelial cells, Intestine.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -2826,9 +2744,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Liver, TRENDS provides 2 GRNs: Hepatoblasts, Liver.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -2870,9 +2787,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Pancreas, TRENDS provides 4 GRNs: Acinar cells, Ductal cells, Islet endocrine cells, Pancreas.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -2922,9 +2838,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Stomach, TRENDS provides 2 GRNs: Parietal and chief cells, Stomach.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -2965,9 +2880,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Liver, TRENDS provides 14 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -3035,7 +2949,7 @@
       "species": "Human",
       "organ_system": "Digestive system",
       "data_form": "Paired",
-      "organ_tissue": "Pancreas GSE200044",
+      "organ_tissue": "Pancreas",
       "sample": "Pancreas_GSE200044",
       "source_id": "pancreas",
       "source_name": "Human islet multiome",
@@ -3055,9 +2969,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC multiome",
       "summary_text": [
-        "Description: Single-cell RNA and ATAC multiome profiling measured 85,266 human islet cells from 20 donors spanning normoglycemia, prediabetes and type 2 diabetes. For Pancreas GSE200044, TRENDS provides 9 cell-type GRNs.",
-        "Source: Human islet multiome",
-        "Dataset title: Single-cell multiome (ATAC and RNA) landscapes of human islets in normoglycemia, prediabetes and type 2 diabetes",
+        "Description: Single-cell RNA and ATAC multiome profiles from human islets across metabolic states were grouped using published cell-type annotations.",
+        "Publication/source: Integrating genetics with single-cell multiomic measurements across disease states identifies mechanisms of beta cell dysfunction in type 2 diabetes",
         "Data form: Paired single-cell RNA and ATAC multiome",
         "Source accession: GSE200044"
       ],
@@ -3126,9 +3039,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For StomachEsophagus, TRENDS provides 22 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -3243,14 +3155,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Kidney, TRENDS provides 3 GRNs: Fetal Kidney, Fetal Renal Cortex, Fetal Renal Pelvis.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -3296,9 +3205,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Kidney, TRENDS provides 3 GRNs: Kidney, Metanephric cells, Ureteric bud cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3322,7 +3230,7 @@
       "species": "Human",
       "organ_system": "Urinary system",
       "data_form": "Paired",
-      "organ_tissue": "GSE234788 human kidney",
+      "organ_tissue": "Kidney",
       "sample": "GSE234788_human_kidney",
       "source_id": "kidney",
       "source_name": "Human kidney SHARE-seq atlas",
@@ -3342,9 +3250,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
       "summary_text": [
-        "Description: SHARE-seq profiled 48 human kidney samples from cortex, medulla, papilla, ureter and renal artery, measuring RNA and chromatin accessibility in the same cells. For GSE234788 human kidney, TRENDS provides 20 cell-type GRNs.",
-        "Source: Human kidney SHARE-seq atlas",
-        "Dataset title: Single-cell multiome sequencing of human kidney anatomical regions with SHARE-seq",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across human kidney anatomical regions.",
+        "Publication/source: Transcriptomic, epigenomic, and spatial metabolomic cell profiling redefines regional human kidney anatomy",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq",
         "Source accession: GSE234788"
       ],
@@ -3457,9 +3364,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Adrenal, TRENDS provides 10 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -3526,14 +3432,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Adrenal gland, TRENDS provides 2 GRNs: Fetal Adrenal Gland, adrenal gland.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -3568,14 +3471,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Thyroid gland, TRENDS provides 1 GRN: thyroid gland.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -3613,9 +3513,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Adrenal, TRENDS provides 3 GRNs: Adrenal, Adrenocortical cells, Chromaffin cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3661,9 +3560,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Neuroendocrine tissue, TRENDS provides 1 GRN: Neuroendocrine cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3700,9 +3598,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Thyroid, TRENDS provides 12 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -3777,14 +3674,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Blood vessel, TRENDS provides 1 GRN: thoracic aorta.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -3815,14 +3709,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Heart, TRENDS provides 3 GRNs: Fetal Heart, heart left ventricle, right atrium auricular region.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -3868,9 +3759,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Blood vessel, TRENDS provides 1 GRN: Vascular endothelial cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3908,9 +3798,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Heart, TRENDS provides 4 GRNs: Cardiomyocytes, Endocardial cells, Epicardial fat cells, Heart.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3960,9 +3849,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Lymphatic vessel, TRENDS provides 1 GRN: Lymphatic endothelial cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -3999,9 +3887,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Heart, TRENDS provides 16 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -4092,14 +3979,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Breast, TRENDS provides 1 GRN: breast epithelium.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4130,14 +4014,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Ovary, TRENDS provides 2 GRNs: Fetal Ovary, Ovary.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4172,14 +4053,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Prostate, TRENDS provides 1 GRN: prostate gland.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4210,14 +4088,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Testis, TRENDS provides 1 GRN: testis.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4248,14 +4123,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Uterus, TRENDS provides 1 GRN: uterus.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4286,14 +4158,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Vagina, TRENDS provides 1 GRN: vagina.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4331,9 +4200,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Placenta, TRENDS provides 3 GRNs: Placenta, Syncytiotrophoblasts and villous cytotrophoblasts, Trophoblast giant cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -4379,9 +4247,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Placenta Decidua, TRENDS provides 3 GRNs: Extravillous trophoblasts, IGFBP1 DKK1 positive cells, PAEP MECOM positive cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -4421,9 +4288,8 @@
       "source_urls": [],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by cell-type annotation",
       "summary_text": [
-        "Description: Unpublished human gonadal scRNA-seq and scATAC-seq profiles were matched using their cell-type annotations. For Gonad, TRENDS provides 2 GRNs: human Leydig, human Sertoli.",
-        "Source: Human gonadal single-cell data",
-        "Dataset title: Unpublished human gonadal scRNA-seq and scATAC-seq data",
+        "Description: Human gonadal scRNA-seq and scATAC-seq profiles were aligned using their cell-type annotations.",
+        "Publication/source: Human gonadal single-cell data",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by cell-type annotation",
         "Source accession: No public accession reported"
       ],
@@ -4458,14 +4324,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Muscle, TRENDS provides 3 GRNs: Fetal Muscle, Psoas Muscle, gastrocnemius medialis.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4511,9 +4374,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Muscle, TRENDS provides 4 GRNs: Muscle, Satellite cells, Skeletal muscle cells, Smooth muscle cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -4562,9 +4424,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Muscle, TRENDS provides 22 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -4679,14 +4540,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Skin, TRENDS provides 3 GRNs: Foreskin Keratinocyte Primary Cells skin02, Melanocyte, lower leg skin.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -4731,9 +4589,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
       "summary_text": [
-        "Description: The Human Development Multiomic Atlas used SHARE-seq to jointly profile chromatin accessibility and gene expression in 817,740 fetal cells from 12 organs between post-conception weeks 10 and 23, resolving 203 cell types. For Skin, TRENDS provides 19 cell-type GRNs.",
-        "Source: Human Development Multiomic Atlas",
-        "Dataset title: Multiomics and deep learning dissect regulatory syntax in human development",
+        "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
+        "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
         "Source accession: PRJNA1402391"
       ],
@@ -4821,7 +4678,7 @@
       "species": "Human",
       "organ_system": "Cell line",
       "data_form": "Bulk",
-      "organ_tissue": "CarT GSE160154",
+      "organ_tissue": "CAR T cells",
       "sample": "CarT_GSE160154",
       "source_id": "cart",
       "source_name": "CAR T-cell study",
@@ -4845,9 +4702,8 @@
       ],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq; GSE160174 is the SuperSeries, GSE160154 is the RNA-seq SubSeries and GSE160139 is the ATAC-seq SubSeries",
       "summary_text": [
-        "Description: Bulk RNA-seq and ATAC-seq compared control day-0 CAR+ T cells with continuously stimulated CAR+ T cells in an in vitro CAR T-cell dysfunction model. For CarT GSE160154, TRENDS provides 2 GRNs: CSR2, D0R2.",
-        "Source: CAR T-cell study",
-        "Dataset title: Induction of T cell dysfunction and NK-like T cell differentiation in vitro and in patients after CAR T cell treatment",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from control and chronically stimulated CAR T cells were paired by experimental condition.",
+        "Publication/source: An NK-like CAR T cell transition in CAR T cell dysfunction",
         "Data form: Paired bulk RNA-seq and ATAC-seq; GSE160174 is the SuperSeries, GSE160154 is the RNA-seq SubSeries and GSE160139 is the ATAC-seq SubSeries",
         "Source accession: GSE160174, GSE160154, GSE160139"
       ],
@@ -4867,7 +4723,7 @@
       "species": "Human",
       "organ_system": "Cell line",
       "data_form": "Paired",
-      "organ_tissue": "CellLine GSE126074",
+      "organ_tissue": "Cell lines",
       "sample": "CellLine_GSE126074",
       "source_id": "cellline",
       "source_name": "SNARE-seq human cell-line mixture",
@@ -4887,9 +4743,8 @@
       ],
       "assay_description": "Paired single-nucleus RNA and ATAC co-assay",
       "summary_text": [
-        "Description: SNARE-seq simultaneously measured gene expression and chromatin accessibility in 1,047 nuclei from a human BJ, H1, K562 and GM12878 cell-line mixture. For CellLine GSE126074, TRENDS provides 4 GRNs: BJ, GM12878, H1, K562.",
-        "Source: SNARE-seq human cell-line mixture",
-        "Dataset title: Simultaneous profiling of transcriptome and chromatin accessibility in single nucleus",
+        "Description: SNARE-seq jointly profiled gene expression and chromatin accessibility in BJ, H1, K562 and GM12878 cell lines.",
+        "Publication/source: High-throughput sequencing of the transcriptome and chromatin accessibility in the same cell",
         "Data form: Paired single-nucleus RNA and ATAC co-assay",
         "Source accession: GSE126074"
       ],
@@ -4932,14 +4787,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For ENCODE cell lines, TRENDS provides 13 cell-type GRNs.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5003,7 +4855,7 @@
       "species": "Human",
       "organ_system": "Cell line",
       "data_form": "Unpaired",
-      "organ_tissue": "Somatic GSE100345",
+      "organ_tissue": "Somatic cell reprogramming",
       "sample": "Somatic_GSE100345",
       "source_id": "somatic",
       "source_name": "Human somatic-cell reprogramming",
@@ -5023,9 +4875,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched across somatic-cell reprogramming states",
       "summary_text": [
-        "Description: Parallel single-cell RNA-seq and ATAC-seq followed changing transcriptional and chromatin-accessibility states during human somatic-cell reprogramming. For Somatic GSE100345, TRENDS provides 5 GRNs: somatic BJ, somatic D16neg, somatic D16pos, somatic D2, somatic D8.",
-        "Source: Human somatic-cell reprogramming",
-        "Dataset title: Determination of dynamic changes in gene expression and chromatin accessibility during cellular reprogramming",
+        "Description: Parallel single-cell RNA-seq and ATAC-seq profiles from human somatic-cell reprogramming were aligned by cell state.",
+        "Publication/source: Diversification of reprogramming trajectories revealed by parallel single-cell transcriptome and chromatin accessibility sequencing",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched across somatic-cell reprogramming states",
         "Source accession: GSE100345"
       ],
@@ -5072,14 +4923,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Adipose tissue, TRENDS provides 2 GRNs: omental fat pad, subcutaneous adipose tissue.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5114,14 +4962,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/human-donor-matrix/"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE released human bulk RNA-seq and ATAC-seq profiles from tissues, primary cells and cell lines. Gene-expression and chromatin-accessibility profiles were paired at the same biosample context before GRN inference. For Other ENCODE samples, TRENDS provides 2 GRNs: Fibroblasts, Foreskin Fibroblast Primary Cells skin02.",
-        "Source: ENCODE",
-        "Dataset title: ENCODE human paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from human tissues, primary cells and cell lines were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5163,9 +5008,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Mesenchyme Stroma, TRENDS provides 3 GRNs: Mesangial cells, Stellate cells, Stromal cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -5211,9 +5055,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Mesothelium, TRENDS provides 1 GRN: Mesothelial cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -5251,9 +5094,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
       "summary_text": [
-        "Description: Separate sci-RNA-seq and sci-ATAC-seq atlases profiled human fetal samples across 15 organs. Chromatin-accessibility samples covered estimated gestational days 89-125, and the two modalities were aligned using the published cell-type annotations. For Uncertain, TRENDS provides 1 GRN: SKOR2 NPSR1 positive cells.",
-        "Source: Human fetal single-cell atlases",
-        "Dataset title: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
+        "Description: Separate sci-RNA-seq and sci-ATAC-seq datasets from human fetal organs were aligned using published cell-type annotations.",
+        "Publication/source: A human cell atlas of fetal gene expression; A human cell atlas of fetal chromatin accessibility",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by fetal cell-type annotation",
         "Source accession: GSE156793, GSE149683"
       ],
@@ -5272,7 +5114,7 @@
       "organ_tissue": "Cerebellum",
       "sample": "mouse_encode_cerebellum",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 1,
       "generation": "bulk",
       "version": "v1.0",
@@ -5284,14 +5126,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Cerebellum: EncodeCerebellumC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5310,7 +5149,7 @@
       "organ_tissue": "Cerebrum",
       "sample": "mouse_encode_cerebrum",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 1,
       "generation": "bulk",
       "version": "v1.0",
@@ -5322,14 +5161,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Cerebrum: EncodeCerebrumC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5348,7 +5184,7 @@
       "organ_tissue": "Forebrain",
       "sample": "mouse_encode_forebrain",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 7,
       "generation": "bulk",
       "version": "v1.0",
@@ -5360,14 +5196,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Forebrain.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5410,7 +5243,7 @@
       "organ_tissue": "Hindbrain",
       "sample": "mouse_encode_hindbrain",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 7,
       "generation": "bulk",
       "version": "v1.0",
@@ -5422,14 +5255,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Hindbrain.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5472,7 +5302,7 @@
       "organ_tissue": "Midbrain",
       "sample": "mouse_encode_midbrain",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 7,
       "generation": "bulk",
       "version": "v1.0",
@@ -5484,14 +5314,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 7 cell-type GRNs for Midbrain.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5534,7 +5361,7 @@
       "organ_tissue": "Neural tube",
       "sample": "mouse_encode_neural-tube",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -5546,14 +5373,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Neural tube: NeuralTubeE11.5, NeuralTubeE12.5, NeuralTubeE13.5, NeuralTubeE14.5, NeuralTubeE15.5.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -5605,9 +5429,8 @@
       ],
       "assay_description": "Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
       "summary_text": [
-        "Description: The Signac mouse-brain reference integrates adult mouse scATAC-seq with an scRNA-seq reference from the same biological system and transfers brain cell identities across modalities. TRENDS provides 7 cell-type GRNs for Brain layers.",
-        "Source: Adult mouse brain Signac reference",
-        "Dataset title: Adult mouse brain scATAC-seq integrated with an scRNA-seq reference",
+        "Description: Mouse brain scATAC-seq was integrated with an scRNA-seq reference, and published cell identities were transferred between modalities.",
+        "Publication/source: Adult mouse brain Signac reference",
         "Data form: Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
         "Source accession: 10x Genomics dataset"
       ],
@@ -5667,9 +5490,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by cortical lineage annotation",
       "summary_text": [
-        "Description: The study profiled E18.5 hGFAP-GFP-positive cortex by scATAC-seq and P1 cortex by scRNA-seq to resolve cortical glial lineages. TRENDS provides 6 cell-type GRNs for Cortex.",
-        "Source: Developing mouse cortex glial study",
-        "Dataset title: Decoding Cortical Glial Cell Development",
+        "Description: Separate scATAC-seq and scRNA-seq profiles from mouse cortex were aligned using published glial-lineage annotations.",
+        "Publication/source: Decoding Cortical Glial Cell Development",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by cortical lineage annotation",
         "Source accession: GSE161132"
       ],
@@ -5725,9 +5547,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Eye: Corneal Stroma, Eye specific.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -5767,9 +5588,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 8 cell-type GRNs for Neuron.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -5833,9 +5653,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Neuron progenitor: Neuron Progenitor.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -5871,9 +5690,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
       "summary_text": [
-        "Description: Single-cell RNA and chromatin-accessibility profiles were generated from adult wild-type and VSX2 super-enhancer-deletion mouse retina. TRENDS provides 7 cell-type GRNs for Retina.",
-        "Source: Mouse retina single-cell atlases",
-        "Dataset title: Identification of a modular super-enhancer in murine retinal development",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse retina were aligned using published retinal cell-type annotations.",
+        "Publication/source: Identification of a modular super-enhancer in murine retinal development",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
         "Source accession: GSE169262"
       ],
@@ -5933,9 +5751,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
       "summary_text": [
-        "Description: SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse brain cells and resolved cell-type-specific regulatory relationships. TRENDS provides 19 cell-type GRNs for Brain.",
-        "Source: Adult mouse brain SHARE-seq",
-        "Dataset title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+        "Description: SHARE-seq jointly measured gene expression and chromatin accessibility in mouse brain cells.",
+        "Publication/source: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq",
         "Source accession: GSE140203"
       ],
@@ -6043,9 +5860,8 @@
       ],
       "assay_description": "Paired single-nucleus RNA and ATAC multiome",
       "summary_text": [
-        "Description: Single-nucleus multiome sequencing profiled RNA and chromatin accessibility in the mouse mid-thoracic spinal cord. TRENDS provides 21 cell-type GRNs for Spinal cord.",
-        "Source: Mouse thoracic spinal-cord multiome",
-        "Dataset title: Best practices for differential accessibility analysis in single-cell epigenomics",
+        "Description: Single-nucleus multiome jointly profiled gene expression and chromatin accessibility in mouse spinal cord.",
+        "Publication/source: Best practices for differential accessibility analysis in single-cell epigenomics",
         "Data form: Paired single-nucleus RNA and ATAC multiome",
         "Source accession: GSE230765"
       ],
@@ -6161,9 +5977,8 @@
       ],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: Paired bulk RNA-seq and ATAC-seq profiled mouse primordial germ cells at embryonic day 10.5. TRENDS provides 1 GRN for PGC: PGCmouseE10.5.",
-        "Source: Mouse primordial germ-cell study",
-        "Dataset title: Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
+        "Description: Bulk RNA-seq and ATAC-seq profiled mouse primordial germ cells.",
+        "Publication/source: Accurate annotation of accessible chromatin in mouse and human primordial germ cells",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: GSE109770"
       ],
@@ -6199,9 +6014,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 5 GRNs for Gonad: Granulosa Cell, Leydig Stromal GM, MGC, Sertoli Cell, Stromal E11Gonad.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -6253,9 +6067,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for PGC: PGC.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -6291,9 +6104,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and NOMe-seq matched by spermatogenic stage",
       "summary_text": [
-        "Description: Purified spermatogenic populations were profiled by single-cell RNA-seq and NOMe-seq to follow successive stages of mouse spermatogenesis. TRENDS provides 10 cell-type GRNs for Spermatogenesis.",
-        "Source: Mouse spermatogenesis single-cell study",
-        "Dataset title: Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
+        "Description: Single-cell RNA-seq and NOMe-seq profiles across mouse spermatogenesis were aligned by germ-cell stage.",
+        "Publication/source: Single-cell RNA-seq uncovers dynamic processes and critical regulators in mouse spermatogenesis",
         "Data form: Unpaired scRNA-seq and NOMe-seq matched by spermatogenic stage",
         "Source accession: GSE107644"
       ],
@@ -6365,9 +6177,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC multiome",
       "summary_text": [
-        "Description: 10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in castrated mouse prostates. TRENDS provides 16 cell-type GRNs for Castrated prostate.",
-        "Source: Castrated mouse prostate multiome",
-        "Dataset title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Description: Single-cell multiome jointly profiled gene expression and chromatin accessibility in castrated mouse prostate.",
+        "Publication/source: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
         "Data form: Paired single-cell RNA and ATAC multiome",
         "Source accession: GSE284640"
       ],
@@ -6463,9 +6274,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC multiome",
       "summary_text": [
-        "Description: 10x Genomics Multiome profiled chromatin accessibility and nuclear gene expression in sham-operated mouse prostates. TRENDS provides 14 cell-type GRNs for Intact prostate.",
-        "Source: Intact mouse prostate multiome",
-        "Dataset title: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
+        "Description: Single-cell multiome jointly profiled gene expression and chromatin accessibility in intact mouse prostate.",
+        "Publication/source: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
         "Data form: Paired single-cell RNA and ATAC multiome",
         "Source accession: GSE284640"
       ],
@@ -6536,7 +6346,7 @@
       "organ_tissue": "Intestine",
       "sample": "mouse_encode_intestine",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 4,
       "generation": "bulk",
       "version": "v1.0",
@@ -6548,14 +6358,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Intestine: IntestineE14.5, IntestineE15.5, IntestineE16.5, IntestineP0.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6586,7 +6393,7 @@
       "organ_tissue": "Large intestine",
       "sample": "mouse_encode_large-intestine",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 1,
       "generation": "bulk",
       "version": "v1.0",
@@ -6598,14 +6405,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Large intestine: EncodeLgintC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6624,7 +6428,7 @@
       "organ_tissue": "Liver",
       "sample": "mouse_encode_liver",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 8,
       "generation": "bulk",
       "version": "v1.0",
@@ -6636,14 +6440,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 8 cell-type GRNs for Liver.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6690,7 +6491,7 @@
       "organ_tissue": "Stomach",
       "sample": "mouse_encode_stomach",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 4,
       "generation": "bulk",
       "version": "v1.0",
@@ -6702,14 +6503,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Stomach: StomachE14.5, StomachE15.5, StomachE16.5, StomachP0.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6757,9 +6555,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Acinar: Acinar Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -6778,7 +6575,7 @@
       "organ_tissue": "Spleen",
       "sample": "mouse_encode_spleen",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 1,
       "generation": "bulk",
       "version": "v1.0",
@@ -6790,14 +6587,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Spleen: EncodeSpleenC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6816,7 +6610,7 @@
       "organ_tissue": "Thymus",
       "sample": "mouse_encode_thymus",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 1,
       "generation": "bulk",
       "version": "v1.0",
@@ -6828,14 +6622,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 1 GRN for Thymus: EncodeThymusC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -6871,9 +6662,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Hematopoietic: Early Erythroblast, Erythroblast.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -6913,9 +6703,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Immune: Macrophage, Myeloid Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -6955,9 +6744,8 @@
       ],
       "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
       "summary_text": [
-        "Description: SHARE-seq jointly measured chromatin accessibility and gene expression in adult mouse skin cells and resolved cell-type-specific regulatory relationships. TRENDS provides 23 cell-type GRNs for Skin.",
-        "Source: Adult mouse skin SHARE-seq",
-        "Dataset title: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+        "Description: SHARE-seq jointly measured gene expression and chromatin accessibility in mouse skin cells.",
+        "Publication/source: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
         "Data form: Paired single-cell RNA and ATAC SHARE-seq",
         "Source accession: GSE140203"
       ],
@@ -7064,7 +6852,7 @@
       "organ_tissue": "ENCODE cell lines",
       "sample": "mouse_encode_encode-cell-lines",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -7076,14 +6864,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for ENCODE cell lines: Encode416bC57bl6MAdult8wks, EncodeA20BalbcannMAdult8wks, EncodeBcellcd19pC57bl6MAdult8wks, EncodeBcellcd43nC57bl6MAdult8wks, EncodeTnaiveC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7115,7 +6900,7 @@
       "species": "Mouse",
       "organ_system": "Cell line",
       "data_form": "Bulk",
-      "organ_tissue": "GATA4 lineage",
+      "organ_tissue": "Cardiomyocytes",
       "sample": "mouse_cardiomyocytes_gata4-lineage",
       "source_id": "mouse_cardiomyocytes",
       "source_name": "Embryonic cardiomyocyte GATA4 study",
@@ -7135,9 +6920,8 @@
       ],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: The study generated RNA-seq and ATAC-seq profiles from E12.5 mouse cardiomyocytes while examining lineage-selective GATA4 occupancy. TRENDS provides 1 GRN for GATA4 lineage: cardiomyocytes.",
-        "Source: Embryonic cardiomyocyte GATA4 study",
-        "Dataset title: Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse cardiomyocytes were paired for GRN inference in a study of lineage-selective GATA4 occupancy.",
+        "Publication/source: Embryonic cardiomyocyte GATA4 study",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: GSE156001"
       ],
@@ -7153,7 +6937,7 @@
       "species": "Mouse",
       "organ_system": "Cell line",
       "data_form": "Bulk",
-      "organ_tissue": "Immune transdifferentiation",
+      "organ_tissue": "B cell-to-macrophage transition",
       "sample": "mouse_immune_immune-transdifferentiation",
       "source_id": "mouse_immune",
       "source_name": "Immune-cell transdifferentiation study",
@@ -7175,9 +6959,8 @@
       ],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
       "summary_text": [
-        "Description: The GSE204746 SuperSeries followed C/EBPalpha-driven conversion of mouse B cells toward macrophages with bulk RNA-seq and ATAC-seq; GSE204745 is its RNA-seq SubSeries. TRENDS provides the starting B-cell and terminal macrophage contexts. TRENDS provides 2 GRNs for Immune transdifferentiation: Macrophages, mBells.",
-        "Source: Immune-cell transdifferentiation study",
-        "Dataset title: Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
+        "Description: Bulk RNA-seq and ATAC-seq profiled C/EBPalpha-driven conversion of mouse B cells to macrophages.",
+        "Publication/source: Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
         "Data form: Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
         "Source accession: GSE204746, GSE204745"
       ],
@@ -7197,7 +6980,7 @@
       "species": "Mouse",
       "organ_system": "Cell line",
       "data_form": "Bulk",
-      "organ_tissue": "Reprogramming",
+      "organ_tissue": "MEF reprogramming",
       "sample": "mouse_mef_reprogramming",
       "source_id": "mouse_mef",
       "source_name": "Mouse fibroblast reprogramming study",
@@ -7221,9 +7004,8 @@
       ],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: Bulk RNA-seq and Omni-ATAC-seq profiled mouse embryonic fibroblasts and intermediate states during conversion toward induced myogenic progenitor cells. The current local release contains the MEF GRN. TRENDS provides 1 GRN for Reprogramming: MEF.",
-        "Source: Mouse fibroblast reprogramming study",
-        "Dataset title: Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
+        "Description: Bulk RNA-seq and Omni-ATAC-seq profiled mouse embryonic fibroblasts during conversion toward induced myogenic progenitor cells.",
+        "Publication/source: An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: GSE169055, GSE169053, GSE186271"
       ],
@@ -7242,7 +7024,7 @@
       "organ_tissue": "Lung",
       "sample": "mouse_encode_lung",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -7254,14 +7036,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Lung: EncodeLungC57bl6MAdult8wks, LungE14.5, LungE15.5, LungE16.5, LungP0.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7315,9 +7094,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by lung cell type",
       "summary_text": [
-        "Description: Separate scRNA-seq and scATAC-seq datasets profiled E17.5 mouse lung mesenchymal populations and were aligned by published cell-type labels. TRENDS provides 8 cell-type GRNs for Lung.",
-        "Source: Developing mouse lung atlases",
-        "Dataset title: Categorization of lung mesenchymal cells in development and fibrosis",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse lung were aligned using published cell-type annotations.",
+        "Publication/source: Categorization of lung mesenchymal cells in development and fibrosis",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by lung cell type",
         "Source accession: GSE157654, GSE157378"
       ],
@@ -7381,9 +7159,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Smooth muscle: Smooth Muscle Lung.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7402,7 +7179,7 @@
       "organ_tissue": "Other ENCODE samples",
       "sample": "mouse_encode_other-encode-samples",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 4,
       "generation": "bulk",
       "version": "v1.0",
@@ -7414,14 +7191,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 4 GRNs for Other ENCODE samples: EncodeFatC57bl6MAdult8wks, EncodeGfatC57bl6MAdult8wks, EncodeMelC57bl6MAdult8wks, EncodeSkmuscleC57bl6MAdult8wks.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7469,9 +7243,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Epithelial: Epithelial Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7507,9 +7280,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 3 GRNs for Germ layer: Ectoderm, Germlayer ExE, Mesoderm.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7553,9 +7325,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Mesothelial: Mesothelial Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7591,9 +7362,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Mixed: mixture.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7629,9 +7399,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 2 GRNs for Smooth muscle: Smooth Muscle, Stromal SmoothMuscle.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7671,9 +7440,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Stromal: Stromal Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7709,9 +7477,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Vascular: Endothelial Cell.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7730,7 +7497,7 @@
       "organ_tissue": "Heart",
       "sample": "mouse_encode_heart",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 8,
       "generation": "bulk",
       "version": "v1.0",
@@ -7742,14 +7509,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 8 cell-type GRNs for Heart.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7813,9 +7577,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Cardiomyocyte: Cardiomyocyte.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7851,9 +7614,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Stromal: Stromal Heart.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -7872,7 +7634,7 @@
       "organ_tissue": "Face",
       "sample": "mouse_encode_face",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -7884,14 +7646,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Face: FaceE11.5, FaceE12.5, FaceE13.5, FaceE14.5, FaceE15.5.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7926,7 +7685,7 @@
       "organ_tissue": "Limb",
       "sample": "mouse_encode_limb",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -7938,14 +7697,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Limb: LimbE11.5, LimbE12.5, LimbE13.5, LimbE14.5, LimbE15.5.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -7997,9 +7753,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Forelimb: Stromal Cell ForeLimb.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],
@@ -8018,7 +7773,7 @@
       "organ_tissue": "Kidney",
       "sample": "mouse_encode_kidney",
       "source_id": "mouse_encode",
-      "source_name": "ENCODE mouse development",
+      "source_name": "ENCODE",
       "network_count": 5,
       "generation": "bulk",
       "version": "v1.0",
@@ -8030,14 +7785,11 @@
       "accessions": [
         "ENCODE"
       ],
-      "source_urls": [
-        "https://www.encodeproject.org/mouse-development-matrix/?type=Experiment&status=released"
-      ],
+      "source_urls": [],
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
-        "Description: ENCODE profiled gene expression and chromatin accessibility across adult and embryonic mouse tissues, primary cells and cell lines. TRENDS paired the two bulk modalities within the same biosample context. TRENDS provides 5 GRNs for Kidney: EncodeKidneyC57bl6MAdult8wks, KidneyE14.5, KidneyE15.5, KidneyE16.5, KidneyP0.",
-        "Source: ENCODE mouse development",
-        "Dataset title: ENCODE mouse paired bulk RNA-seq and ATAC-seq profiles",
+        "Description: Bulk RNA-seq and ATAC-seq profiles from mouse tissues and developmental contexts were paired within the same biosample context for GRN inference.",
+        "Publication/source: ENCODE",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: ENCODE"
       ],
@@ -8089,9 +7841,8 @@
       ],
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
       "summary_text": [
-        "Description: Separate single-cell RNA and chromatin-accessibility atlases profiled mouse embryos at E7.5 and E13.5. Published cell-type annotations were used to align the two modalities. TRENDS provides 1 GRN for Kidney: Kidney specific.",
-        "Source: Mouse embryo single-cell atlases",
-        "Dataset title: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
+        "Description: Separate scRNA-seq and scATAC-seq profiles from mouse embryos were aligned using published cell-type annotations.",
+        "Publication/source: Single-cell chromatin accessibility and transcriptome atlas of mouse embryos",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by embryonic cell type",
         "Source accession: OMIX928"
       ],

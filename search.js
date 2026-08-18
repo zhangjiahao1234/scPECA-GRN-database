@@ -140,39 +140,6 @@ function accessionLinks(row) {
   });
 }
 
-function sourceLinks(row) {
-  elements.sourceLinks.replaceChildren();
-  if (!row.source_urls.length) {
-    elements.sourceLinks.textContent = "No public source record";
-    return;
-  }
-
-  const list = document.createElement("div");
-  list.className = "source-link-list";
-  row.source_urls.forEach((url, index) => {
-    const accession = row.accessions.find((value) => url.includes(value));
-    let label = `Open source record ${index + 1}`;
-    if (accession) {
-      label = `Open ${accession}`;
-    } else if (url.includes("encodeproject.org")) {
-      label = "Open ENCODE record";
-    } else if (url.includes("10xgenomics.com")) {
-      label = "Open 10x Genomics dataset";
-    } else if (url.includes("satijalab.org")) {
-      label = "Open Seurat reference";
-    } else if (
-      url.includes("nature.com") ||
-      url.includes("elifesciences.org")
-    ) {
-      label = "Open publication";
-    }
-    list.append(
-      createLink(url, label)
-    );
-  });
-  elements.sourceLinks.append(list);
-}
-
 function renderCellTypes(row, query = "") {
   const normalizedQuery = query.trim().toLowerCase();
   const cells = row.cell_entities.filter((cell) =>
@@ -226,13 +193,10 @@ function renderSelected() {
 
   const description = row.summary_text[0].replace(/^Description:\s*/, "");
   elements.description.textContent = description;
-  elements.sourceName.textContent = row.source_name;
-  elements.recordTitle.textContent = row.record_title;
-  elements.articleTitle.textContent = row.article_title || "";
-  elements.articleTitleRow.hidden = !row.article_title;
+  elements.publicationSource.textContent =
+    row.article_title || row.source_name;
   elements.assayDescription.textContent = row.assay_description;
   accessionLinks(row);
-  sourceLinks(row);
 
   elements.cellFilter.value = "";
   renderCellTypes(row);
@@ -285,13 +249,9 @@ function initialize() {
   elements.resultTitle = byId("result-title");
   elements.downloadButton = byId("download-button");
   elements.description = byId("description");
-  elements.sourceName = byId("source-name");
-  elements.recordTitle = byId("record-title");
-  elements.articleTitle = byId("article-title");
-  elements.articleTitleRow = byId("article-title-row");
+  elements.publicationSource = byId("publication-source");
   elements.assayDescription = byId("assay-description");
   elements.accessions = byId("accessions");
-  elements.sourceLinks = byId("source-links");
   elements.cellFilter = byId("cell-filter");
   elements.cellTypeCount = byId("cell-type-count");
   elements.cellTable = byId("cell-table");
