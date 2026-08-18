@@ -101,7 +101,7 @@
     },
     {
       "source_id": "pbmc",
-      "source_name": "10x Genomics PBMC multiome",
+      "source_name": "10x Genomics PBMC dataset",
       "data_form": "Paired",
       "figshare_article_id": 26121643,
       "figshare_url": "https://figshare.com/s/bf735dc630dd4e793453",
@@ -119,7 +119,7 @@
     },
     {
       "source_id": "gonad",
-      "source_name": "Human gonadal single-cell data",
+      "source_name": "Unpublished human gonadal data",
       "data_form": "Unpaired",
       "figshare_article_id": 26121649,
       "figshare_url": "https://figshare.com/s/3ca8adddd9fd7d724364",
@@ -137,7 +137,7 @@
       "figshare_article_id": 26121652,
       "figshare_url": "https://figshare.com/s/1d2d8fe24d29962161d7",
       "record_title": "Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
-      "article_title": null,
+      "article_title": "Single-Cell Transcriptomic Comparison of Human Fetal Retina, hPSC-Derived Retinal Organoids, and Long-Term Retinal Cultures; Single-cell ATAC-seq of fetal human retina and stem-cell-derived retinal organoids shows changing chromatin landscapes during cell fate acquisition",
       "accessions": [
         "GSE142526",
         "GSE184386"
@@ -261,7 +261,7 @@
       "figshare_item_title": "Mouse_bulk_cardiomyocytes",
       "figshare_url": "https://figshare.com/s/c622d197345650bde140",
       "record_title": "Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
-      "article_title": null,
+      "article_title": "GATA4 Regulates Developing Endocardium Through Interaction with ETS1",
       "accessions": [
         "GSE156001"
       ],
@@ -281,7 +281,7 @@
       "figshare_item_title": "Mouse_bulk_Immune",
       "figshare_url": "https://figshare.com/s/fa6c5e00e2e28a510044",
       "record_title": "Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
-      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
+      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPα regulates transdifferentiation velocity",
       "accessions": [
         "GSE204746",
         "GSE204745"
@@ -303,7 +303,7 @@
       "figshare_item_title": "Mouse_bulk_MEF",
       "figshare_url": "https://figshare.com/s/6bf589deb076492c979f",
       "record_title": "Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
-      "article_title": "An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
+      "article_title": "Integrative molecular roadmap for direct conversion of fibroblasts into myocytes and myogenic progenitor cells",
       "accessions": [
         "GSE169055",
         "GSE169053",
@@ -341,7 +341,7 @@
       "source_id": "mouse_brain_layers",
       "folder": "sc/Brain_layer_stuartlab",
       "mapping_dataset": "Brain_stuartlab",
-      "source_name": "Adult mouse brain Signac reference",
+      "source_name": "10x Genomics mouse brain dataset",
       "data_form": "Unpaired",
       "figshare_article_id": 33102824,
       "figshare_item_title": "Mouse_sc_brain_layer",
@@ -407,7 +407,7 @@
       "figshare_item_title": "Mouse_sc_brain",
       "figshare_url": "https://figshare.com/s/16eec51782f1a50d9b02",
       "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
       "accessions": [
         "GSE140203"
       ],
@@ -427,7 +427,7 @@
       "figshare_item_title": "Mouse_sc_skin",
       "figshare_url": "https://figshare.com/s/c55c18a2f1ee95bace5d",
       "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
       "accessions": [
         "GSE140203"
       ],
@@ -447,7 +447,7 @@
       "figshare_item_title": "Mouse_sc_thoracic_spinal_cord",
       "figshare_url": "https://figshare.com/s/46fab8d78f6a040c11f0",
       "record_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
-      "article_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "article_title": "Single-cell and spatial atlases of spinal cord injury in the Tabulae Paralytica",
       "accessions": [
         "GSE230765"
       ],
@@ -956,7 +956,7 @@
       "organ_tissue": "PBMC",
       "sample": "Seurat_pbmcMultiome",
       "source_id": "pbmc",
-      "source_name": "10x Genomics PBMC multiome",
+      "source_name": "10x Genomics PBMC dataset",
       "network_count": 10,
       "generation": "paired",
       "version": "v1.0",
@@ -972,11 +972,11 @@
         "https://www.10xgenomics.com/datasets/10-k-human-pbm-cs-multiome-v-1-0-chromium-x-1-standard-2-0-0",
         "https://satijalab.org/seurat/articles/weighted_nearest_neighbor_analysis"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Joint RNA and chromatin-accessibility profiles from human peripheral blood mononuclear cells were grouped using published cell-type annotations.",
-        "Publication/source: 10x Genomics PBMC multiome",
-        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Publication/source: 10x Genomics PBMC dataset",
+        "Data form: sc-multiome",
         "Source accession: 10x Genomics dataset"
       ],
       "cell_entities": [
@@ -1046,11 +1046,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -1128,11 +1128,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -1234,11 +1234,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -1558,11 +1558,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -1957,11 +1957,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255677"
       ],
-      "assay_description": "Paired single-nucleus RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Paired single-cell multiome profiles from human outer-ear and nose tissues were grouped using published cell-type annotations.",
         "Publication/source: Repurposing of a gill gene regulatory program for outer-ear evolution",
-        "Data form: Paired single-nucleus RNA and ATAC multiome",
+        "Data form: sc-multiome",
         "Source accession: GSE255677"
       ],
       "cell_entities": [
@@ -2075,7 +2075,7 @@
       "figshare_article_id": 26121652,
       "figshare_url": "https://figshare.com/s/1d2d8fe24d29962161d7",
       "record_title": "Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
-      "article_title": "Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
+      "article_title": "Single-Cell Transcriptomic Comparison of Human Fetal Retina, hPSC-Derived Retinal Organoids, and Long-Term Retinal Cultures; Single-cell ATAC-seq of fetal human retina and stem-cell-derived retinal organoids shows changing chromatin landscapes during cell fate acquisition",
       "accessions": [
         "GSE142526",
         "GSE184386"
@@ -2087,7 +2087,7 @@
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
       "summary_text": [
         "Description: Separate scRNA-seq and scATAC-seq datasets from developing human retina were aligned using published retinal cell-type annotations.",
-        "Publication/source: Single-cell transcriptomic and chromatin-accessibility atlases of the developing human retina",
+        "Publication/source: Single-Cell Transcriptomic Comparison of Human Fetal Retina, hPSC-Derived Retinal Organoids, and Long-Term Retinal Cultures; Single-cell ATAC-seq of fetal human retina and stem-cell-derived retinal organoids shows changing chromatin landscapes during cell fate acquisition",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by retinal cell type",
         "Source accession: GSE142526, GSE184386"
       ],
@@ -2220,11 +2220,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -2878,11 +2878,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -2967,11 +2967,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200044"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Single-cell RNA and ATAC multiome profiles from human islets across metabolic states were grouped using published cell-type annotations.",
         "Publication/source: Integrating genetics with single-cell multiomic measurements across disease states identifies mechanisms of beta cell dysfunction in type 2 diabetes",
-        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Data form: sc-multiome",
         "Source accession: GSE200044"
       ],
       "cell_entities": [
@@ -3037,11 +3037,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -3248,11 +3248,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234788"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across human kidney anatomical regions.",
         "Publication/source: Transcriptomic, epigenomic, and spatial metabolomic cell profiling redefines regional human kidney anatomy",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq",
+        "Data form: sc-multiome",
         "Source accession: GSE234788"
       ],
       "cell_entities": [
@@ -3362,11 +3362,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -3596,11 +3596,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -3885,11 +3885,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -4275,7 +4275,7 @@
       "organ_tissue": "Gonad",
       "sample": "Gonad",
       "source_id": "gonad",
-      "source_name": "Human gonadal single-cell data",
+      "source_name": "Unpublished human gonadal data",
       "network_count": 2,
       "generation": "unpaired",
       "version": "v1.0",
@@ -4289,7 +4289,7 @@
       "assay_description": "Unpaired scRNA-seq and scATAC-seq matched by cell-type annotation",
       "summary_text": [
         "Description: Human gonadal scRNA-seq and scATAC-seq profiles were aligned using their cell-type annotations.",
-        "Publication/source: Human gonadal single-cell data",
+        "Publication/source: Unpublished human gonadal data",
         "Data form: Unpaired scRNA-seq and scATAC-seq matched by cell-type annotation",
         "Source accession: No public accession reported"
       ],
@@ -4422,11 +4422,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -4587,11 +4587,11 @@
         "https://www.nature.com/articles/s41586-026-10326-9",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1402391"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly profiled gene expression and chromatin accessibility across 12 human fetal organs, with published cell-type annotations used to define GRNs.",
         "Publication/source: Multiomics and deep learning dissect regulatory syntax in human development",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq across 12 fetal organs",
+        "Data form: sc-multiome",
         "Source accession: PRJNA1402391"
       ],
       "cell_entities": [
@@ -4741,11 +4741,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126074"
       ],
-      "assay_description": "Paired single-nucleus RNA and ATAC co-assay",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SNARE-seq jointly profiled gene expression and chromatin accessibility in BJ, H1, K562 and GM12878 cell lines.",
         "Publication/source: High-throughput sequencing of the transcriptome and chromatin accessibility in the same cell",
-        "Data form: Paired single-nucleus RNA and ATAC co-assay",
+        "Data form: sc-multiome",
         "Source accession: GSE126074"
       ],
       "cell_entities": [
@@ -5412,7 +5412,7 @@
       "organ_tissue": "Brain layers",
       "sample": "mouse_brain_layers_brain-layers",
       "source_id": "mouse_brain_layers",
-      "source_name": "Adult mouse brain Signac reference",
+      "source_name": "10x Genomics mouse brain dataset",
       "network_count": 7,
       "generation": "unpaired",
       "version": "v1.0",
@@ -5430,7 +5430,7 @@
       "assay_description": "Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
       "summary_text": [
         "Description: Mouse brain scATAC-seq was integrated with an scRNA-seq reference, and published cell identities were transferred between modalities.",
-        "Publication/source: Adult mouse brain Signac reference",
+        "Publication/source: 10x Genomics mouse brain dataset",
         "Data form: Unpaired scATAC-seq and scRNA-seq matched by transferred cell identity",
         "Source accession: 10x Genomics dataset"
       ],
@@ -5742,18 +5742,18 @@
       "figshare_article_id": 30428194,
       "figshare_url": "https://figshare.com/s/16eec51782f1a50d9b02",
       "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
       "accessions": [
         "GSE140203"
       ],
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly measured gene expression and chromatin accessibility in mouse brain cells.",
-        "Publication/source: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq",
+        "Publication/source: Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
+        "Data form: sc-multiome",
         "Source accession: GSE140203"
       ],
       "cell_entities": [
@@ -5851,18 +5851,18 @@
       "figshare_article_id": 30428128,
       "figshare_url": "https://figshare.com/s/46fab8d78f6a040c11f0",
       "record_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
-      "article_title": "Best practices for differential accessibility analysis in single-cell epigenomics",
+      "article_title": "Single-cell and spatial atlases of spinal cord injury in the Tabulae Paralytica",
       "accessions": [
         "GSE230765"
       ],
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230765"
       ],
-      "assay_description": "Paired single-nucleus RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Single-nucleus multiome jointly profiled gene expression and chromatin accessibility in mouse spinal cord.",
-        "Publication/source: Best practices for differential accessibility analysis in single-cell epigenomics",
-        "Data form: Paired single-nucleus RNA and ATAC multiome",
+        "Publication/source: Single-cell and spatial atlases of spinal cord injury in the Tabulae Paralytica",
+        "Data form: sc-multiome",
         "Source accession: GSE230765"
       ],
       "cell_entities": [
@@ -6175,11 +6175,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Single-cell multiome jointly profiled gene expression and chromatin accessibility in castrated mouse prostate.",
         "Publication/source: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
-        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Data form: sc-multiome",
         "Source accession: GSE284640"
       ],
       "cell_entities": [
@@ -6272,11 +6272,11 @@
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284640"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC multiome",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: Single-cell multiome jointly profiled gene expression and chromatin accessibility in intact mouse prostate.",
         "Publication/source: Cellular cartography reveals mouse prostate organization and determinants of castration resistance",
-        "Data form: Paired single-cell RNA and ATAC multiome",
+        "Data form: sc-multiome",
         "Source accession: GSE284640"
       ],
       "cell_entities": [
@@ -6735,18 +6735,18 @@
       "figshare_article_id": 30433639,
       "figshare_url": "https://figshare.com/s/c55c18a2f1ee95bace5d",
       "record_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-      "article_title": "Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
+      "article_title": "Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
       "accessions": [
         "GSE140203"
       ],
       "source_urls": [
         "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140203"
       ],
-      "assay_description": "Paired single-cell RNA and ATAC SHARE-seq",
+      "assay_description": "sc-multiome",
       "summary_text": [
         "Description: SHARE-seq jointly measured gene expression and chromatin accessibility in mouse skin cells.",
-        "Publication/source: Integrative single-cell chromatin and transcriptome profiling uncovers cell-type-specific regulatory interactions",
-        "Data form: Paired single-cell RNA and ATAC SHARE-seq",
+        "Publication/source: Chromatin Potential Identified by Shared Single-Cell Profiling of RNA and Chromatin",
+        "Data form: sc-multiome",
         "Source accession: GSE140203"
       ],
       "cell_entities": [
@@ -6911,7 +6911,7 @@
       "figshare_article_id": 33102911,
       "figshare_url": "https://figshare.com/s/c622d197345650bde140",
       "record_title": "Lineage selective cardiac GATA4 chromatin occupancy [embryo]",
-      "article_title": null,
+      "article_title": "GATA4 Regulates Developing Endocardium Through Interaction with ETS1",
       "accessions": [
         "GSE156001"
       ],
@@ -6921,7 +6921,7 @@
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
         "Description: Bulk RNA-seq and ATAC-seq profiles from mouse cardiomyocytes were paired for GRN inference in a study of lineage-selective GATA4 occupancy.",
-        "Publication/source: Embryonic cardiomyocyte GATA4 study",
+        "Publication/source: GATA4 Regulates Developing Endocardium Through Interaction with ETS1",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: GSE156001"
       ],
@@ -6948,7 +6948,7 @@
       "figshare_article_id": 33102908,
       "figshare_url": "https://figshare.com/s/fa6c5e00e2e28a510044",
       "record_title": "Arginine methylation of C/EBPalpha controls the speed of immune cell transdifferentiation",
-      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
+      "article_title": "Carm1-arginine methylation of the transcription factor C/EBPα regulates transdifferentiation velocity",
       "accessions": [
         "GSE204746",
         "GSE204745"
@@ -6960,7 +6960,7 @@
       "assay_description": "Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
       "summary_text": [
         "Description: Bulk RNA-seq and ATAC-seq profiled C/EBPalpha-driven conversion of mouse B cells to macrophages.",
-        "Publication/source: Carm1-arginine methylation of the transcription factor C/EBPalpha regulates transdifferentiation velocity",
+        "Publication/source: Carm1-arginine methylation of the transcription factor C/EBPα regulates transdifferentiation velocity",
         "Data form: Paired bulk RNA-seq and ATAC-seq across immune-cell transdifferentiation states",
         "Source accession: GSE204746, GSE204745"
       ],
@@ -6991,7 +6991,7 @@
       "figshare_article_id": 33102902,
       "figshare_url": "https://figshare.com/s/6bf589deb076492c979f",
       "record_title": "Integrative molecular roadmap for reprogramming mouse fibroblasts into induced myogenic stem and progenitor cells",
-      "article_title": "An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
+      "article_title": "Integrative molecular roadmap for direct conversion of fibroblasts into myocytes and myogenic progenitor cells",
       "accessions": [
         "GSE169055",
         "GSE169053",
@@ -7005,7 +7005,7 @@
       "assay_description": "Paired bulk RNA-seq and ATAC-seq",
       "summary_text": [
         "Description: Bulk RNA-seq and Omni-ATAC-seq profiled mouse embryonic fibroblasts during conversion toward induced myogenic progenitor cells.",
-        "Publication/source: An integrative molecular roadmap for direct conversion of fibroblasts into myogenic stem and progenitor cells",
+        "Publication/source: Integrative molecular roadmap for direct conversion of fibroblasts into myocytes and myogenic progenitor cells",
         "Data form: Paired bulk RNA-seq and ATAC-seq",
         "Source accession: GSE169055, GSE169053, GSE186271"
       ],
